@@ -1,0 +1,917 @@
+{
+  "@context" : {
+    "SpeedUnit" : {
+      "@id" : "https://saref.etsi.org/saref4auto/SpeedUnit"
+    },
+    "LightTruck" : {
+      "@id" : "https://saref.etsi.org/saref4auto/LightTruck"
+    },
+    "Address" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Address"
+    },
+    "Platooning" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Platooning"
+    },
+    "OWLClass_7f65788c_8f5a_4c8b_89c8_1f924c8ef511" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_7f65788c_8f5a_4c8b_89c8_1f924c8ef511"
+    },
+    "SmallObject" : {
+      "@id" : "https://saref.etsi.org/saref4auto/SmallObject"
+    },
+    "hasShape" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasShape",
+      "@type" : "@id"
+    },
+    "OWLClass_d2711230_22c1_49e8_8058_a44688a41a16" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_d2711230_22c1_49e8_8058_a44688a41a16"
+    },
+    "consistsOfVehicle" : {
+      "@id" : "https://saref.etsi.org/saref4auto/consistsOfVehicle",
+      "@type" : "@id"
+    },
+    "OWLClass_9ac216bc_9889_42be_b873_8567be75a107" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_9ac216bc_9889_42be_b873_8567be75a107"
+    },
+    "UnitOfMeasure" : {
+      "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+    },
+    "OWLClass_33be815d_25bd_48d7_bdb4_8a6febb58d2c" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_33be815d_25bd_48d7_bdb4_8a6febb58d2c"
+    },
+    "Route" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Route"
+    },
+    "hasEnvironment" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasEnvironment",
+      "@type" : "@id"
+    },
+    "Closed" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Closed"
+    },
+    "isControlledByDevice" : {
+      "@id" : "https://saref.etsi.org/core/isControlledByDevice",
+      "@type" : "@id"
+    },
+    "Disengaging" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Disengaging"
+    },
+    "OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "RoutePoint" : {
+      "@id" : "https://saref.etsi.org/saref4auto/RoutePoint"
+    },
+    "hasLength" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasLength",
+      "@type" : "@id"
+    },
+    "isCollectionOf" : {
+      "@id" : "https://saref.etsi.org/saref4auto/isCollectionOf",
+      "@type" : "@id"
+    },
+    "CriticalObject" : {
+      "@id" : "https://saref.etsi.org/saref4auto/CriticalObject"
+    },
+    "PlatoonVehicleState" : {
+      "@id" : "https://saref.etsi.org/saref4auto/PlatoonVehicleState"
+    },
+    "OWLClass_0f32b2d8_db89_4881_ace7_72cace8ba5de" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_0f32b2d8_db89_4881_ace7_72cace8ba5de"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Reserved" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Reserved"
+    },
+    "OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a"
+    },
+    "OWLClass_38f0cbf1_e069_4e64_9812_7f81eac96690" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_38f0cbf1_e069_4e64_9812_7f81eac96690"
+    },
+    "hasDestinationEndPoint" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasDestinationEndPoint",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "Platoon" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Platoon"
+    },
+    "ParkingSpot" : {
+      "@id" : "https://saref.etsi.org/saref4auto/ParkingSpot"
+    },
+    "detectsPosition" : {
+      "@id" : "https://saref.etsi.org/saref4auto/detectsPosition",
+      "@type" : "@id"
+    },
+    "OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0"
+    },
+    "AtPickUpSpot" : {
+      "@id" : "https://saref.etsi.org/saref4auto/AtPickUpSpot"
+    },
+    "Assembling" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Assembling"
+    },
+    "RegularParkingSpot" : {
+      "@id" : "https://saref.etsi.org/saref4auto/RegularParkingSpot"
+    },
+    "PlatoonRole" : {
+      "@id" : "https://saref.etsi.org/saref4auto/PlatoonRole"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+    },
+    "HeavyTruck" : {
+      "@id" : "https://saref.etsi.org/saref4auto/HeavyTruck"
+    },
+    "isMemberOfPlatoon" : {
+      "@id" : "https://saref.etsi.org/saref4auto/isMemberOfPlatoon",
+      "@type" : "@id"
+    },
+    "measuresProperty" : {
+      "@id" : "https://saref.etsi.org/core/measuresProperty",
+      "@type" : "@id"
+    },
+    "hasPosition" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasPosition",
+      "@type" : "@id"
+    },
+    "Geometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
+    "OWLClass_c74dee04_0497_4156_bcad_06a79021d4b3" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_c74dee04_0497_4156_bcad_06a79021d4b3"
+    },
+    "LargeObject" : {
+      "@id" : "https://saref.etsi.org/saref4auto/LargeObject"
+    },
+    "BrakeCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4auto/BrakeCapacity"
+    },
+    "hasValue" : {
+      "@id" : "https://saref.etsi.org/core/hasValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Speed" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Speed"
+    },
+    "PassengerCar" : {
+      "@id" : "https://saref.etsi.org/saref4auto/PassengerCar"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    },
+    "OWLDataProperty_f859b87a_028e_46d7_a87e_d75bf80fe7c7" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLDataProperty_f859b87a_028e_46d7_a87e_d75bf80fe7c7",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OWLClass_9547169c_07a6_48ee_837e_27343a45ed06" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_9547169c_07a6_48ee_837e_27343a45ed06"
+    },
+    "PlatoonState" : {
+      "@id" : "https://saref.etsi.org/saref4auto/PlatoonState"
+    },
+    "hasRole" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasRole",
+      "@type" : "@id"
+    },
+    "Engaging" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Engaging"
+    },
+    "SpecialPermitParkingSpot" : {
+      "@id" : "https://saref.etsi.org/saref4auto/SpecialPermitParkingSpot"
+    },
+    "hasDestination" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasDestination",
+      "@type" : "@id"
+    },
+    "hasVehicleEnvironmentMember" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasVehicleEnvironmentMember",
+      "@type" : "@id"
+    },
+    "long" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+    },
+    "OWLClass_2cc57115_7965_4f13_9ad6_139fbf337b2e" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_2cc57115_7965_4f13_9ad6_139fbf337b2e"
+    },
+    "Feature" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "OWLObjectProperty_e1bbccf3_d604_4a6c_a130_e2148e0787fc" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLObjectProperty_e1bbccf3_d604_4a6c_a130_e2148e0787fc",
+      "@type" : "@id"
+    },
+    "OWLClass_6b9849f8_eb6a_4b0d_b135_c271d2c28f91" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_6b9849f8_eb6a_4b0d_b135_c271d2c28f91"
+    },
+    "hasIdentifier" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasIdentifier",
+      "@type" : "@id"
+    },
+    "AutomationLevel" : {
+      "@id" : "https://saref.etsi.org/saref4auto/AutomationLevel"
+    },
+    "WidthUnit" : {
+      "@id" : "https://saref.etsi.org/saref4auto/WidthUnit"
+    },
+    "OWLClass_9cf96130_d31e_4542_ab3c_d4b830de2cd6" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_9cf96130_d31e_4542_ab3c_d4b830de2cd6"
+    },
+    "OWLClass_f2f0f1ca_8879_4599_8acf_34fcb5e0c2a6" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_f2f0f1ca_8879_4599_8acf_34fcb5e0c2a6"
+    },
+    "Bus" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Bus"
+    },
+    "Measurement" : {
+      "@id" : "https://saref.etsi.org/core/Measurement"
+    },
+    "HeightUnit" : {
+      "@id" : "https://saref.etsi.org/saref4auto/HeightUnit"
+    },
+    "OWLClass_eb1fda7a_fc6c_4dfb_ac2f_1ce59234bc97" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_eb1fda7a_fc6c_4dfb_ac2f_1ce59234bc97"
+    },
+    "Movement" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Movement"
+    },
+    "ElectronicControlUnit" : {
+      "@id" : "https://saref.etsi.org/saref4auto/ElectronicControlUnit"
+    },
+    "VehicleEnvironment" : {
+      "@id" : "https://saref.etsi.org/saref4auto/VehicleEnvironment"
+    },
+    "Charging" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Charging"
+    },
+    "OWLClass_8cd541c9_9bb2_49a5_9820_43c0dbcf5a60" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_8cd541c9_9bb2_49a5_9820_43c0dbcf5a60"
+    },
+    "Length" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Length"
+    },
+    "ParkingVehicleState" : {
+      "@id" : "https://saref.etsi.org/saref4auto/ParkingVehicleState"
+    },
+    "isConfidenceOf" : {
+      "@id" : "https://saref.etsi.org/saref4auto/isConfidenceOf",
+      "@type" : "@id"
+    },
+    "OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa"
+    },
+    "usesMeasurement" : {
+      "@id" : "https://saref.etsi.org/saref4auto/usesMeasurement",
+      "@type" : "@id"
+    },
+    "Tram" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Tram"
+    },
+    "RelativePosition" : {
+      "@id" : "https://saref.etsi.org/saref4auto/RelativePosition"
+    },
+    "VulnerableRoadUser" : {
+      "@id" : "https://saref.etsi.org/saref4auto/VulnerableRoadUser"
+    },
+    "PersonalDevice" : {
+      "@id" : "https://saref.etsi.org/saref4auto/PersonalDevice"
+    },
+    "OWLClass_be6b198e_5792_4367_8dd0_e1193127a9d0" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_be6b198e_5792_4367_8dd0_e1193127a9d0"
+    },
+    "RendezvousLocation" : {
+      "@id" : "https://saref.etsi.org/saref4auto/RendezvousLocation"
+    },
+    "hasDestinationAddress" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasDestinationAddress",
+      "@type" : "@id"
+    },
+    "Free" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Free"
+    },
+    "hasMaxSize" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasMaxSize"
+    },
+    "hasProperty" : {
+      "@id" : "https://saref.etsi.org/core/hasProperty",
+      "@type" : "@id"
+    },
+    "hasPlatoonPosition" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasPlatoonPosition",
+      "@type" : "@id"
+    },
+    "LateralAcceleration" : {
+      "@id" : "https://saref.etsi.org/saref4auto/LateralAcceleration"
+    },
+    "isMemberOf" : {
+      "@id" : "https://saref.etsi.org/saref4auto/isMemberOf",
+      "@type" : "@id"
+    },
+    "PlatoonAutomationLevel" : {
+      "@id" : "https://saref.etsi.org/saref4auto/PlatoonAutomationLevel"
+    },
+    "PublicTransport" : {
+      "@id" : "https://saref.etsi.org/saref4auto/PublicTransport"
+    },
+    "measurementMadeBy" : {
+      "@id" : "https://saref.etsi.org/core/measurementMadeBy",
+      "@type" : "@id"
+    },
+    "Unknown" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Unknown"
+    },
+    "RoadSideActuator" : {
+      "@id" : "https://saref.etsi.org/saref4auto/RoadSideActuator"
+    },
+    "consistsOfEquipment" : {
+      "@id" : "https://saref.etsi.org/saref4auto/consistsOfEquipment",
+      "@type" : "@id"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "hasAutomationLevel" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasAutomationLevel",
+      "@type" : "@id"
+    },
+    "OWLClass_62ab1c22_189c_4445_85ee_1ef1e2d17b57" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_62ab1c22_189c_4445_85ee_1ef1e2d17b57"
+    },
+    "AccelerationConfidence" : {
+      "@id" : "https://saref.etsi.org/saref4auto/AccelerationConfidence"
+    },
+    "PositionConfidenceEllipse" : {
+      "@id" : "https://saref.etsi.org/saref4auto/PositionConfidenceEllipse"
+    },
+    "consistsOfObject" : {
+      "@id" : "https://saref.etsi.org/saref4auto/consistsOfObject",
+      "@type" : "@id"
+    },
+    "Standalone" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Standalone"
+    },
+    "OWLClass_71fc68af_f487_4bdf_ac37_4e79e6cd7468" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_71fc68af_f487_4bdf_ac37_4e79e6cd7468"
+    },
+    "LengthUnit" : {
+      "@id" : "https://saref.etsi.org/saref4auto/LengthUnit"
+    },
+    "NotifiedEvent" : {
+      "@id" : "https://saref.etsi.org/saref4auto/NotifiedEvent"
+    },
+    "RoadSideSensor" : {
+      "@id" : "https://saref.etsi.org/saref4auto/RoadSideSensor"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Width" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Width"
+    },
+    "Role" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Role"
+    },
+    "PerceptionState" : {
+      "@id" : "https://saref.etsi.org/saref4auto/PerceptionState"
+    },
+    "OWLClass_f4d3087f_4c57_4b40_bbf0_59a10d4f1876" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_f4d3087f_4c57_4b40_bbf0_59a10d4f1876"
+    },
+    "hasPlatoonVehicleState" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasPlatoonVehicleState",
+      "@type" : "@id"
+    },
+    "hasMember" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasMember",
+      "@type" : "@id"
+    },
+    "hasSize" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasSize",
+      "@type" : "@id"
+    },
+    "RelativeSpeed" : {
+      "@id" : "https://saref.etsi.org/saref4auto/RelativeSpeed"
+    },
+    "OWLClass_efb5f3dd_4e42_4e19_91b3_f451575038ea" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_efb5f3dd_4e42_4e19_91b3_f451575038ea"
+    },
+    "location" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+      "@type" : "@id"
+    },
+    "RoadObject" : {
+      "@id" : "https://saref.etsi.org/saref4auto/RoadObject"
+    },
+    "Weight" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Weight"
+    },
+    "hasConfidenceValue" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasConfidenceValue"
+    },
+    "OWLClass_268735bf_d97b_43a0_80f7_ead69c3861fa" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_268735bf_d97b_43a0_80f7_ead69c3861fa"
+    },
+    "hasEnd" : {
+      "@id" : "http://www.w3.org/2006/time#hasEnd",
+      "@type" : "@id"
+    },
+    "SpeedConfidence" : {
+      "@id" : "https://saref.etsi.org/saref4auto/SpeedConfidence"
+    },
+    "Car" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Car"
+    },
+    "hasAbsolutePosition" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasAbsolutePosition",
+      "@type" : "@id"
+    },
+    "OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    },
+    "hasBeginning" : {
+      "@id" : "http://www.w3.org/2006/time#hasBeginning",
+      "@type" : "@id"
+    },
+    "Occupied" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Occupied"
+    },
+    "hasEstimatedRendezvousLocation" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasEstimatedRendezvousLocation",
+      "@type" : "@id"
+    },
+    "alt" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt"
+    },
+    "Acceleration" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Acceleration"
+    },
+    "hasSubSystem" : {
+      "@id" : "https://saref.etsi.org/saref4syst/hasSubSystem",
+      "@type" : "@id"
+    },
+    "hasConfidenceUnitOfMeasure" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasConfidenceUnitOfMeasure",
+      "@type" : "@id"
+    },
+    "relatesToMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/relatesToMeasurement",
+      "@type" : "@id"
+    },
+    "hasVehicleRole" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasVehicleRole",
+      "@type" : "@id"
+    },
+    "Truck" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Truck"
+    },
+    "OWLClass_f12ac0e6_d518_41b2_a737_112009debde8" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_f12ac0e6_d518_41b2_a737_112009debde8"
+    },
+    "isMeasuredByDevice" : {
+      "@id" : "https://saref.etsi.org/core/isMeasuredByDevice",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "hasWidth" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasWidth",
+      "@type" : "@id"
+    },
+    "hasParkingVehicleState" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasParkingVehicleState",
+      "@type" : "@id"
+    },
+    "hasRelativePosition" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasRelativePosition",
+      "@type" : "@id"
+    },
+    "hasHeight" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasHeight",
+      "@type" : "@id"
+    },
+    "OWLClass_c00a4beb_8f90_4c26_bd83_6f7cfd3d5b70" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_c00a4beb_8f90_4c26_bd83_6f7cfd3d5b70"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Point" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+    },
+    "Size" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Size"
+    },
+    "consistsOfEvent" : {
+      "@id" : "https://saref.etsi.org/saref4auto/consistsOfEvent",
+      "@type" : "@id"
+    },
+    "Position" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Position"
+    },
+    "makesMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/makesMeasurement",
+      "@type" : "@id"
+    },
+    "OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8"
+    },
+    "P4Animal" : {
+      "@id" : "https://saref.etsi.org/saref4auto/P4Animal"
+    },
+    "hasEstimatedJoiningTime" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasEstimatedJoiningTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "OWLObjectProperty_1828ea5b_6175_4e01_88e4_a1b9cab3b318" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLObjectProperty_1828ea5b_6175_4e01_88e4_a1b9cab3b318",
+      "@type" : "@id"
+    },
+    "hasCoordinateX" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasCoordinateX"
+    },
+    "hasGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "@type" : "@id"
+    },
+    "RoadSideEquipment" : {
+      "@id" : "https://saref.etsi.org/saref4auto/RoadSideEquipment"
+    },
+    "OWLClass_c25f950f_505d_4814_be70_0de84bc70d3c" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_c25f950f_505d_4814_be70_0de84bc70d3c"
+    },
+    "Property" : {
+      "@id" : "https://saref.etsi.org/core/Property"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "VehicleRole" : {
+      "@id" : "https://saref.etsi.org/saref4auto/VehicleRole"
+    },
+    "inXSDDateTimeStamp" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "hasDescriptionName" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasDescriptionName"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "Parking" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Parking"
+    },
+    "OWLClass_7507dd57_9c90_44e6_a415_770e8066fcc9" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_7507dd57_9c90_44e6_a415_770e8066fcc9"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://saref.etsi.org/core/isMeasuredIn",
+      "@type" : "@id"
+    },
+    "OWLClass_083fab3f_ca95_4af8_873e_7563bd6bec77" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_083fab3f_ca95_4af8_873e_7563bd6bec77"
+    },
+    "OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4"
+    },
+    "Height" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Height"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "SpatialObject" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+    },
+    "OWLClass_92454d09_d714_4870_a8d4_c8c16bbc49d8" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_92454d09_d714_4870_a8d4_c8c16bbc49d8"
+    },
+    "TrafficManagementCentre" : {
+      "@id" : "https://saref.etsi.org/saref4auto/TrafficManagementCentre"
+    },
+    "hasMovement" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasMovement",
+      "@type" : "@id"
+    },
+    "lat" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+    },
+    "OWLClass_28157908_14ae_4cbc_909d_850da3c26f2e" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_28157908_14ae_4cbc_909d_850da3c26f2e"
+    },
+    "ParkingSpotPoint" : {
+      "@id" : "https://saref.etsi.org/saref4auto/ParkingSpotPoint"
+    },
+    "consistsOfUser" : {
+      "@id" : "https://saref.etsi.org/saref4auto/consistsOfUser",
+      "@type" : "@id"
+    },
+    "OWLClass_1c2e7359_7ebf_4f4c_b511_6d579bc168fd" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_1c2e7359_7ebf_4f4c_b511_6d579bc168fd"
+    },
+    "OWLClass_d53e4618_b4c4_4b81_8457_c41b82d733d4" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_d53e4618_b4c4_4b81_8457_c41b82d733d4"
+    },
+    "consistsOfEntity" : {
+      "@id" : "https://saref.etsi.org/saref4auto/consistsOfEntity",
+      "@type" : "@id"
+    },
+    "RoadEntity" : {
+      "@id" : "https://saref.etsi.org/saref4auto/RoadEntity"
+    },
+    "CardinalityUnit" : {
+      "@id" : "https://saref.etsi.org/saref4auto/CardinalityUnit"
+    },
+    "OWLClass_f3514a2a_4990_46bd_b24f_ab39a8895638" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_f3514a2a_4990_46bd_b24f_ab39a8895638"
+    },
+    "consistsOf" : {
+      "@id" : "https://saref.etsi.org/core/consistsOf",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "hasCoordinateZ" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasCoordinateZ"
+    },
+    "hasIDValue" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasIDValue"
+    },
+    "AbsolutePosition" : {
+      "@id" : "https://saref.etsi.org/saref4auto/AbsolutePosition"
+    },
+    "hasPerceptionState" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasPerceptionState",
+      "@type" : "@id"
+    },
+    "PlatoonPosition" : {
+      "@id" : "https://saref.etsi.org/saref4auto/PlatoonPosition"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "YawRate" : {
+      "@id" : "https://saref.etsi.org/saref4auto/YawRate"
+    },
+    "hasRoadTopologyPosition" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasRoadTopologyPosition",
+      "@type" : "@id"
+    },
+    "OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358"
+    },
+    "OWLClass_eb247bb6_865a_4b75_9193_ba8ee763b4a2" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_eb247bb6_865a_4b75_9193_ba8ee763b4a2"
+    },
+    "hasState" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasState",
+      "@type" : "@id"
+    },
+    "AbsoluteSpeed" : {
+      "@id" : "https://saref.etsi.org/saref4auto/AbsoluteSpeed"
+    },
+    "EndPoint" : {
+      "@id" : "https://saref.etsi.org/saref4auto/EndPoint"
+    },
+    "Searching" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Searching"
+    },
+    "State" : {
+      "@id" : "https://saref.etsi.org/saref4auto/State"
+    },
+    "OWLClass_ceca653f_ffb9_4523_91dd_53460e7557c0" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_ceca653f_ffb9_4523_91dd_53460e7557c0"
+    },
+    "Forming" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Forming"
+    },
+    "Parked" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Parked"
+    },
+    "relatesToProperty" : {
+      "@id" : "https://saref.etsi.org/core/relatesToProperty",
+      "@type" : "@id"
+    },
+    "OWLClass_92dab589_1afc_4f99_a53c_031ddf5a1d85" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_92dab589_1afc_4f99_a53c_031ddf5a1d85"
+    },
+    "TwoWheeler" : {
+      "@id" : "https://saref.etsi.org/saref4auto/TwoWheeler"
+    },
+    "LongitudinalAcceleration" : {
+      "@id" : "https://saref.etsi.org/saref4auto/LongitudinalAcceleration"
+    },
+    "hasOrigin" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasOrigin",
+      "@type" : "@id"
+    },
+    "Actuator" : {
+      "@id" : "https://saref.etsi.org/core/Actuator"
+    },
+    "SpatialThing" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    },
+    "P1Pedestrian" : {
+      "@id" : "https://saref.etsi.org/saref4auto/P1Pedestrian"
+    },
+    "OWLClass_3c89eac0_be9e_4296_ae63_6b28ca4f810b" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_3c89eac0_be9e_4296_ae63_6b28ca4f810b"
+    },
+    "StartPoint" : {
+      "@id" : "https://saref.etsi.org/saref4auto/StartPoint"
+    },
+    "hasPlatoonRole" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasPlatoonRole",
+      "@type" : "@id"
+    },
+    "OWLClass_30dd4a6b_a368_45c4_bcb0_b2d8300ba2c1" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_30dd4a6b_a368_45c4_bcb0_b2d8300ba2c1"
+    },
+    "isMemberOfVehicleEnvironment" : {
+      "@id" : "https://saref.etsi.org/saref4auto/isMemberOfVehicleEnvironment",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "controlsProperty" : {
+      "@id" : "https://saref.etsi.org/core/controlsProperty",
+      "@type" : "@id"
+    },
+    "MediumObject" : {
+      "@id" : "https://saref.etsi.org/saref4auto/MediumObject"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "System" : {
+      "@id" : "https://saref.etsi.org/saref4syst/System"
+    },
+    "OWLObjectProperty_c016f3d4_1a3a_4a8b_b22d_56aaff72f689" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLObjectProperty_c016f3d4_1a3a_4a8b_b22d_56aaff72f689",
+      "@type" : "@id"
+    },
+    "P2Bicyclist" : {
+      "@id" : "https://saref.etsi.org/saref4auto/P2Bicyclist"
+    },
+    "Shape" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Shape"
+    },
+    "ParkingSpotState" : {
+      "@id" : "https://saref.etsi.org/saref4auto/ParkingSpotState"
+    },
+    "hasPlatoonState" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasPlatoonState",
+      "@type" : "@id"
+    },
+    "AngularDirection" : {
+      "@id" : "https://saref.etsi.org/saref4auto/AngularDirection"
+    },
+    "Device" : {
+      "@id" : "https://saref.etsi.org/core/Device"
+    },
+    "AutomotiveObject" : {
+      "@id" : "https://saref.etsi.org/saref4auto/AutomotiveObject"
+    },
+    "TrafficLightController" : {
+      "@id" : "https://saref.etsi.org/saref4auto/TrafficLightController"
+    },
+    "P3Motorcyclist" : {
+      "@id" : "https://saref.etsi.org/saref4auto/P3Motorcyclist"
+    },
+    "subSystemOf" : {
+      "@id" : "https://saref.etsi.org/saref4syst/subSystemOf",
+      "@type" : "@id"
+    },
+    "Vehicle" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Vehicle"
+    },
+    "OWLClass_495b7639_fa49_44c2_a634_3838926ad786" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_495b7639_fa49_44c2_a634_3838926ad786"
+    },
+    "DrivingToParkingSpot" : {
+      "@id" : "https://saref.etsi.org/saref4auto/DrivingToParkingSpot"
+    },
+    "hasTimestamp" : {
+      "@id" : "https://saref.etsi.org/core/hasTimestamp"
+    },
+    "StationID" : {
+      "@id" : "https://saref.etsi.org/saref4auto/StationID"
+    },
+    "OWLClass_95be8558_d8a2_4eed_b3ac_45d78ee1d852" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_95be8558_d8a2_4eed_b3ac_45d78ee1d852"
+    },
+    "hasPlatoonMember" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasPlatoonMember",
+      "@type" : "@id"
+    },
+    "Identifier" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Identifier"
+    },
+    "OWLObjectProperty_10d4f71b_6da1_4eb5_840c_760db83f999d" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLObjectProperty_10d4f71b_6da1_4eb5_840c_760db83f999d",
+      "@type" : "@id"
+    },
+    "RoadTopologyPosition" : {
+      "@id" : "https://saref.etsi.org/saref4auto/RoadTopologyPosition"
+    },
+    "hasBrakeCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasBrakeCapacity",
+      "@type" : "@id"
+    },
+    "OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5"
+    },
+    "OWLClass_3ef5abd6_4002_4095_96dd_008e5780e633" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_3ef5abd6_4002_4095_96dd_008e5780e633"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "OWLClass_9ab327e6_b09d_41b2_93f3_a2f8970b9d72" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_9ab327e6_b09d_41b2_93f3_a2f8970b9d72"
+    },
+    "DrivingToPickUpSpot" : {
+      "@id" : "https://saref.etsi.org/saref4auto/DrivingToPickUpSpot"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "hasOpeningTimeAvailability" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasOpeningTimeAvailability",
+      "@type" : "@id"
+    },
+    "UUID" : {
+      "@id" : "https://saref.etsi.org/saref4auto/UUID"
+    },
+    "hasParkingSpotState" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasParkingSpotState",
+      "@type" : "@id"
+    },
+    "OWLDataProperty_60a77575_e39d_454c_96c5_66f14035eb2e" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLDataProperty_60a77575_e39d_454c_96c5_66f14035eb2e",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Heading" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Heading"
+    },
+    "VehicleAutomationLevel" : {
+      "@id" : "https://saref.etsi.org/saref4auto/VehicleAutomationLevel"
+    },
+    "AtDropOffSpot" : {
+      "@id" : "https://saref.etsi.org/saref4auto/AtDropOffSpot"
+    },
+    "OWLClass_8ef04dbb_f94e_4dae_8bf0_cb63cd807909" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_8ef04dbb_f94e_4dae_8bf0_cb63cd807909"
+    },
+    "Confidence" : {
+      "@id" : "https://saref.etsi.org/saref4auto/Confidence"
+    },
+    "hasConfidence" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasConfidence",
+      "@type" : "@id"
+    },
+    "OWLClass_b53cfe83_28d7_4f08_a457_43738aace26a" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_b53cfe83_28d7_4f08_a457_43738aace26a"
+    },
+    "hasCoordinateY" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasCoordinateY"
+    },
+    "hasRoute" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasRoute",
+      "@type" : "@id"
+    },
+    "hasPlatoonIndex" : {
+      "@id" : "https://saref.etsi.org/saref4auto/hasPlatoonIndex",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Sensor" : {
+      "@id" : "https://saref.etsi.org/core/Sensor"
+    },
+    "OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379"
+    },
+    "ElectricChargingParkingSpot" : {
+      "@id" : "https://saref.etsi.org/saref4auto/ElectricChargingParkingSpot"
+    }
+  }
+}
