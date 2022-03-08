@@ -7,6 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix geosp: <http://www.opengis.net/ont/geosparql#> .
 @prefix saref: <https://saref.etsi.org/core/> .
 @prefix s4auto: <https://saref.etsi.org/saref4auto/> .
@@ -27,6 +28,8 @@
                                       dcterms:publisher <https://www.etsi.org/> ;
                                       dcterms:source <https://saref.etsi.org/sources/saref4auto/> ;
                                       dcterms:title "SAREF extension for automotive"@en ;
+                                      vann:preferredNamespacePrefix "s4auto" ;
+                                      vann:preferredNamespaceUri "https://saref.etsi.org/saref4auto/" ;
                                       rdfs:seeAlso <https://www.etsi.org/deliver/etsi_ts/103400_103499/10341007/01.01.01_60/ts_10341007v010101p.pdf> ;
                                       owl:versionInfo "v1.1.1" .
 
@@ -68,6 +71,14 @@ dcterms:source rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/title
 dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
 #################################################################
