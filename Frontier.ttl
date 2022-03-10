@@ -18,16 +18,17 @@
 
 <https://saref.etsi.org/saref4auto/> rdf:type owl:Ontology ;
                                       owl:versionIRI <https://saref.etsi.org/saref4auto/v1.1.1/> ;
-                                      dcterms:contributor <https://scholar.google.com/citations?user=coCDIj8AAAAJ> ;
+                                      dcterms:contributor <https://scholar.google.com/citations?user=coCDIj8AAAAJ> ,
+                                                          <https://www.linkedin.com/in/pol-torres-46a83863/> ;
                                       dcterms:creator <http://netellany.fr/> ,
                                                       <https://www.linkedin.com/in/lauradaniele> ;
-                                      dcterms:description "This ontology extends the SAREF ontology for the automotive domain. This work has been developed in the context of the STF 566, which was established with the goal to create four SAREF extensions, one of them for the automotive domain."@en ;
+                                      dcterms:description "This ontology extends the SAREF ontology for the automotive domain applied to the H2020 FRONTIER Project. This work has been developed in the context of the STF 566, which was established with the goal to create four SAREF extensions, one of them for the automotive domain."@en ;
                                       dcterms:issued "2020-07-27"^^xsd:date ;
                                       dcterms:license <https://forge.etsi.org/etsi-software-license> ;
-                                      dcterms:modified "2021-07-26"^^xsd:date ;
+                                      dcterms:modified "2022-03-09"@en ;
                                       dcterms:publisher <https://www.etsi.org/> ;
                                       dcterms:source <https://saref.etsi.org/sources/saref4auto/> ;
-                                      dcterms:title "SAREF extension for automotive"@en ;
+                                      dcterms:title "FRONTIER Project with SAREF extension for automotive"@en ;
                                       vann:preferredNamespacePrefix "s4auto" ;
                                       vann:preferredNamespaceUri "https://saref.etsi.org/saref4auto/" ;
                                       rdfs:seeAlso <https://www.etsi.org/deliver/etsi_ts/103400_103499/10341007/01.01.01_60/ts_10341007v010101p.pdf> ;
@@ -2761,8 +2762,8 @@ s4auto:Unknown rdf:type owl:NamedIndividual ,
 #################################################################
 
 s4auto:PublicTransport rdfs:comment "A type of vehicle role"@en ;
-                       rdfs:label "PublicTransport"@en ,
-                                  "publicTransport"@en ;
+                       rdfs:label "publicTransport"@en ,
+                                  "PublicTransport"@en ;
                        rdfs:comment "A type of vehicle. Example of public transport is a bus or a tram"@en .
 
 
