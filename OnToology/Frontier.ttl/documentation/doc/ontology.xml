@@ -11,15 +11,16 @@
     <owl:Ontology rdf:about="https://saref.etsi.org/saref4auto/">
         <owl:versionIRI rdf:resource="https://saref.etsi.org/saref4auto/v1.1.1/"/>
         <terms:contributor rdf:resource="https://scholar.google.com/citations?user=coCDIj8AAAAJ"/>
+        <terms:contributor rdf:resource="https://www.linkedin.com/in/pol-torres-46a83863/"/>
         <terms:creator rdf:resource="http://netellany.fr/"/>
         <terms:creator rdf:resource="https://www.linkedin.com/in/lauradaniele"/>
-        <terms:description xml:lang="en">This ontology extends the SAREF ontology for the automotive domain. This work has been developed in the context of the STF 566, which was established with the goal to create four SAREF extensions, one of them for the automotive domain.</terms:description>
+        <terms:description xml:lang="en">This ontology extends the SAREF ontology for the automotive domain applied to the H2020 FRONTIER Project. This work has been developed in the context of the STF 566, which was established with the goal to create four SAREF extensions, one of them for the automotive domain.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-27</terms:issued>
         <terms:license rdf:resource="https://forge.etsi.org/etsi-software-license"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-26</terms:modified>
+        <terms:modified xml:lang="en">2022-03-09</terms:modified>
         <terms:publisher rdf:resource="https://www.etsi.org/"/>
         <terms:source rdf:resource="https://saref.etsi.org/sources/saref4auto/"/>
-        <terms:title xml:lang="en">SAREF extension for automotive</terms:title>
+        <terms:title xml:lang="en">FRONTIER Project with SAREF extension for automotive</terms:title>
         <vann:preferredNamespacePrefix>s4auto</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://saref.etsi.org/saref4auto/</vann:preferredNamespaceUri>
         <rdfs:seeAlso rdf:resource="https://www.etsi.org/deliver/etsi_ts/103400_103499/10341007/01.01.01_60/ts_10341007v010101p.pdf"/>
