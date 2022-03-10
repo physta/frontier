@@ -2220,6 +2220,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@id" : "https://scholar.google.com/citations?user=coCDIj8AAAAJ"
+  }, {
+    "@id" : "https://www.linkedin.com/in/pol-torres-46a83863/"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "http://netellany.fr/"
@@ -2228,7 +2230,7 @@
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "This ontology extends the SAREF ontology for the automotive domain. This work has been developed in the context of the STF 566, which was established with the goal to create four SAREF extensions, one of them for the automotive domain."
+    "@value" : "This ontology extends the SAREF ontology for the automotive domain applied to the H2020 FRONTIER Project. This work has been developed in the context of the STF 566, which was established with the goal to create four SAREF extensions, one of them for the automotive domain."
   } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -2238,8 +2240,8 @@
     "@id" : "https://forge.etsi.org/etsi-software-license"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2021-07-26"
+    "@language" : "en",
+    "@value" : "2022-03-09"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://www.etsi.org/"
@@ -2249,7 +2251,7 @@
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
-    "@value" : "SAREF extension for automotive"
+    "@value" : "FRONTIER Project with SAREF extension for automotive"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "s4auto"
