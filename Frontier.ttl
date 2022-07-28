@@ -763,7 +763,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                                                        rdfs:comment """Anything with spatial extent, i.e. size, shape, or position.
  e.g. people, places, bowling balls, as well as abstract areas like cubes.""" ;
                                                        rdfs:isDefinedBy "http://www.w3.org/2003/01/geo/wgs84_pos#" ;
-                                                       rdfs:label "Spatial Thing"@en .
+                                                       rdfs:label "SpatialThing"@en .
 
 
 ###  http://www.w3.org/2006/time#Instant
@@ -1042,7 +1042,7 @@ s4auto:Car rdf:type owl:Class ;
 s4auto:CardinalityUnit rdf:type owl:Class ;
                        rdfs:subClassOf saref:UnitOfMeasure ;
                        rdfs:comment "unit of measure of size"@en ;
-                       rdfs:label "cardinality unit"@en .
+                       rdfs:label "CardinalityUnit"@en .
 
 
 ###  https://saref.etsi.org/saref4auto/Charging
@@ -1223,7 +1223,7 @@ s4auto:Height rdf:type owl:Class ;
 s4auto:HeightUnit rdf:type owl:Class ;
                   rdfs:subClassOf saref:UnitOfMeasure ;
                   rdfs:comment "unit of measure of height"@en ;
-                  rdfs:label "height unit"@en .
+                  rdfs:label "HeightUnit"@en .
 
 
 ###  https://saref.etsi.org/saref4auto/Identifier
@@ -1240,7 +1240,7 @@ s4auto:Identifier rdf:type owl:Class ;
 s4auto:LargeObject rdf:type owl:Class ;
                    rdfs:subClassOf s4auto:CriticalObject ;
                    rdfs:comment "A type of Critical Object"@en ;
-                   rdfs:label "Large Object"@en .
+                   rdfs:label "LargeObject"@en .
 
 
 ###  https://saref.etsi.org/saref4auto/LateralAcceleration
@@ -1270,7 +1270,7 @@ s4auto:Length rdf:type owl:Class ;
 s4auto:LengthUnit rdf:type owl:Class ;
                   rdfs:subClassOf saref:UnitOfMeasure ;
                   rdfs:comment "unit of measure of lenght"@en ;
-                  rdfs:label "length unit"@en .
+                  rdfs:label "LengthUnit"@en .
 
 
 ###  https://saref.etsi.org/saref4auto/LightTruck
@@ -1291,7 +1291,7 @@ s4auto:LongitudinalAcceleration rdf:type owl:Class ;
 s4auto:MediumObject rdf:type owl:Class ;
                     rdfs:subClassOf s4auto:CriticalObject ;
                     rdfs:comment "A type of Critical Object"@en ;
-                    rdfs:label "Medium Object"@en .
+                    rdfs:label "MediumObject"@en .
 
 
 ###  https://saref.etsi.org/saref4auto/Movement
@@ -1377,6 +1377,13 @@ s4auto:OWLClass_15fb483a_e638_4f66_813b_1d6257210b27 rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8 ;
                                                      rdfs:comment "An obstruction on the road caused by one or more vehicles." ;
                                                      rdfs:label "VehicleObstruction"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127
+s4auto:OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86 ;
+                                                     rdfs:comment "Averaged measurements or calculations of traffic headway, i.e. the distance or time interval between vehicles. This measure is measured from the head of one vehicle to the head of the following vehicle." ;
+                                                     rdfs:label "TrafficHeadway"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694
@@ -1529,6 +1536,12 @@ s4auto:OWLClass_3f5ca29b_a4bb_4d64_89b4_aac68c137c49 rdf:type owl:Class ;
                                                      rdfs:label "faultDescription"@es .
 
 
+###  https://saref.etsi.org/saref4auto/OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8
+s4auto:OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4 ;
+                                                     rdfs:label "EquipmentOrSystemFault"@es .
+
+
 ###  https://saref.etsi.org/saref4auto/OWLClass_495b7639_fa49_44c2_a634_3838926ad786
 s4auto:OWLClass_495b7639_fa49_44c2_a634_3838926ad786 rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379 ;
@@ -1627,7 +1640,7 @@ s4auto:OWLClass_71fc68af_f487_4bdf_ac37_4e79e6cd7468 rdf:type owl:Class ;
 s4auto:OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5 rdf:type owl:Class ;
                                                      rdfs:subClassOf saref:UnitOfMeasure ;
                                                      rdfs:comment "To indicate the number of an entity in a fraction of time. Number per second" ;
-                                                     rdfs:label "flow unit"@es .
+                                                     rdfs:label "FlowUnit"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_74646d5d_a895_4eb2_891b_56e07258b839
@@ -1683,6 +1696,13 @@ s4auto:OWLClass_888ef99b_3ccc_45a4_bda4_3258bb4b4192 rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:NotifiedEvent ;
                                                      rdfs:comment "Accidents are events where one or more vehicles are involved in collisions or in leaving the roadway. These include collisions between vehicles or with other road users or obstacles." ;
                                                      rdfs:label "Accident"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de
+s4auto:OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4 ;
+                                                     rdfs:comment "A traffic condition which is not normal." ;
+                                                     rdfs:label "AbnormalTraffic"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa
@@ -1833,7 +1853,7 @@ s4auto:OWLClass_9cf96130_d31e_4542_ab3c_d4b830de2cd6 rdf:type owl:Class ;
 ###  https://saref.etsi.org/saref4auto/OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0
 s4auto:OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0 rdf:type owl:Class ;
                                                      rdfs:subClassOf saref:UnitOfMeasure ;
-                                                     rdfs:label "acceleration unit"@es .
+                                                     rdfs:label "AccelerationUnit"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_a2818dfc_41cf_4923_9680_ba37180e5970
@@ -1924,7 +1944,7 @@ s4auto:OWLClass_c25f950f_505d_4814_be70_0de84bc70d3c rdf:type owl:Class ;
 s4auto:OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f rdf:type owl:Class ;
                                                      rdfs:subClassOf saref:UnitOfMeasure ;
                                                      rdfs:comment "To indicate when each datum is caputred" ;
-                                                     rdfs:label "timestamp"@es .
+                                                     rdfs:label "TimeStamp"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_c74dee04_0497_4156_bcad_06a79021d4b3
@@ -2074,7 +2094,7 @@ s4auto:OWLClass_f12ac0e6_d518_41b2_a737_112009debde8 rdf:type owl:Class ;
 ###  https://saref.etsi.org/saref4auto/OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba
 s4auto:OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba rdf:type owl:Class ;
                                                      rdfs:subClassOf saref:UnitOfMeasure ;
-                                                     rdfs:label "time unit"@es .
+                                                     rdfs:label "TimeUnit"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_f3514a2a_4990_46bd_b24f_ab39a8895638
@@ -2573,7 +2593,7 @@ s4auto:Size rdf:type owl:Class ;
 s4auto:SmallObject rdf:type owl:Class ;
                    rdfs:subClassOf s4auto:CriticalObject ;
                    rdfs:comment "A type of Critical Object"@en ;
-                   rdfs:label "Small Object"@en .
+                   rdfs:label "SmallObject"@en .
 
 
 ###  https://saref.etsi.org/saref4auto/SpecialPermitParkingSpot
@@ -2613,7 +2633,7 @@ s4auto:SpeedConfidence rdf:type owl:Class ;
 s4auto:SpeedUnit rdf:type owl:Class ;
                  rdfs:subClassOf saref:UnitOfMeasure ;
                  rdfs:comment "unit of measure of speed"@en ;
-                 rdfs:label "speed unit"@en .
+                 rdfs:label "SpeedUnit"@en .
 
 
 ###  https://saref.etsi.org/saref4auto/Standalone
@@ -2881,7 +2901,7 @@ s4auto:Width rdf:type owl:Class ;
 s4auto:WidthUnit rdf:type owl:Class ;
                  rdfs:subClassOf saref:UnitOfMeasure ;
                  rdfs:comment "unit of measure of width"@en ;
-                 rdfs:label "width unit"@en .
+                 rdfs:label "WidthUnit"@en .
 
 
 ###  https://saref.etsi.org/saref4auto/YawRate
