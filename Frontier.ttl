@@ -228,7 +228,6 @@ s4auto:OWLObjectProperty_c016f3d4_1a3a_4a8b_b22d_56aaff72f689 rdf:type owl:Objec
 
 ###  https://saref.etsi.org/saref4auto/OWLObjectProperty_e1bbccf3_d604_4a6c_a130_e2148e0787fc
 s4auto:OWLObjectProperty_e1bbccf3_d604_4a6c_a130_e2148e0787fc rdf:type owl:ObjectProperty ;
-                                                              rdfs:domain s4auto:OWLClass_f2f0f1ca_8879_4599_8acf_34fcb5e0c2a6 ;
                                                               rdfs:range s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a ;
                                                               rdfs:label "hasDataOf"@es .
 
@@ -1304,9 +1303,30 @@ s4auto:Movement rdf:type owl:Class ;
 
 ###  https://saref.etsi.org/saref4auto/NotifiedEvent
 s4auto:NotifiedEvent rdf:type owl:Class ;
-                     rdfs:subClassOf owl:Thing ;
+                     rdfs:subClassOf s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4 ;
                      rdfs:comment "The relevant types of events are trafficCondition, accident, roadworks, impassability, adverseWeatherCondition-Adhesion, aquaplannning, hazardousLocation-SurfaceCondition, hazardousLocation-ObstacleOnTheRoad, hazardousLocation-AnimalOnTheRoad, humanPresenceOnTheRoad, wrongWayDriving, rescueAndRecoveryWorkInProgress, adverseWeatherCondition-ExtremeWeatherCondition, adverseWeatherCondition-Visibility, adverseWeatherCondition-Precipitation, slowVehicle, dangerousEndOfQueue, vehicleBreakdown, postCrash, humanProblem, stationaryVehicle, emergencyVehicleApproaching, hazardousLocation-DangerousCurve, collisionRisk, signalViolation, dangerousSituation"@en ;
                      rdfs:label "NotifiedEvent"@en .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_04329a05_2232_4bf5_b0a8_ded14fee7c24
+s4auto:OWLClass_04329a05_2232_4bf5_b0a8_ded14fee7c24 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e ;
+                                                     rdfs:comment "Sum (vi²) / N - ( sum (vi) / N )² (including all vehicles from all classes) (vi) = speed of vehicle i N = total vehicle count" ;
+                                                     rdfs:label "Restlessness"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_04b546d7_4632_4354_b9a1_00058c30a662
+s4auto:OWLClass_04b546d7_4632_4354_b9a1_00058c30a662 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d ;
+                                                     rdfs:comment "Measurements of atmospheric pollution." ;
+                                                     rdfs:label "PollutionInformation"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab
+s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4 ;
+                                                     rdfs:comment "Any conditions which have the potential to degrade normal driving conditions." ;
+                                                     rdfs:label "Conditions"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_083fab3f_ca95_4af8_873e_7563bd6bec77
@@ -1316,7 +1336,7 @@ s4auto:OWLClass_083fab3f_ca95_4af8_873e_7563bd6bec77 rdf:type owl:Class ;
                                                                        owl:onProperty s4auto:OWLObjectProperty_c016f3d4_1a3a_4a8b_b22d_56aaff72f689 ;
                                                                        owl:someValuesFrom saref:Property
                                                                      ] ;
-                                                     rdfs:label "Historic_data"@es .
+                                                     rdfs:label "HistoricData"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4
@@ -1327,12 +1347,18 @@ s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4 rdf:type owl:Class ;
                                                                        owl:someValuesFrom s4auto:Vehicle
                                                                      ] ;
                                                      owl:disjointWith s4auto:OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa ;
-                                                     rdfs:label "Public_transport_data"@es .
+                                                     rdfs:label "PublicTransportData"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d
+s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d rdf:type owl:Class ;
+                                                     rdfs:comment "Measured or derived values relating to the weather at a specific location or locations." ;
+                                                     rdfs:label "WeatherData"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_0f32b2d8_db89_4881_ace7_72cace8ba5de
 s4auto:OWLClass_0f32b2d8_db89_4881_ace7_72cace8ba5de rdf:type owl:Class ;
-                                                     rdfs:subClassOf saref:Property ,
+                                                     rdfs:subClassOf s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86 ,
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty saref:isMeasuredIn ;
                                                                        owl:allValuesFrom s4auto:OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5
@@ -1341,14 +1367,36 @@ s4auto:OWLClass_0f32b2d8_db89_4881_ace7_72cace8ba5de rdf:type owl:Class ;
                                                                        owl:onProperty saref:hasValue ;
                                                                        owl:someValuesFrom xsd:float
                                                                      ] ;
-                                                     rdfs:comment "Property of interest. Flow of vehicle or people in a specific point" ;
-                                                     rdfs:label "Flow"@es .
+                                                     rdfs:comment "Property of interest. Flow of vehicle or people in a specific point" ,
+                                                                  "Vehicle count within vehicle class." ;
+                                                     rdfs:label "TrafficFlow"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_15fb483a_e638_4f66_813b_1d6257210b27
+s4auto:OWLClass_15fb483a_e638_4f66_813b_1d6257210b27 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8 ;
+                                                     rdfs:comment "An obstruction on the road caused by one or more vehicles." ;
+                                                     rdfs:label "VehicleObstruction"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694
+s4auto:OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8 ;
+                                                     rdfs:comment "An obstruction on the road resulting from an environmental cause." ;
+                                                     rdfs:label "EnvironmentalObstruction"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_1c2e7359_7ebf_4f4c_b511_6d579bc168fd
 s4auto:OWLClass_1c2e7359_7ebf_4f4c_b511_6d579bc168fd rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4 ;
                                                      rdfs:label "Timetable_of_simulation_period_data"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_1ee5b47b_5031_4283_9ea4_b5d07533c19c
+s4auto:OWLClass_1ee5b47b_5031_4283_9ea4_b5d07533c19c rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_74646d5d_a895_4eb2_891b_56e07258b839 ;
+                                                     rdfs:comment "A road node as part of the specialised road identified by the name of a junction on this road." ;
+                                                     rdfs:label "RoadNode"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_268735bf_d97b_43a0_80f7_ead69c3861fa
@@ -1370,7 +1418,14 @@ s4auto:OWLClass_268735bf_d97b_43a0_80f7_ead69c3861fa rdf:type owl:Class ;
                                                                        owl:onProperty s4auto:OWLDataProperty_f859b87a_028e_46d7_a87e_d75bf80fe7c7 ;
                                                                        owl:someValuesFrom xsd:string
                                                                      ] ;
-                                                     rdfs:label "Transport_data"@es .
+                                                     rdfs:label "TransportData"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_26b47864_9eb3_4711_89a6_c23244800e78
+s4auto:OWLClass_26b47864_9eb3_4711_89a6_c23244800e78 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e ;
+                                                     rdfs:comment "Date and time of the last update of data for this measurement point." ;
+                                                     rdfs:label "lastUpdateOfDeviceInformation"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_28157908_14ae_4cbc_909d_850da3c26f2e
@@ -1380,9 +1435,23 @@ s4auto:OWLClass_28157908_14ae_4cbc_909d_850da3c26f2e rdf:type owl:Class ;
                                                      rdfs:label "TAZ_system_data"@es .
 
 
+###  https://saref.etsi.org/saref4auto/OWLClass_28e02d4d_1c7b_4c7b_af28_cc59c73a9fa1
+s4auto:OWLClass_28e02d4d_1c7b_4c7b_af28_cc59c73a9fa1 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab ;
+                                                     rdfs:comment "Road surface conditions that are not related to the weather but which may affect driving conditions." ;
+                                                     rdfs:label "NonWeatherRelatedRoadConditions"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_2945d1e2_7172_4b82_869f_0b779bc9496b
+s4auto:OWLClass_2945d1e2_7172_4b82_869f_0b779bc9496b rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0 ;
+                                                     rdfs:comment "Roadworks involving the maintenance or installation of infrastructure." ;
+                                                     rdfs:label "MaintenanceWorks"@es .
+
+
 ###  https://saref.etsi.org/saref4auto/OWLClass_2cc57115_7965_4f13_9ad6_139fbf337b2e
 s4auto:OWLClass_2cc57115_7965_4f13_9ad6_139fbf337b2e rdf:type owl:Class ;
-                                                     rdfs:subClassOf s4auto:OWLClass_f12ac0e6_d518_41b2_a737_112009debde8 ;
+                                                     rdfs:subClassOf s4auto:OWLClass_be6b198e_5792_4367_8dd0_e1193127a9d0 ;
                                                      owl:disjointWith s4auto:OWLClass_be6b198e_5792_4367_8dd0_e1193127a9d0 ;
                                                      rdfs:label "Duration"@es .
 
@@ -1390,7 +1459,14 @@ s4auto:OWLClass_2cc57115_7965_4f13_9ad6_139fbf337b2e rdf:type owl:Class ;
 ###  https://saref.etsi.org/saref4auto/OWLClass_30dd4a6b_a368_45c4_bcb0_b2d8300ba2c1
 s4auto:OWLClass_30dd4a6b_a368_45c4_bcb0_b2d8300ba2c1 rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a ;
-                                                     rdfs:label "Adquisition_rate"@es .
+                                                     rdfs:label "AdquisitionRate"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_32021b7a_e7be_4a44_9c27_d1ea8f53eaa4
+s4auto:OWLClass_32021b7a_e7be_4a44_9c27_d1ea8f53eaa4 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d ;
+                                                     rdfs:comment "Measurements of road surface conditions which are related to the weather." ;
+                                                     rdfs:label "RoadSurfaceConditionInformation"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_33be815d_25bd_48d7_bdb4_8a6febb58d2c
@@ -1403,22 +1479,32 @@ s4auto:OWLClass_33be815d_25bd_48d7_bdb4_8a6febb58d2c rdf:type owl:Class ;
                                                      rdfs:label "Stops_location_data"@es .
 
 
-###  https://saref.etsi.org/saref4auto/OWLClass_38f0cbf1_e069_4e64_9812_7f81eac96690
-s4auto:OWLClass_38f0cbf1_e069_4e64_9812_7f81eac96690 rdf:type owl:Class ;
-                                                     rdfs:subClassOf s4auto:OWLClass_f2f0f1ca_8879_4599_8acf_34fcb5e0c2a6 ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <http://www.w3.org/2003/01/geo/wgs84_pos#location> ;
-                                                                       owl:allValuesFrom s4auto:Address
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty s4auto:OWLObjectProperty_e1bbccf3_d604_4a6c_a130_e2148e0787fc ;
-                                                                       owl:allValuesFrom s4auto:OWLClass_083fab3f_ca95_4af8_873e_7563bd6bec77
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty s4auto:OWLObjectProperty_e1bbccf3_d604_4a6c_a130_e2148e0787fc ;
-                                                                       owl:allValuesFrom s4auto:OWLClass_8ef04dbb_f94e_4dae_8bf0_cb63cd807909
-                                                                     ] ;
-                                                     rdfs:label "Antwerp_pilot"@es .
+###  https://saref.etsi.org/saref4auto/OWLClass_34f8159d_60f8_42d5_9ee3_ef6ca0f3823f
+s4auto:OWLClass_34f8159d_60f8_42d5_9ee3_ef6ca0f3823f rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8 ;
+                                                     rdfs:comment "An obstruction on the road resulting from the failure or damage of infrastructure on, under, above or close to the road." ;
+                                                     rdfs:label "InfrastructureDamageObstruction"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_35018e3e_3a05_4ce1_b21d_aecb99889b6a
+s4auto:OWLClass_35018e3e_3a05_4ce1_b21d_aecb99889b6a rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d ;
+                                                     rdfs:comment "Measurements of precipitation." ;
+                                                     rdfs:label "PrecipitationInformation"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0
+s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:NotifiedEvent ;
+                                                     rdfs:comment "Highway maintenance, installation and construction activities that may potentially affect traffic operations." ;
+                                                     rdfs:label "Roadworks"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_3bfa8d5b_36f3_465e_b7e0_cbbcdbb14af9
+s4auto:OWLClass_3bfa8d5b_36f3_465e_b7e0_cbbcdbb14af9 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8 ;
+                                                     rdfs:comment "An obstruction on the road resulting from the presence of animals." ;
+                                                     rdfs:label "AnimalPresenceObstruction"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_3c89eac0_be9e_4296_ae63_6b28ca4f810b
@@ -1433,15 +1519,74 @@ s4auto:OWLClass_3ef5abd6_4002_4095_96dd_008e5780e633 rdf:type owl:Class ;
                                                      rdfs:label "Shapefile"@es .
 
 
+###  https://saref.etsi.org/saref4auto/OWLClass_3f5ca29b_a4bb_4d64_89b4_aac68c137c49
+s4auto:OWLClass_3f5ca29b_a4bb_4d64_89b4_aac68c137c49 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e ;
+                                                     rdfs:comment """Failure-status of the measurement point
+•	0 = no failure
+•	1 = 1 of both detection loops is probably failing
+•	2 = more than 20 percent bad counts: severe failure""" ;
+                                                     rdfs:label "faultDescription"@es .
+
+
 ###  https://saref.etsi.org/saref4auto/OWLClass_495b7639_fa49_44c2_a634_3838926ad786
 s4auto:OWLClass_495b7639_fa49_44c2_a634_3838926ad786 rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379 ;
                                                      rdfs:label "XLS"@es .
 
 
+###  https://saref.etsi.org/saref4auto/OWLClass_4e93090d_5aeb_4946_a593_25268703bb08
+s4auto:OWLClass_4e93090d_5aeb_4946_a593_25268703bb08 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e ;
+                                                     rdfs:comment "Degree of availability = ((60s - unavailability) / 60s) * 100 Unavailability = Time during which a detector was unable to reliably detect passing vehicles" ;
+                                                     rdfs:label "AvailabilityRate"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_50c8f1b0_b382_4232_b895_16b7210ad7d3
+s4auto:OWLClass_50c8f1b0_b382_4232_b895_16b7210ad7d3 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86 ;
+                                                     rdfs:comment "Averaged measurements or calculations of traffic speed." ;
+                                                     rdfs:label "TrafficSpeed"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_51b26c11_9322_4c2b_8eaf_551547ee4dfb
+s4auto:OWLClass_51b26c11_9322_4c2b_8eaf_551547ee4dfb rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab ;
+                                                     rdfs:comment "Road surface conditions that are related to the weather which may affect the driving conditions, such as ice, snow or water." ;
+                                                     rdfs:label "WeatherRelatedRoadConditions"@es .
+
+
 ###  https://saref.etsi.org/saref4auto/OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a
 s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a rdf:type owl:Class ;
                                                      rdfs:label "Mobility_data"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_55978b20_33ff_44a1_a09c_974f509cc274
+s4auto:OWLClass_55978b20_33ff_44a1_a09c_974f509cc274 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e ;
+                                                     rdfs:comment "\"Obervation time\". Starting date and time of the minute to which the data correspond, UTC+1. the date is several years in the past, this can point to a restarted measurement device which hasn't synchronised its time yet. that case, if the data still changes every  minute, it can be assumed that the data is live and current. pe. 13:00:00 contains the minute between 13:00:00 and 13:00:59" ;
+                                                     rdfs:label "DevicePublication"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_56e947e4_2cd5_45c3_8238_cdb029833309
+s4auto:OWLClass_56e947e4_2cd5_45c3_8238_cdb029833309 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8 ;
+                                                     rdfs:comment "Data measurement for each type of vehicle class" ;
+                                                     rdfs:label "MeasuredData"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_59b3b3ba_5757_41b5_8741_7e226853e49e
+s4auto:OWLClass_59b3b3ba_5757_41b5_8741_7e226853e49e rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d ;
+                                                     rdfs:comment "Measurements of wind conditions." ;
+                                                     rdfs:label "WindInformation"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_61ddf3e4_a633_49ea_bdef_7ca9c784cc34
+s4auto:OWLClass_61ddf3e4_a633_49ea_bdef_7ca9c784cc34 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_8d26a591_bd0b_48a3_ba4b_61932a89dcbd ;
+                                                     rdfs:comment "The details of the delays being caused by the situation element defined in the situation record. It is recommended to only use one of the optional attributes to avoid confusion." ;
+                                                     rdfs:label "Delay"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_62ab1c22_189c_4445_85ee_1ef1e2d17b57
@@ -1454,6 +1599,17 @@ s4auto:OWLClass_62ab1c22_189c_4445_85ee_1ef1e2d17b57 rdf:type owl:Class ;
 s4auto:OWLClass_6b9849f8_eb6a_4b0d_b135_c271d2c28f91 rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4 ;
                                                      rdfs:label "Arrivals_departures_data"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4
+s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4 rdf:type owl:Class ;
+                                                     rdfs:label "NetworkSituation"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b
+s4auto:OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:NotifiedEvent ;
+                                                     rdfs:label "Activity"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_71fc68af_f487_4bdf_ac37_4e79e6cd7468
@@ -1474,9 +1630,15 @@ s4auto:OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5 rdf:type owl:Class ;
                                                      rdfs:label "flow unit"@es .
 
 
+###  https://saref.etsi.org/saref4auto/OWLClass_74646d5d_a895_4eb2_891b_56e07258b839
+s4auto:OWLClass_74646d5d_a895_4eb2_891b_56e07258b839 rdf:type owl:Class ;
+                                                     rdfs:comment "Identification of a road by its name, identifier, type ..." ;
+                                                     rdfs:label "Road"@es .
+
+
 ###  https://saref.etsi.org/saref4auto/OWLClass_7507dd57_9c90_44e6_a415_770e8066fcc9
 s4auto:OWLClass_7507dd57_9c90_44e6_a415_770e8066fcc9 rdf:type owl:Class ;
-                                                     rdfs:subClassOf saref:Property ,
+                                                     rdfs:subClassOf s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86 ,
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty saref:isMeasuredIn ;
                                                                        owl:allValuesFrom s4auto:CardinalityUnit
@@ -1485,13 +1647,29 @@ s4auto:OWLClass_7507dd57_9c90_44e6_a415_770e8066fcc9 rdf:type owl:Class ;
                                                                        owl:onProperty saref:hasValue ;
                                                                        owl:someValuesFrom xsd:float
                                                                      ] ;
+                                                     rdfs:comment """Occupancy = Pointcoverage (in 10ms) / 60s (in sec)
+•	Pointcoverage: Time during which a fictional point of the detector was covered by a vehicle. The pointcoverage is expressed in units of 10 milliseconds""" ;
                                                      rdfs:label "Occupancy"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_78d734ea_cb53_4c72_9514_3f83274cfc68
+s4auto:OWLClass_78d734ea_cb53_4c72_9514_3f83274cfc68 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:Speed ;
+                                                     rdfs:comment "n / Sum (1/vi) = harmonic average speed of the vehicles in this vehicle class with vi = individual speed of a vehicle in this vehicle class" ;
+                                                     rdfs:label "HarmonicSpeed"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_7f65788c_8f5a_4c8b_89c8_1f924c8ef511
 s4auto:OWLClass_7f65788c_8f5a_4c8b_89c8_1f924c8ef511 rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8 ;
-                                                     rdfs:label "Incidents_data"@es .
+                                                     rdfs:label "IncidentsData"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_81fdb39d_0931_47a8_b051_9516044569d5
+s4auto:OWLClass_81fdb39d_0931_47a8_b051_9516044569d5 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0 ;
+                                                     rdfs:comment "Roadworks involving the construction of new infrastructure." ;
+                                                     rdfs:label "ConstructionWorks"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379
@@ -1500,16 +1678,30 @@ s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379 rdf:type owl:Class ;
                                                      rdfs:label "Format"@es .
 
 
+###  https://saref.etsi.org/saref4auto/OWLClass_888ef99b_3ccc_45a4_bda4_3258bb4b4192
+s4auto:OWLClass_888ef99b_3ccc_45a4_bda4_3258bb4b4192 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:NotifiedEvent ;
+                                                     rdfs:comment "Accidents are events where one or more vehicles are involved in collisions or in leaving the roadway. These include collisions between vehicles or with other road users or obstacles." ;
+                                                     rdfs:label "Accident"@es .
+
+
 ###  https://saref.etsi.org/saref4auto/OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa
 s4auto:OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_268735bf_d97b_43a0_80f7_ead69c3861fa ;
-                                                     rdfs:label "Network_data"@es .
+                                                     rdfs:label "NetworkData"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_8cd541c9_9bb2_49a5_9820_43c0dbcf5a60
 s4auto:OWLClass_8cd541c9_9bb2_49a5_9820_43c0dbcf5a60 rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379 ;
                                                      rdfs:label "GTFS"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_8d26a591_bd0b_48a3_ba4b_61932a89dcbd
+s4auto:OWLClass_8d26a591_bd0b_48a3_ba4b_61932a89dcbd rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4 ;
+                                                     rdfs:comment "An assessment of the impact that an event or operator action defined by the situation record has on the driving conditions." ;
+                                                     rdfs:label "Impact"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_8ef04dbb_f94e_4dae_8bf0_cb63cd807909
@@ -1527,7 +1719,21 @@ s4auto:OWLClass_8ef04dbb_f94e_4dae_8bf0_cb63cd807909 rdf:type owl:Class ;
                                                                        owl:onProperty saref:isMeasuredByDevice ;
                                                                        owl:allValuesFrom saref:Device
                                                                      ] ;
-                                                     rdfs:label "Loop_detector_data"@es .
+                                                     rdfs:label "LoopDetectorData"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_8f320229_ef05_43f1_9766_80adb01eada6
+s4auto:OWLClass_8f320229_ef05_43f1_9766_80adb01eada6 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86 ;
+                                                     rdfs:comment "Derived/computed travel time information relating to a linear section of the road network; forecast = true means a forecast for a vehicle at the start of the specified location, forecast = false means calculation/measurement at the end." ;
+                                                     rdfs:label "TravelTimeData"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_917b1f76_f117_4910_91ac_2519f8c07dc3
+s4auto:OWLClass_917b1f76_f117_4910_91ac_2519f8c07dc3 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0 ;
+                                                     rdfs:comment "The subjects with which the roadworks are associated." ;
+                                                     rdfs:label "Subjects"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_92454d09_d714_4870_a8d4_c8c16bbc49d8
@@ -1549,13 +1755,27 @@ s4auto:OWLClass_92454d09_d714_4870_a8d4_c8c16bbc49d8 rdf:type owl:Class ;
                                                                        owl:onProperty s4auto:OWLObjectProperty_c016f3d4_1a3a_4a8b_b22d_56aaff72f689 ;
                                                                        owl:allValuesFrom s4auto:OWLClass_0f32b2d8_db89_4881_ace7_72cace8ba5de
                                                                      ] ;
-                                                     rdfs:label "Pedestrian_data"@es .
+                                                     rdfs:label "PedestrianData"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_92dab589_1afc_4f99_a53c_031ddf5a1d85
 s4auto:OWLClass_92dab589_1afc_4f99_a53c_031ddf5a1d85 rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_efb5f3dd_4e42_4e19_91b3_f451575038ea ;
-                                                     rdfs:label "Mobile_data"@es .
+                                                     rdfs:label "MobileData"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_942e2767_7f64_4ce0_822b_2cc26c6a540d
+s4auto:OWLClass_942e2767_7f64_4ce0_822b_2cc26c6a540d rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d ;
+                                                     rdfs:comment "Measurements of atmospheric humidity." ;
+                                                     rdfs:label "HumidityInformation"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_94907a46_9fca_42fb_9c66_8626fb7ee513
+s4auto:OWLClass_94907a46_9fca_42fb_9c66_8626fb7ee513 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8 ;
+                                                     rdfs:comment "Any stationary or moving obstacle of a physical nature, other than of an animal, vehicle, environmental, or damaged equipment nature." ;
+                                                     rdfs:label "GeneralObstruction"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_9547169c_07a6_48ee_837e_27343a45ed06
@@ -1582,6 +1802,24 @@ s4auto:OWLClass_9ac216bc_9889_42be_b873_8567be75a107 rdf:type owl:Class ;
                                                      rdfs:label "Centroids"@es .
 
 
+###  https://saref.etsi.org/saref4auto/OWLClass_9ad3360e_429a_4107_a353_2f10a459de05
+s4auto:OWLClass_9ad3360e_429a_4107_a353_2f10a459de05 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab ;
+                                                     rdfs:comment "Conditions of the road surface which may affect driving conditions. These may be related to the weather (e.g. ice, snow etc.) or to other conditions (e.g. oil, mud, leaves etc. on the road)" ;
+                                                     rdfs:label "RoadSurfaceConditions"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_9c9b4090_f3cc_4238_bf99_b4dc7b09c9da
+s4auto:OWLClass_9c9b4090_f3cc_4238_bf99_b4dc7b09c9da rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_56e947e4_2cd5_45c3_8238_cdb029833309 ;
+                                                     rdfs:comment """Regularity of the data:
+•	0 = Regelur data
+•	1 = Indication for irregular data
+•	2 = Indication for extermely irregular data
+•	3 = Indication for extremely irregular data caused by a failure""" ;
+                                                     rdfs:label "Regularity"@es .
+
+
 ###  https://saref.etsi.org/saref4auto/OWLClass_9cf96130_d31e_4542_ab3c_d4b830de2cd6
 s4auto:OWLClass_9cf96130_d31e_4542_ab3c_d4b830de2cd6 rdf:type owl:Class ;
                                                      rdfs:subClassOf geosp:Feature ,
@@ -1598,10 +1836,59 @@ s4auto:OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0 rdf:type owl:Class ;
                                                      rdfs:label "acceleration unit"@es .
 
 
+###  https://saref.etsi.org/saref4auto/OWLClass_a2818dfc_41cf_4923_9680_ba37180e5970
+s4auto:OWLClass_a2818dfc_41cf_4923_9680_ba37180e5970 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0 ;
+                                                     rdfs:comment "Details of the maintenance vehicles involved in the roadworks activity." ;
+                                                     rdfs:label "MaintenanceVehicles"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_a58175fa_904f_4ee1_9c97_39b077249abf
+s4auto:OWLClass_a58175fa_904f_4ee1_9c97_39b077249abf rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d ;
+                                                     rdfs:comment "Measurements of atmospheric visibility." ;
+                                                     rdfs:label "VisibilityInformation"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_a61c93fb_45ce_4eae_94ac_15200c75ee91
+s4auto:OWLClass_a61c93fb_45ce_4eae_94ac_15200c75ee91 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d ;
+                                                     rdfs:comment "Measurements of atmospheric temperature." ;
+                                                     rdfs:label "TemperatureInformation"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_ab8202ff_e405_4365_abc8_8fc24e9c38b7
+s4auto:OWLClass_ab8202ff_e405_4365_abc8_8fc24e9c38b7 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b ;
+                                                     rdfs:comment "Authority initiated operation or activity that could disrupt traffic." ;
+                                                     rdfs:label "AuthorityOperation"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_b2aecf6a_cbcb_46a6_89e3_ffaf56c1c350
+s4auto:OWLClass_b2aecf6a_cbcb_46a6_89e3_ffaf56c1c350 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab ;
+                                                     rdfs:comment "Any environmental conditions which may be affecting the driving conditions on the road." ;
+                                                     rdfs:label "PoorEnvironmentConditions"@es .
+
+
 ###  https://saref.etsi.org/saref4auto/OWLClass_b53cfe83_28d7_4f08_a457_43738aace26a
 s4auto:OWLClass_b53cfe83_28d7_4f08_a457_43738aace26a rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4 ;
                                                      rdfs:label "Line_routing_data"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_b7b8e4f0_00ef_4ec3_8706_a3a35e4aebd0
+s4auto:OWLClass_b7b8e4f0_00ef_4ec3_8706_a3a35e4aebd0 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b ;
+                                                     rdfs:comment "Deliberate human action of either a public disorder nature or of a situation alert type which could disrupt traffic." ;
+                                                     rdfs:label "DisturbanceActivity"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8
+s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4 ;
+                                                     rdfs:comment "Any stationary or moving obstacle of a physical nature (e.g. obstacles or vehicles from an earlier accident, shed loads on carriageway, rock fall, abnormal or dangerous loads, or animals etc.) which could disrupt or endanger traffic." ;
+                                                     rdfs:label "Obstruction"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_be6b198e_5792_4367_8dd0_e1193127a9d0
@@ -1611,7 +1898,14 @@ s4auto:OWLClass_be6b198e_5792_4367_8dd0_e1193127a9d0 rdf:type owl:Class ;
                                                                        owl:onProperty s4auto:OWLObjectProperty_e1bbccf3_d604_4a6c_a130_e2148e0787fc ;
                                                                        owl:someValuesFrom saref:Property
                                                                      ] ;
-                                                     rdfs:label "Congestion_severage"@es .
+                                                     rdfs:label "CongestionSeverage"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_be7c1797_e17e_4904_8dc6_3b99926e33dd
+s4auto:OWLClass_be7c1797_e17e_4904_8dc6_3b99926e33dd rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d ;
+                                                     rdfs:comment "Measurements of atmospheric pressure." ;
+                                                     rdfs:label "PressureInformation"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_c00a4beb_8f90_4c26_bd83_6f7cfd3d5b70
@@ -1640,30 +1934,37 @@ s4auto:OWLClass_c74dee04_0497_4156_bcad_06a79021d4b3 rdf:type owl:Class ;
                                                                        owl:onProperty s4auto:OWLObjectProperty_10d4f71b_6da1_4eb5_840c_760db83f999d ;
                                                                        owl:someValuesFrom s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379
                                                                      ] ;
-                                                     rdfs:label "Coding_information"@es .
+                                                     rdfs:label "CodingInformation"@es .
 
 
-###  https://saref.etsi.org/saref4auto/OWLClass_ceca653f_ffb9_4523_91dd_53460e7557c0
-s4auto:OWLClass_ceca653f_ffb9_4523_91dd_53460e7557c0 rdf:type owl:Class ;
-                                                     rdfs:subClassOf s4auto:OWLClass_f2f0f1ca_8879_4599_8acf_34fcb5e0c2a6 ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <http://www.w3.org/2003/01/geo/wgs84_pos#location> ;
-                                                                       owl:allValuesFrom s4auto:Address
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty s4auto:OWLObjectProperty_e1bbccf3_d604_4a6c_a130_e2148e0787fc ;
-                                                                       owl:allValuesFrom s4auto:OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty s4auto:OWLObjectProperty_e1bbccf3_d604_4a6c_a130_e2148e0787fc ;
-                                                                       owl:allValuesFrom s4auto:OWLClass_b53cfe83_28d7_4f08_a457_43738aace26a
-                                                                     ] ;
-                                                     rdfs:label "Oxfordshire_pilot"@es .
+###  https://saref.etsi.org/saref4auto/OWLClass_ca6f3e72_e492_4e42_bb50_b3befd5200b2
+s4auto:OWLClass_ca6f3e72_e492_4e42_bb50_b3befd5200b2 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e ;
+                                                     rdfs:comment """Availabilty of the measurement point:
+•	0 = The measurement point is currently unavailable
+•	1 = The measurement point is currently available""" ;
+                                                     rdfs:label "statusDescription"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_ca926664_1ef7_4528_8022_66d1d26b701e
+s4auto:OWLClass_ca926664_1ef7_4528_8022_66d1d26b701e rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e ;
+                                                     rdfs:comment """•	0 = Data of this point has a DevicePulication older than about 3 minutes ago
+•	1 = Data of this point has a DevicePulication more recent than about 3 minutes ago. This might signify connection problems. The measurement point may be offline.""" ;
+                                                     rdfs:label "lastDeviceCheck"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_ce70b5bf_f678_4d04_8f7e_ff5b116b49a3
+s4auto:OWLClass_ce70b5bf_f678_4d04_8f7e_ff5b116b49a3 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b ;
+                                                     rdfs:comment "Organised public event which could disrupt traffic." ;
+                                                     rdfs:label "PublicEvent"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_d2711230_22c1_49e8_8058_a44688a41a16
 s4auto:OWLClass_d2711230_22c1_49e8_8058_a44688a41a16 rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:Speed ;
+                                                     rdfs:comment "Sum (vi) / n = arithmetic average speed of the vehicles in this vehicle class (with vi = individual speed of a vehicle in this vehicle class)\"" ;
                                                      rdfs:label "Average_speed"@es .
 
 
@@ -1686,29 +1987,8 @@ s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8 rdf:type owl:Class ;
                                                                        owl:onProperty s4auto:OWLDataProperty_f859b87a_028e_46d7_a87e_d75bf80fe7c7 ;
                                                                        owl:someValuesFrom xsd:string
                                                                      ] ;
-                                                     rdfs:label "Traffic_data"@es .
-
-
-###  https://saref.etsi.org/saref4auto/OWLClass_d53e4618_b4c4_4b81_8457_c41b82d733d4
-s4auto:OWLClass_d53e4618_b4c4_4b81_8457_c41b82d733d4 rdf:type owl:Class ;
-                                                     rdfs:subClassOf s4auto:OWLClass_f2f0f1ca_8879_4599_8acf_34fcb5e0c2a6 ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <http://www.w3.org/2003/01/geo/wgs84_pos#location> ;
-                                                                       owl:allValuesFrom s4auto:Address
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty s4auto:OWLObjectProperty_e1bbccf3_d604_4a6c_a130_e2148e0787fc ;
-                                                                       owl:allValuesFrom s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty s4auto:OWLObjectProperty_e1bbccf3_d604_4a6c_a130_e2148e0787fc ;
-                                                                       owl:allValuesFrom s4auto:OWLClass_c74dee04_0497_4156_bcad_06a79021d4b3
-                                                                     ] ,
-                                                                     [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty s4auto:OWLObjectProperty_e1bbccf3_d604_4a6c_a130_e2148e0787fc ;
-                                                                       owl:allValuesFrom s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8
-                                                                     ] ;
-                                                     rdfs:label "Athens_pilot"@es .
+                                                     rdfs:comment "Measured or derived values relating to traffic or individual vehicle movements on a specific section or at a specific point on the road network." ;
+                                                     rdfs:label "TrafficData"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358
@@ -1719,6 +1999,20 @@ s4auto:OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358 rdf:type owl:Class ;
                                                                        owl:someValuesFrom s4auto:AbsolutePosition
                                                                      ] ;
                                                      rdfs:label "Georeferences"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86
+s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8 ;
+                                                     rdfs:comment "An instance of data which is derived/computed from one or more measurements over a period of time. It may be a current value or a forecast value predicted from historical measurements." ;
+                                                     rdfs:label "ElaboratedData"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_e6b10e5f_1fc3_49fe_995b_d2771ae66e91
+s4auto:OWLClass_e6b10e5f_1fc3_49fe_995b_d2771ae66e91 rdf:type owl:Class ;
+                                                     rdfs:subClassOf s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86 ;
+                                                     rdfs:comment "The status of traffic conditions on a specific section or at a specific point on the road network." ;
+                                                     rdfs:label "TrafficStatus"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_eb1fda7a_fc6c_4dfb_ac2f_1ce59234bc97
@@ -1740,7 +2034,7 @@ s4auto:OWLClass_eb1fda7a_fc6c_4dfb_ac2f_1ce59234bc97 rdf:type owl:Class ;
                                                                        owl:onProperty s4auto:OWLObjectProperty_c016f3d4_1a3a_4a8b_b22d_56aaff72f689 ;
                                                                        owl:allValuesFrom s4auto:OWLClass_0f32b2d8_db89_4881_ace7_72cace8ba5de
                                                                      ] ;
-                                                     rdfs:label "Bike_data"@es .
+                                                     rdfs:label "BikeData"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_eb247bb6_865a_4b75_9193_ba8ee763b4a2
@@ -1768,24 +2062,19 @@ s4auto:OWLClass_efb5f3dd_4e42_4e19_91b3_f451575038ea rdf:type owl:Class ;
                                                                        owl:onProperty s4auto:OWLDataProperty_f859b87a_028e_46d7_a87e_d75bf80fe7c7 ;
                                                                        owl:someValuesFrom xsd:string
                                                                      ] ;
-                                                     rdfs:label "User_data"@es .
+                                                     rdfs:label "UserData"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_f12ac0e6_d518_41b2_a737_112009debde8
 s4auto:OWLClass_f12ac0e6_d518_41b2_a737_112009debde8 rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8 ;
-                                                     rdfs:label "Traffic_handling"@es .
+                                                     rdfs:label "TrafficHandling"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba
 s4auto:OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba rdf:type owl:Class ;
                                                      rdfs:subClassOf saref:UnitOfMeasure ;
                                                      rdfs:label "time unit"@es .
-
-
-###  https://saref.etsi.org/saref4auto/OWLClass_f2f0f1ca_8879_4599_8acf_34fcb5e0c2a6
-s4auto:OWLClass_f2f0f1ca_8879_4599_8acf_34fcb5e0c2a6 rdf:type owl:Class ;
-                                                     rdfs:label "Frontier"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/OWLClass_f3514a2a_4990_46bd_b24f_ab39a8895638
@@ -1799,6 +2088,12 @@ s4auto:OWLClass_f3514a2a_4990_46bd_b24f_ab39a8895638 rdf:type owl:Class ;
 s4auto:OWLClass_f4d3087f_4c57_4b40_bbf0_59a10d4f1876 rdf:type owl:Class ;
                                                      rdfs:subClassOf s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379 ;
                                                      rdfs:label "CSV"@es .
+
+
+###  https://saref.etsi.org/saref4auto/OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e
+s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e rdf:type owl:Class ;
+                                                     rdfs:subClassOf saref:Device ;
+                                                     rdfs:label "DeviceStatus"@es .
 
 
 ###  https://saref.etsi.org/saref4auto/Occupied
@@ -2777,6 +3072,48 @@ s4auto:Unknown rdfs:comment "A type of state for Platoon or for a Vehicle in a P
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( s4auto:NotifiedEvent
+                s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab
+                s4auto:OWLClass_8d26a591_bd0b_48a3_ba4b_61932a89dcbd
+                s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( s4auto:OWLClass_04329a05_2232_4bf5_b0a8_ded14fee7c24
+                s4auto:OWLClass_26b47864_9eb3_4711_89a6_c23244800e78
+                s4auto:OWLClass_3f5ca29b_a4bb_4d64_89b4_aac68c137c49
+                s4auto:OWLClass_4e93090d_5aeb_4946_a593_25268703bb08
+                s4auto:OWLClass_55978b20_33ff_44a1_a09c_974f509cc274
+                s4auto:OWLClass_ca6f3e72_e492_4e42_bb50_b3befd5200b2
+                s4auto:OWLClass_ca926664_1ef7_4528_8022_66d1d26b701e
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( s4auto:OWLClass_04329a05_2232_4bf5_b0a8_ded14fee7c24
+                s4auto:OWLClass_4e93090d_5aeb_4946_a593_25268703bb08
+                s4auto:RoadSideSensor
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( s4auto:OWLClass_04b546d7_4632_4354_b9a1_00058c30a662
+                s4auto:OWLClass_32021b7a_e7be_4a44_9c27_d1ea8f53eaa4
+                s4auto:OWLClass_35018e3e_3a05_4ce1_b21d_aecb99889b6a
+                s4auto:OWLClass_59b3b3ba_5757_41b5_8741_7e226853e49e
+                s4auto:OWLClass_942e2767_7f64_4ce0_822b_2cc26c6a540d
+                s4auto:OWLClass_a58175fa_904f_4ee1_9c97_39b077249abf
+                s4auto:OWLClass_a61c93fb_45ce_4eae_94ac_15200c75ee91
+                s4auto:OWLClass_be7c1797_e17e_4904_8dc6_3b99926e33dd
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( s4auto:OWLClass_083fab3f_ca95_4af8_873e_7563bd6bec77
                 s4auto:OWLClass_7f65788c_8f5a_4c8b_89c8_1f924c8ef511
                 s4auto:OWLClass_8ef04dbb_f94e_4dae_8bf0_cb63cd807909
@@ -2786,10 +3123,48 @@ s4auto:Unknown rdfs:comment "A type of state for Platoon or for a Vehicle in a P
 
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( s4auto:OWLClass_0f32b2d8_db89_4881_ace7_72cace8ba5de
+                s4auto:OWLClass_50c8f1b0_b382_4232_b895_16b7210ad7d3
+                s4auto:OWLClass_7507dd57_9c90_44e6_a415_770e8066fcc9
+                s4auto:OWLClass_8f320229_ef05_43f1_9766_80adb01eada6
+                s4auto:OWLClass_e6b10e5f_1fc3_49fe_995b_d2771ae66e91
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( s4auto:OWLClass_15fb483a_e638_4f66_813b_1d6257210b27
+                s4auto:OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694
+                s4auto:OWLClass_34f8159d_60f8_42d5_9ee3_ef6ca0f3823f
+                s4auto:OWLClass_3bfa8d5b_36f3_465e_b7e0_cbbcdbb14af9
+                s4auto:OWLClass_94907a46_9fca_42fb_9c66_8626fb7ee513
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( s4auto:OWLClass_268735bf_d97b_43a0_80f7_ead69c3861fa
                 s4auto:OWLClass_c74dee04_0497_4156_bcad_06a79021d4b3
                 s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8
                 s4auto:OWLClass_efb5f3dd_4e42_4e19_91b3_f451575038ea
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( s4auto:OWLClass_28e02d4d_1c7b_4c7b_af28_cc59c73a9fa1
+                s4auto:OWLClass_51b26c11_9322_4c2b_8eaf_551547ee4dfb
+                s4auto:OWLClass_9ad3360e_429a_4107_a353_2f10a459de05
+                s4auto:OWLClass_b2aecf6a_cbcb_46a6_89e3_ffaf56c1c350
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( s4auto:OWLClass_2945d1e2_7172_4b82_869f_0b779bc9496b
+                s4auto:OWLClass_81fdb39d_0931_47a8_b051_9516044569d5
+                s4auto:OWLClass_917b1f76_f117_4910_91ac_2519f8c07dc3
+                s4auto:OWLClass_a2818dfc_41cf_4923_9680_ba37180e5970
               )
 ] .
 
@@ -2809,6 +3184,14 @@ s4auto:Unknown rdfs:comment "A type of state for Platoon or for a Vehicle in a P
   owl:members ( s4auto:OWLClass_92454d09_d714_4870_a8d4_c8c16bbc49d8
                 s4auto:OWLClass_92dab589_1afc_4f99_a53c_031ddf5a1d85
                 s4auto:OWLClass_eb1fda7a_fc6c_4dfb_ac2f_1ce59234bc97
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( s4auto:OWLClass_ab8202ff_e405_4365_abc8_8fc24e9c38b7
+                s4auto:OWLClass_b7b8e4f0_00ef_4ec3_8706_a3a35e4aebd0
+                s4auto:OWLClass_ce70b5bf_f678_4d04_8f7e_ff5b116b49a3
               )
 ] .
 
