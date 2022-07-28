@@ -22,6 +22,9 @@
       "@id" : "https://saref.etsi.org/saref4auto/hasShape",
       "@type" : "@id"
     },
+    "OWLClass_ca926664_1ef7_4528_8022_66d1d26b701e" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_ca926664_1ef7_4528_8022_66d1d26b701e"
+    },
     "OWLClass_d2711230_22c1_49e8_8058_a44688a41a16" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_d2711230_22c1_49e8_8058_a44688a41a16"
     },
@@ -32,6 +35,9 @@
     "OWLClass_9ac216bc_9889_42be_b873_8567be75a107" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_9ac216bc_9889_42be_b873_8567be75a107"
     },
+    "OWLClass_ce70b5bf_f678_4d04_8f7e_ff5b116b49a3" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_ce70b5bf_f678_4d04_8f7e_ff5b116b49a3"
+    },
     "UnitOfMeasure" : {
       "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
     },
@@ -40,6 +46,9 @@
     },
     "Route" : {
       "@id" : "https://saref.etsi.org/saref4auto/Route"
+    },
+    "OWLClass_26b47864_9eb3_4711_89a6_c23244800e78" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_26b47864_9eb3_4711_89a6_c23244800e78"
     },
     "hasEnvironment" : {
       "@id" : "https://saref.etsi.org/saref4auto/hasEnvironment",
@@ -87,15 +96,33 @@
     "Reserved" : {
       "@id" : "https://saref.etsi.org/saref4auto/Reserved"
     },
+    "OWLClass_b2aecf6a_cbcb_46a6_89e3_ffaf56c1c350" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_b2aecf6a_cbcb_46a6_89e3_ffaf56c1c350"
+    },
+    "OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694"
+    },
+    "OWLClass_78d734ea_cb53_4c72_9514_3f83274cfc68" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_78d734ea_cb53_4c72_9514_3f83274cfc68"
+    },
     "OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a"
     },
-    "OWLClass_38f0cbf1_e069_4e64_9812_7f81eac96690" : {
-      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_38f0cbf1_e069_4e64_9812_7f81eac96690"
+    "OWLClass_3f5ca29b_a4bb_4d64_89b4_aac68c137c49" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_3f5ca29b_a4bb_4d64_89b4_aac68c137c49"
+    },
+    "OWLClass_3bfa8d5b_36f3_465e_b7e0_cbbcdbb14af9" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_3bfa8d5b_36f3_465e_b7e0_cbbcdbb14af9"
     },
     "hasDestinationEndPoint" : {
       "@id" : "https://saref.etsi.org/saref4auto/hasDestinationEndPoint",
       "@type" : "@id"
+    },
+    "OWLClass_a61c93fb_45ce_4eae_94ac_15200c75ee91" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_a61c93fb_45ce_4eae_94ac_15200c75ee91"
+    },
+    "OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b"
     },
     "issued" : {
       "@id" : "http://purl.org/dc/terms/issued"
@@ -119,11 +146,17 @@
     "AtPickUpSpot" : {
       "@id" : "https://saref.etsi.org/saref4auto/AtPickUpSpot"
     },
+    "OWLClass_8f320229_ef05_43f1_9766_80adb01eada6" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_8f320229_ef05_43f1_9766_80adb01eada6"
+    },
     "Assembling" : {
       "@id" : "https://saref.etsi.org/saref4auto/Assembling"
     },
     "RegularParkingSpot" : {
       "@id" : "https://saref.etsi.org/saref4auto/RegularParkingSpot"
+    },
+    "OWLClass_9ad3360e_429a_4107_a353_2f10a459de05" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_9ad3360e_429a_4107_a353_2f10a459de05"
     },
     "PlatoonRole" : {
       "@id" : "https://saref.etsi.org/saref4auto/PlatoonRole"
@@ -168,6 +201,12 @@
     "PassengerCar" : {
       "@id" : "https://saref.etsi.org/saref4auto/PassengerCar"
     },
+    "OWLClass_a58175fa_904f_4ee1_9c97_39b077249abf" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_a58175fa_904f_4ee1_9c97_39b077249abf"
+    },
+    "OWLClass_04329a05_2232_4bf5_b0a8_ded14fee7c24" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_04329a05_2232_4bf5_b0a8_ded14fee7c24"
+    },
     "Instant" : {
       "@id" : "http://www.w3.org/2006/time#Instant"
     },
@@ -199,6 +238,9 @@
       "@id" : "https://saref.etsi.org/saref4auto/hasVehicleEnvironmentMember",
       "@type" : "@id"
     },
+    "OWLClass_8d26a591_bd0b_48a3_ba4b_61932a89dcbd" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_8d26a591_bd0b_48a3_ba4b_61932a89dcbd"
+    },
     "long" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
     },
@@ -218,6 +260,9 @@
     "OWLClass_6b9849f8_eb6a_4b0d_b135_c271d2c28f91" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_6b9849f8_eb6a_4b0d_b135_c271d2c28f91"
     },
+    "OWLClass_ca6f3e72_e492_4e42_bb50_b3befd5200b2" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_ca6f3e72_e492_4e42_bb50_b3befd5200b2"
+    },
     "hasIdentifier" : {
       "@id" : "https://saref.etsi.org/saref4auto/hasIdentifier",
       "@type" : "@id"
@@ -228,11 +273,11 @@
     "WidthUnit" : {
       "@id" : "https://saref.etsi.org/saref4auto/WidthUnit"
     },
+    "OWLClass_81fdb39d_0931_47a8_b051_9516044569d5" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_81fdb39d_0931_47a8_b051_9516044569d5"
+    },
     "OWLClass_9cf96130_d31e_4542_ab3c_d4b830de2cd6" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_9cf96130_d31e_4542_ab3c_d4b830de2cd6"
-    },
-    "OWLClass_f2f0f1ca_8879_4599_8acf_34fcb5e0c2a6" : {
-      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_f2f0f1ca_8879_4599_8acf_34fcb5e0c2a6"
     },
     "Bus" : {
       "@id" : "https://saref.etsi.org/saref4auto/Bus"
@@ -287,11 +332,20 @@
     "VulnerableRoadUser" : {
       "@id" : "https://saref.etsi.org/saref4auto/VulnerableRoadUser"
     },
+    "OWLClass_9c9b4090_f3cc_4238_bf99_b4dc7b09c9da" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_9c9b4090_f3cc_4238_bf99_b4dc7b09c9da"
+    },
     "PersonalDevice" : {
       "@id" : "https://saref.etsi.org/saref4auto/PersonalDevice"
     },
     "OWLClass_be6b198e_5792_4367_8dd0_e1193127a9d0" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_be6b198e_5792_4367_8dd0_e1193127a9d0"
+    },
+    "OWLClass_942e2767_7f64_4ce0_822b_2cc26c6a540d" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_942e2767_7f64_4ce0_822b_2cc26c6a540d"
+    },
+    "OWLClass_e6b10e5f_1fc3_49fe_995b_d2771ae66e91" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_e6b10e5f_1fc3_49fe_995b_d2771ae66e91"
     },
     "RendezvousLocation" : {
       "@id" : "https://saref.etsi.org/saref4auto/RendezvousLocation"
@@ -341,6 +395,9 @@
       "@id" : "https://saref.etsi.org/saref4auto/consistsOfEquipment",
       "@type" : "@id"
     },
+    "OWLClass_61ddf3e4_a633_49ea_bdef_7ca9c784cc34" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_61ddf3e4_a633_49ea_bdef_7ca9c784cc34"
+    },
     "Interval" : {
       "@id" : "http://www.w3.org/2006/time#Interval"
     },
@@ -364,6 +421,9 @@
     "Standalone" : {
       "@id" : "https://saref.etsi.org/saref4auto/Standalone"
     },
+    "OWLClass_56e947e4_2cd5_45c3_8238_cdb029833309" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_56e947e4_2cd5_45c3_8238_cdb029833309"
+    },
     "OWLClass_71fc68af_f487_4bdf_ac37_4e79e6cd7468" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_71fc68af_f487_4bdf_ac37_4e79e6cd7468"
     },
@@ -378,6 +438,9 @@
     },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "OWLClass_59b3b3ba_5757_41b5_8741_7e226853e49e" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_59b3b3ba_5757_41b5_8741_7e226853e49e"
     },
     "Width" : {
       "@id" : "https://saref.etsi.org/saref4auto/Width"
@@ -442,6 +505,9 @@
     "OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f"
     },
+    "OWLClass_ab8202ff_e405_4365_abc8_8fc24e9c38b7" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_ab8202ff_e405_4365_abc8_8fc24e9c38b7"
+    },
     "TemporalEntity" : {
       "@id" : "http://www.w3.org/2006/time#TemporalEntity"
     },
@@ -451,6 +517,9 @@
     },
     "Occupied" : {
       "@id" : "https://saref.etsi.org/saref4auto/Occupied"
+    },
+    "OWLClass_35018e3e_3a05_4ce1_b21d_aecb99889b6a" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_35018e3e_3a05_4ce1_b21d_aecb99889b6a"
     },
     "hasEstimatedRendezvousLocation" : {
       "@id" : "https://saref.etsi.org/saref4auto/hasEstimatedRendezvousLocation",
@@ -495,6 +564,9 @@
       "@id" : "https://saref.etsi.org/saref4auto/hasWidth",
       "@type" : "@id"
     },
+    "OWLClass_be7c1797_e17e_4904_8dc6_3b99926e33dd" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_be7c1797_e17e_4904_8dc6_3b99926e33dd"
+    },
     "hasParkingVehicleState" : {
       "@id" : "https://saref.etsi.org/saref4auto/hasParkingVehicleState",
       "@type" : "@id"
@@ -530,8 +602,14 @@
       "@id" : "https://saref.etsi.org/core/makesMeasurement",
       "@type" : "@id"
     },
+    "OWLClass_55978b20_33ff_44a1_a09c_974f509cc274" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_55978b20_33ff_44a1_a09c_974f509cc274"
+    },
     "OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8"
+    },
+    "OWLClass_94907a46_9fca_42fb_9c66_8626fb7ee513" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_94907a46_9fca_42fb_9c66_8626fb7ee513"
     },
     "P4Animal" : {
       "@id" : "https://saref.etsi.org/saref4auto/P4Animal"
@@ -553,6 +631,9 @@
     },
     "RoadSideEquipment" : {
       "@id" : "https://saref.etsi.org/saref4auto/RoadSideEquipment"
+    },
+    "OWLClass_888ef99b_3ccc_45a4_bda4_3258bb4b4192" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_888ef99b_3ccc_45a4_bda4_3258bb4b4192"
     },
     "OWLClass_c25f950f_505d_4814_be70_0de84bc70d3c" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_c25f950f_505d_4814_be70_0de84bc70d3c"
@@ -579,6 +660,9 @@
     "Parking" : {
       "@id" : "https://saref.etsi.org/saref4auto/Parking"
     },
+    "OWLClass_1ee5b47b_5031_4283_9ea4_b5d07533c19c" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_1ee5b47b_5031_4283_9ea4_b5d07533c19c"
+    },
     "OWLClass_7507dd57_9c90_44e6_a415_770e8066fcc9" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_7507dd57_9c90_44e6_a415_770e8066fcc9"
     },
@@ -600,6 +684,9 @@
     },
     "SpatialObject" : {
       "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+    },
+    "OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4"
     },
     "OWLClass_92454d09_d714_4870_a8d4_c8c16bbc49d8" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_92454d09_d714_4870_a8d4_c8c16bbc49d8"
@@ -627,9 +714,6 @@
     "OWLClass_1c2e7359_7ebf_4f4c_b511_6d579bc168fd" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_1c2e7359_7ebf_4f4c_b511_6d579bc168fd"
     },
-    "OWLClass_d53e4618_b4c4_4b81_8457_c41b82d733d4" : {
-      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_d53e4618_b4c4_4b81_8457_c41b82d733d4"
-    },
     "consistsOfEntity" : {
       "@id" : "https://saref.etsi.org/saref4auto/consistsOfEntity",
       "@type" : "@id"
@@ -656,12 +740,27 @@
     "hasIDValue" : {
       "@id" : "https://saref.etsi.org/saref4auto/hasIDValue"
     },
+    "OWLClass_04b546d7_4632_4354_b9a1_00058c30a662" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_04b546d7_4632_4354_b9a1_00058c30a662"
+    },
+    "OWLClass_34f8159d_60f8_42d5_9ee3_ef6ca0f3823f" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_34f8159d_60f8_42d5_9ee3_ef6ca0f3823f"
+    },
+    "OWLClass_32021b7a_e7be_4a44_9c27_d1ea8f53eaa4" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_32021b7a_e7be_4a44_9c27_d1ea8f53eaa4"
+    },
     "AbsolutePosition" : {
       "@id" : "https://saref.etsi.org/saref4auto/AbsolutePosition"
+    },
+    "OWLClass_51b26c11_9322_4c2b_8eaf_551547ee4dfb" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_51b26c11_9322_4c2b_8eaf_551547ee4dfb"
     },
     "hasPerceptionState" : {
       "@id" : "https://saref.etsi.org/saref4auto/hasPerceptionState",
       "@type" : "@id"
+    },
+    "OWLClass_b7b8e4f0_00ef_4ec3_8706_a3a35e4aebd0" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_b7b8e4f0_00ef_4ec3_8706_a3a35e4aebd0"
     },
     "PlatoonPosition" : {
       "@id" : "https://saref.etsi.org/saref4auto/PlatoonPosition"
@@ -676,6 +775,9 @@
       "@id" : "https://saref.etsi.org/saref4auto/hasRoadTopologyPosition",
       "@type" : "@id"
     },
+    "OWLClass_917b1f76_f117_4910_91ac_2519f8c07dc3" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_917b1f76_f117_4910_91ac_2519f8c07dc3"
+    },
     "OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358"
     },
@@ -689,6 +791,9 @@
     "AbsoluteSpeed" : {
       "@id" : "https://saref.etsi.org/saref4auto/AbsoluteSpeed"
     },
+    "OWLClass_4e93090d_5aeb_4946_a593_25268703bb08" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_4e93090d_5aeb_4946_a593_25268703bb08"
+    },
     "EndPoint" : {
       "@id" : "https://saref.etsi.org/saref4auto/EndPoint"
     },
@@ -698,8 +803,14 @@
     "State" : {
       "@id" : "https://saref.etsi.org/saref4auto/State"
     },
-    "OWLClass_ceca653f_ffb9_4523_91dd_53460e7557c0" : {
-      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_ceca653f_ffb9_4523_91dd_53460e7557c0"
+    "OWLClass_28e02d4d_1c7b_4c7b_af28_cc59c73a9fa1" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_28e02d4d_1c7b_4c7b_af28_cc59c73a9fa1"
+    },
+    "OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e"
+    },
+    "OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d"
     },
     "Forming" : {
       "@id" : "https://saref.etsi.org/saref4auto/Forming"
@@ -739,12 +850,21 @@
     "StartPoint" : {
       "@id" : "https://saref.etsi.org/saref4auto/StartPoint"
     },
+    "OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8"
+    },
     "hasPlatoonRole" : {
       "@id" : "https://saref.etsi.org/saref4auto/hasPlatoonRole",
       "@type" : "@id"
     },
     "OWLClass_30dd4a6b_a368_45c4_bcb0_b2d8300ba2c1" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_30dd4a6b_a368_45c4_bcb0_b2d8300ba2c1"
+    },
+    "OWLClass_a2818dfc_41cf_4923_9680_ba37180e5970" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_a2818dfc_41cf_4923_9680_ba37180e5970"
+    },
+    "OWLClass_2945d1e2_7172_4b82_869f_0b779bc9496b" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_2945d1e2_7172_4b82_869f_0b779bc9496b"
     },
     "isMemberOfVehicleEnvironment" : {
       "@id" : "https://saref.etsi.org/saref4auto/isMemberOfVehicleEnvironment",
@@ -760,8 +880,14 @@
     "MediumObject" : {
       "@id" : "https://saref.etsi.org/saref4auto/MediumObject"
     },
+    "OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab"
+    },
     "contributor" : {
       "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0"
     },
     "System" : {
       "@id" : "https://saref.etsi.org/saref4syst/System"
@@ -808,11 +934,17 @@
     "OWLClass_495b7639_fa49_44c2_a634_3838926ad786" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_495b7639_fa49_44c2_a634_3838926ad786"
     },
+    "OWLClass_15fb483a_e638_4f66_813b_1d6257210b27" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_15fb483a_e638_4f66_813b_1d6257210b27"
+    },
     "DrivingToParkingSpot" : {
       "@id" : "https://saref.etsi.org/saref4auto/DrivingToParkingSpot"
     },
     "hasTimestamp" : {
       "@id" : "https://saref.etsi.org/core/hasTimestamp"
+    },
+    "OWLClass_74646d5d_a895_4eb2_891b_56e07258b839" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_74646d5d_a895_4eb2_891b_56e07258b839"
     },
     "StationID" : {
       "@id" : "https://saref.etsi.org/saref4auto/StationID"
@@ -860,6 +992,9 @@
       "@id" : "https://saref.etsi.org/saref4auto/hasOpeningTimeAvailability",
       "@type" : "@id"
     },
+    "OWLClass_50c8f1b0_b382_4232_b895_16b7210ad7d3" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_50c8f1b0_b382_4232_b895_16b7210ad7d3"
+    },
     "UUID" : {
       "@id" : "https://saref.etsi.org/saref4auto/UUID"
     },
@@ -906,6 +1041,9 @@
     },
     "Sensor" : {
       "@id" : "https://saref.etsi.org/core/Sensor"
+    },
+    "OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86"
     },
     "OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379"
