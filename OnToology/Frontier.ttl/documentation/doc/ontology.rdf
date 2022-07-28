@@ -1208,7 +1208,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <rdfs:comment>Anything with spatial extent, i.e. size, shape, or position.
  e.g. people, places, bowling balls, as well as abstract areas like cubes.</rdfs:comment>
         <rdfs:isDefinedBy>http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">Spatial Thing</rdfs:label>
+        <rdfs:label xml:lang="en">SpatialThing</rdfs:label>
     </owl:Class>
     
 
@@ -1637,7 +1637,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://saref.etsi.org/saref4auto/CardinalityUnit">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
         <rdfs:comment xml:lang="en">unit of measure of size</rdfs:comment>
-        <rdfs:label xml:lang="en">cardinality unit</rdfs:label>
+        <rdfs:label xml:lang="en">CardinalityUnit</rdfs:label>
     </owl:Class>
     
 
@@ -1916,7 +1916,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://saref.etsi.org/saref4auto/HeightUnit">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
         <rdfs:comment xml:lang="en">unit of measure of height</rdfs:comment>
-        <rdfs:label xml:lang="en">height unit</rdfs:label>
+        <rdfs:label xml:lang="en">HeightUnit</rdfs:label>
     </owl:Class>
     
 
@@ -1943,7 +1943,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://saref.etsi.org/saref4auto/LargeObject">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4auto/CriticalObject"/>
         <rdfs:comment xml:lang="en">A type of Critical Object</rdfs:comment>
-        <rdfs:label xml:lang="en">Large Object</rdfs:label>
+        <rdfs:label xml:lang="en">LargeObject</rdfs:label>
     </owl:Class>
     
 
@@ -1989,7 +1989,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://saref.etsi.org/saref4auto/LengthUnit">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
         <rdfs:comment xml:lang="en">unit of measure of lenght</rdfs:comment>
-        <rdfs:label xml:lang="en">length unit</rdfs:label>
+        <rdfs:label xml:lang="en">LengthUnit</rdfs:label>
     </owl:Class>
     
 
@@ -2022,7 +2022,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://saref.etsi.org/saref4auto/MediumObject">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4auto/CriticalObject"/>
         <rdfs:comment xml:lang="en">A type of Critical Object</rdfs:comment>
-        <rdfs:label xml:lang="en">Medium Object</rdfs:label>
+        <rdfs:label xml:lang="en">MediumObject</rdfs:label>
     </owl:Class>
     
 
@@ -2156,6 +2156,17 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4auto/OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8"/>
         <rdfs:comment>An obstruction on the road caused by one or more vehicles.</rdfs:comment>
         <rdfs:label xml:lang="es">VehicleObstruction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4auto/OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127 -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4auto/OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4auto/OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86"/>
+        <rdfs:comment>Averaged measurements or calculations of traffic headway, i.e. the distance or time interval between vehicles. This measure is measured from the head of one vehicle to the head of the following vehicle.</rdfs:comment>
+        <rdfs:label xml:lang="es">TrafficHeadway</rdfs:label>
     </owl:Class>
     
 
@@ -2396,6 +2407,16 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- https://saref.etsi.org/saref4auto/OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8 -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4auto/OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4auto/OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4"/>
+        <rdfs:label xml:lang="es">EquipmentOrSystemFault</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://saref.etsi.org/saref4auto/OWLClass_495b7639_fa49_44c2_a634_3838926ad786 -->
 
 
@@ -2554,7 +2575,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://saref.etsi.org/saref4auto/OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
         <rdfs:comment>To indicate the number of an entity in a fraction of time. Number per second</rdfs:comment>
-        <rdfs:label xml:lang="es">flow unit</rdfs:label>
+        <rdfs:label xml:lang="es">FlowUnit</rdfs:label>
     </owl:Class>
     
 
@@ -2642,6 +2663,17 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4auto/NotifiedEvent"/>
         <rdfs:comment>Accidents are events where one or more vehicles are involved in collisions or in leaving the roadway. These include collisions between vehicles or with other road users or obstacles.</rdfs:comment>
         <rdfs:label xml:lang="es">Accident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4auto/OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4auto/OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4auto/OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4"/>
+        <rdfs:comment>A traffic condition which is not normal.</rdfs:comment>
+        <rdfs:label xml:lang="es">AbnormalTraffic</rdfs:label>
     </owl:Class>
     
 
@@ -2880,7 +2912,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://saref.etsi.org/saref4auto/OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
-        <rdfs:label xml:lang="es">acceleration unit</rdfs:label>
+        <rdfs:label xml:lang="es">AccelerationUnit</rdfs:label>
     </owl:Class>
     
 
@@ -3025,7 +3057,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://saref.etsi.org/saref4auto/OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
         <rdfs:comment>To indicate when each datum is caputred</rdfs:comment>
-        <rdfs:label xml:lang="es">timestamp</rdfs:label>
+        <rdfs:label xml:lang="es">TimeStamp</rdfs:label>
     </owl:Class>
     
 
@@ -3259,7 +3291,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://saref.etsi.org/saref4auto/OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
-        <rdfs:label xml:lang="es">time unit</rdfs:label>
+        <rdfs:label xml:lang="es">TimeUnit</rdfs:label>
     </owl:Class>
     
 
@@ -4032,7 +4064,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://saref.etsi.org/saref4auto/SmallObject">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4auto/CriticalObject"/>
         <rdfs:comment xml:lang="en">A type of Critical Object</rdfs:comment>
-        <rdfs:label xml:lang="en">Small Object</rdfs:label>
+        <rdfs:label xml:lang="en">SmallObject</rdfs:label>
     </owl:Class>
     
 
@@ -4094,7 +4126,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://saref.etsi.org/saref4auto/SpeedUnit">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
         <rdfs:comment xml:lang="en">unit of measure of speed</rdfs:comment>
-        <rdfs:label xml:lang="en">speed unit</rdfs:label>
+        <rdfs:label xml:lang="en">SpeedUnit</rdfs:label>
     </owl:Class>
     
 
@@ -4502,7 +4534,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://saref.etsi.org/saref4auto/WidthUnit">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
         <rdfs:comment xml:lang="en">unit of measure of width</rdfs:comment>
-        <rdfs:label xml:lang="en">width unit</rdfs:label>
+        <rdfs:label xml:lang="en">WidthUnit</rdfs:label>
     </owl:Class>
     
 

@@ -1744,7 +1744,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Spatial Thing"
+    "@value" : "SpatialThing"
   } ]
 }, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
@@ -2547,7 +2547,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "cardinality unit"
+    "@value" : "CardinalityUnit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
@@ -2903,7 +2903,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "height unit"
+    "@value" : "HeightUnit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
@@ -2931,7 +2931,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Large Object"
+    "@value" : "LargeObject"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/saref4auto/CriticalObject"
@@ -2994,7 +2994,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "length unit"
+    "@value" : "LengthUnit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
@@ -3036,7 +3036,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Medium Object"
+    "@value" : "MediumObject"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/saref4auto/CriticalObject"
@@ -3190,6 +3190,19 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/saref4auto/OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4auto/OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Averaged measurements or calculations of traffic headway, i.e. the distance or time interval between vehicles. This measure is measured from the head of one vehicle to the head of the following vehicle."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "TrafficHeadway"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4auto/OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/saref4auto/OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694",
@@ -3431,6 +3444,16 @@
     "@id" : "https://saref.etsi.org/saref4auto/OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e"
   } ]
 }, {
+  "@id" : "https://saref.etsi.org/saref4auto/OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "EquipmentOrSystemFault"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4auto/OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4"
+  } ]
+}, {
   "@id" : "https://saref.etsi.org/saref4auto/OWLClass_495b7639_fa49_44c2_a634_3838926ad786",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -3598,7 +3621,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "flow unit"
+    "@value" : "FlowUnit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
@@ -3688,6 +3711,19 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/saref4auto/NotifiedEvent"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4auto/OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A traffic condition which is not normal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "AbnormalTraffic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4auto/OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/saref4auto/OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa",
@@ -3901,7 +3937,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "acceleration unit"
+    "@value" : "AccelerationUnit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
@@ -4060,7 +4096,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "timestamp"
+    "@value" : "TimeStamp"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
@@ -4249,7 +4285,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "time unit"
+    "@value" : "TimeUnit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
@@ -5140,7 +5176,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Small Object"
+    "@value" : "SmallObject"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/saref4auto/CriticalObject"
@@ -5216,7 +5252,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "speed unit"
+    "@value" : "SpeedUnit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
@@ -5599,7 +5635,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "width unit"
+    "@value" : "WidthUnit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://saref.etsi.org/core/UnitOfMeasure"

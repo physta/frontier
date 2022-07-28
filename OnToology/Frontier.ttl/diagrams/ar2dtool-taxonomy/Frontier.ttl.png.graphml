@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="210" parse.nodes="219" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="213" parse.nodes="222" parse.order="free">
       <node id="nid_s4auto:OWLClass_51b26c11_9322_4c2b_8eaf_551547ee4dfb">
          <data key="d0">
             <y:ShapeNode>
@@ -286,6 +286,41 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_s4auto:OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="520.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">s4auto:OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="520.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf8" source="nid_s4auto:OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8" target="nid_s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_s4auto:OWLClass_eb247bb6_865a_4b75_9193_ba8ee763b4a2">
          <data key="d0">
             <y:ShapeNode>
@@ -310,7 +345,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf8" source="nid_s4auto:OWLClass_eb247bb6_865a_4b75_9193_ba8ee763b4a2" target="nid_s4auto:OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358">
+    <edge id="eid_rdfs:subClassOf9" source="nid_s4auto:OWLClass_eb247bb6_865a_4b75_9193_ba8ee763b4a2" target="nid_s4auto:OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -345,7 +380,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf9" source="nid_s4auto:Closed" target="nid_s4auto:ParkingSpotState">
+    <edge id="eid_rdfs:subClassOf10" source="nid_s4auto:Closed" target="nid_s4auto:ParkingSpotState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -380,7 +415,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf10" source="nid_s4auto:TrafficManagementCentre" target="nid_s4auto:AutomotiveObject">
+    <edge id="eid_rdfs:subClassOf11" source="nid_s4auto:TrafficManagementCentre" target="nid_s4auto:AutomotiveObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -415,7 +450,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf11" source="nid_s4auto:OWLClass_04329a05_2232_4bf5_b0a8_ded14fee7c24" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
+    <edge id="eid_rdfs:subClassOf12" source="nid_s4auto:OWLClass_04329a05_2232_4bf5_b0a8_ded14fee7c24" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -450,7 +485,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf12" source="nid_s4auto:OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba" target="nid_saref:UnitOfMeasure">
+    <edge id="eid_rdfs:subClassOf13" source="nid_s4auto:OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba" target="nid_saref:UnitOfMeasure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -485,7 +520,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf13" source="nid_s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0" target="nid_s4auto:NotifiedEvent">
+    <edge id="eid_rdfs:subClassOf14" source="nid_s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0" target="nid_s4auto:NotifiedEvent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -520,7 +555,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf14" source="nid_s4auto:AtDropOffSpot" target="nid_s4auto:ParkingVehicleState">
+    <edge id="eid_rdfs:subClassOf15" source="nid_s4auto:AtDropOffSpot" target="nid_s4auto:ParkingVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -543,7 +578,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf15" source="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86" target="nid_s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8">
+    <edge id="eid_rdfs:subClassOf16" source="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86" target="nid_s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -566,7 +601,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf16" source="nid_s4auto:OWLClass_7507dd57_9c90_44e6_a415_770e8066fcc9" target="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86">
+    <edge id="eid_rdfs:subClassOf17" source="nid_s4auto:OWLClass_7507dd57_9c90_44e6_a415_770e8066fcc9" target="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -589,7 +624,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf17" source="nid_s4auto:OWLClass_56e947e4_2cd5_45c3_8238_cdb029833309" target="nid_s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8">
+    <edge id="eid_rdfs:subClassOf18" source="nid_s4auto:OWLClass_56e947e4_2cd5_45c3_8238_cdb029833309" target="nid_s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -612,7 +647,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf18" source="nid_s4auto:RendezvousLocation" target="nid_s4auto:Point">
+    <edge id="eid_rdfs:subClassOf19" source="nid_s4auto:RendezvousLocation" target="nid_s4auto:Point">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -635,7 +670,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf19" source="nid_s4auto:OWLClass_2945d1e2_7172_4b82_869f_0b779bc9496b" target="nid_s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0">
+    <edge id="eid_rdfs:subClassOf20" source="nid_s4auto:OWLClass_2945d1e2_7172_4b82_869f_0b779bc9496b" target="nid_s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -670,7 +705,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf20" source="nid_s4auto:Tram" target="nid_s4auto:PublicTransport">
+    <edge id="eid_rdfs:subClassOf21" source="nid_s4auto:Tram" target="nid_s4auto:PublicTransport">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -681,7 +716,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf21" source="nid_s4auto:Vehicle" target="nid_s4auto:AutomotiveObject">
+    <edge id="eid_rdfs:subClassOf22" source="nid_s4auto:Vehicle" target="nid_s4auto:AutomotiveObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -704,7 +739,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf22" source="nid_s4auto:Vehicle" target="nid_s4syst:System">
+    <edge id="eid_rdfs:subClassOf23" source="nid_s4auto:Vehicle" target="nid_s4syst:System">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -727,7 +762,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf23" source="nid_s4auto:Vehicle" target="nid_saref:FeatureOfInterest">
+    <edge id="eid_rdfs:subClassOf24" source="nid_s4auto:Vehicle" target="nid_saref:FeatureOfInterest">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -762,7 +797,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf24" source="nid_s4auto:OWLClass_34f8159d_60f8_42d5_9ee3_ef6ca0f3823f" target="nid_s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8">
+    <edge id="eid_rdfs:subClassOf25" source="nid_s4auto:OWLClass_34f8159d_60f8_42d5_9ee3_ef6ca0f3823f" target="nid_s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -797,7 +832,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf25" source="nid_s4auto:CriticalObject" target="nid_owl:Thing">
+    <edge id="eid_rdfs:subClassOf26" source="nid_s4auto:CriticalObject" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -820,7 +855,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf26" source="nid_s4auto:LengthUnit" target="nid_saref:UnitOfMeasure">
+    <edge id="eid_rdfs:subClassOf27" source="nid_s4auto:LengthUnit" target="nid_saref:UnitOfMeasure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -855,7 +890,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf27" source="nid_s4auto:OWLClass_ab8202ff_e405_4365_abc8_8fc24e9c38b7" target="nid_s4auto:OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b">
+    <edge id="eid_rdfs:subClassOf28" source="nid_s4auto:OWLClass_ab8202ff_e405_4365_abc8_8fc24e9c38b7" target="nid_s4auto:OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -878,19 +913,7 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="520.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf28" source="nid_s4auto:OWLClass_8d26a591_bd0b_48a3_ba4b_61932a89dcbd" target="nid_s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4">
+    <edge id="eid_rdfs:subClassOf29" source="nid_s4auto:OWLClass_8d26a591_bd0b_48a3_ba4b_61932a89dcbd" target="nid_s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -913,7 +936,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf29" source="nid_time:Interval" target="nid_time:TemporalEntity">
+    <edge id="eid_rdfs:subClassOf30" source="nid_time:Interval" target="nid_time:TemporalEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -936,7 +959,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf30" source="nid_s4auto:OWLClass_26b47864_9eb3_4711_89a6_c23244800e78" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
+    <edge id="eid_rdfs:subClassOf31" source="nid_s4auto:OWLClass_26b47864_9eb3_4711_89a6_c23244800e78" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -959,7 +982,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf31" source="nid_s4auto:MediumObject" target="nid_s4auto:CriticalObject">
+    <edge id="eid_rdfs:subClassOf32" source="nid_s4auto:MediumObject" target="nid_s4auto:CriticalObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -994,7 +1017,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf32" source="nid_s4auto:OWLClass_495b7639_fa49_44c2_a634_3838926ad786" target="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379">
+    <edge id="eid_rdfs:subClassOf33" source="nid_s4auto:OWLClass_495b7639_fa49_44c2_a634_3838926ad786" target="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1029,7 +1052,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf33" source="nid_s4auto:UUID" target="nid_s4auto:Identifier">
+    <edge id="eid_rdfs:subClassOf34" source="nid_s4auto:UUID" target="nid_s4auto:Identifier">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1052,7 +1075,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf34" source="nid_s4auto:OWLClass_9ad3360e_429a_4107_a353_2f10a459de05" target="nid_s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab">
+    <edge id="eid_rdfs:subClassOf35" source="nid_s4auto:OWLClass_9ad3360e_429a_4107_a353_2f10a459de05" target="nid_s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1087,7 +1110,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf35" source="nid_s4auto:OWLClass_f3514a2a_4990_46bd_b24f_ab39a8895638" target="nid_s4auto:OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa">
+    <edge id="eid_rdfs:subClassOf36" source="nid_s4auto:OWLClass_f3514a2a_4990_46bd_b24f_ab39a8895638" target="nid_s4auto:OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1122,7 +1145,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf36" source="nid_s4auto:PassengerCar" target="nid_s4auto:Car">
+    <edge id="eid_rdfs:subClassOf37" source="nid_s4auto:PassengerCar" target="nid_s4auto:Car">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1157,7 +1180,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf37" source="nid_s4auto:Assembling" target="nid_s4auto:PlatoonState">
+    <edge id="eid_rdfs:subClassOf38" source="nid_s4auto:Assembling" target="nid_s4auto:PlatoonState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1168,7 +1191,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf38" source="nid_s4auto:OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b" target="nid_s4auto:NotifiedEvent">
+    <edge id="eid_rdfs:subClassOf39" source="nid_s4auto:OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b" target="nid_s4auto:NotifiedEvent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1191,7 +1214,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf39" source="nid_s4auto:OWLClass_b2aecf6a_cbcb_46a6_89e3_ffaf56c1c350" target="nid_s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab">
+    <edge id="eid_rdfs:subClassOf40" source="nid_s4auto:OWLClass_b2aecf6a_cbcb_46a6_89e3_ffaf56c1c350" target="nid_s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1202,7 +1225,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf40" source="nid_s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8" target="nid_s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a">
+    <edge id="eid_rdfs:subClassOf41" source="nid_s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8" target="nid_s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1237,7 +1260,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf41" source="nid_s4auto:SpeedConfidence" target="nid_s4auto:Confidence">
+    <edge id="eid_rdfs:subClassOf42" source="nid_s4auto:SpeedConfidence" target="nid_s4auto:Confidence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1260,7 +1283,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf42" source="nid_s4auto:WidthUnit" target="nid_saref:UnitOfMeasure">
+    <edge id="eid_rdfs:subClassOf43" source="nid_s4auto:WidthUnit" target="nid_saref:UnitOfMeasure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1283,7 +1306,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf43" source="nid_s4auto:OWLClass_78d734ea_cb53_4c72_9514_3f83274cfc68" target="nid_s4auto:Speed">
+    <edge id="eid_rdfs:subClassOf44" source="nid_s4auto:OWLClass_78d734ea_cb53_4c72_9514_3f83274cfc68" target="nid_s4auto:Speed">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1318,7 +1341,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf44" source="nid_s4auto:OWLClass_71fc68af_f487_4bdf_ac37_4e79e6cd7468" target="nid_s4auto:OWLClass_9ab327e6_b09d_41b2_93f3_a2f8970b9d72">
+    <edge id="eid_rdfs:subClassOf45" source="nid_s4auto:OWLClass_71fc68af_f487_4bdf_ac37_4e79e6cd7468" target="nid_s4auto:OWLClass_9ab327e6_b09d_41b2_93f3_a2f8970b9d72">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1341,7 +1364,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf45" source="nid_s4auto:ParkingSpotPoint" target="nid_s4auto:Point">
+    <edge id="eid_rdfs:subClassOf46" source="nid_s4auto:ParkingSpotPoint" target="nid_s4auto:Point">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1376,7 +1399,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf46" source="nid_s4auto:Searching" target="nid_s4auto:PlatoonVehicleState">
+    <edge id="eid_rdfs:subClassOf47" source="nid_s4auto:Searching" target="nid_s4auto:PlatoonVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1399,7 +1422,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf47" source="nid_s4auto:StationID" target="nid_s4auto:Identifier">
+    <edge id="eid_rdfs:subClassOf48" source="nid_s4auto:StationID" target="nid_s4auto:Identifier">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1422,7 +1445,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf48" source="nid_s4auto:Reserved" target="nid_s4auto:ParkingSpotState">
+    <edge id="eid_rdfs:subClassOf49" source="nid_s4auto:Reserved" target="nid_s4auto:ParkingSpotState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1445,7 +1468,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf49" source="nid_s4auto:OWLClass_f4d3087f_4c57_4b40_bbf0_59a10d4f1876" target="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379">
+    <edge id="eid_rdfs:subClassOf50" source="nid_s4auto:OWLClass_f4d3087f_4c57_4b40_bbf0_59a10d4f1876" target="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_s4auto:OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="520.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">s4auto:OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf51" source="nid_s4auto:OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127" target="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1468,7 +1514,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf50" source="nid_s4auto:OWLClass_0f32b2d8_db89_4881_ace7_72cace8ba5de" target="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86">
+    <edge id="eid_rdfs:subClassOf52" source="nid_s4auto:OWLClass_0f32b2d8_db89_4881_ace7_72cace8ba5de" target="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1491,7 +1537,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf51" source="nid_s4auto:OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0" target="nid_saref:UnitOfMeasure">
+    <edge id="eid_rdfs:subClassOf53" source="nid_s4auto:OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0" target="nid_saref:UnitOfMeasure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1514,7 +1560,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf52" source="nid_s4auto:OWLClass_c25f950f_505d_4814_be70_0de84bc70d3c" target="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379">
+    <edge id="eid_rdfs:subClassOf54" source="nid_s4auto:OWLClass_c25f950f_505d_4814_be70_0de84bc70d3c" target="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1525,7 +1571,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf53" source="nid_s4auto:NotifiedEvent" target="nid_s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4">
+    <edge id="eid_rdfs:subClassOf55" source="nid_s4auto:NotifiedEvent" target="nid_s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1560,7 +1606,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf54" source="nid_s4auto:OWLClass_3c89eac0_be9e_4296_ae63_6b28ca4f810b" target="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4">
+    <edge id="eid_rdfs:subClassOf56" source="nid_s4auto:OWLClass_3c89eac0_be9e_4296_ae63_6b28ca4f810b" target="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1583,7 +1629,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf55" source="nid_s4auto:OWLClass_1c2e7359_7ebf_4f4c_b511_6d579bc168fd" target="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4">
+    <edge id="eid_rdfs:subClassOf57" source="nid_s4auto:OWLClass_1c2e7359_7ebf_4f4c_b511_6d579bc168fd" target="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1606,7 +1652,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf56" source="nid_s4auto:OWLClass_8f320229_ef05_43f1_9766_80adb01eada6" target="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86">
+    <edge id="eid_rdfs:subClassOf58" source="nid_s4auto:OWLClass_8f320229_ef05_43f1_9766_80adb01eada6" target="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1629,7 +1675,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf57" source="nid_s4auto:StartPoint" target="nid_s4auto:Point">
+    <edge id="eid_rdfs:subClassOf59" source="nid_s4auto:StartPoint" target="nid_s4auto:Point">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1652,7 +1698,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf58" source="nid_s4auto:LargeObject" target="nid_s4auto:CriticalObject">
+    <edge id="eid_rdfs:subClassOf60" source="nid_s4auto:LargeObject" target="nid_s4auto:CriticalObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1675,7 +1721,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf59" source="nid_s4auto:OWLClass_b7b8e4f0_00ef_4ec3_8706_a3a35e4aebd0" target="nid_s4auto:OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b">
+    <edge id="eid_rdfs:subClassOf61" source="nid_s4auto:OWLClass_b7b8e4f0_00ef_4ec3_8706_a3a35e4aebd0" target="nid_s4auto:OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1698,7 +1744,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf60" source="nid_s4auto:Occupied" target="nid_s4auto:ParkingSpotState">
+    <edge id="eid_rdfs:subClassOf62" source="nid_s4auto:Occupied" target="nid_s4auto:ParkingSpotState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1721,7 +1767,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf61" source="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4" target="nid_s4auto:OWLClass_268735bf_d97b_43a0_80f7_ead69c3861fa">
+    <edge id="eid_rdfs:subClassOf63" source="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4" target="nid_s4auto:OWLClass_268735bf_d97b_43a0_80f7_ead69c3861fa">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1756,7 +1802,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf62" source="nid_s4auto:ElectronicControlUnit" target="nid_saref:Device">
+    <edge id="eid_rdfs:subClassOf64" source="nid_s4auto:ElectronicControlUnit" target="nid_saref:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1767,7 +1813,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf63" source="nid_s4auto:ElectronicControlUnit" target="nid_s4syst:System">
+    <edge id="eid_rdfs:subClassOf65" source="nid_s4auto:ElectronicControlUnit" target="nid_s4syst:System">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1802,7 +1848,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf64" source="nid_s4auto:OWLClass_04b546d7_4632_4354_b9a1_00058c30a662" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
+    <edge id="eid_rdfs:subClassOf66" source="nid_s4auto:OWLClass_04b546d7_4632_4354_b9a1_00058c30a662" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1825,7 +1871,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf65" source="nid_s4auto:OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f" target="nid_saref:UnitOfMeasure">
+    <edge id="eid_rdfs:subClassOf67" source="nid_s4auto:OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f" target="nid_saref:UnitOfMeasure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1860,7 +1906,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf66" source="nid_s4auto:OWLClass_9cf96130_d31e_4542_ab3c_d4b830de2cd6" target="nid_geosp:Feature">
+    <edge id="eid_rdfs:subClassOf68" source="nid_s4auto:OWLClass_9cf96130_d31e_4542_ab3c_d4b830de2cd6" target="nid_geosp:Feature">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1895,7 +1941,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf67" source="nid_s4auto:RoadTopologyPosition" target="nid_s4auto:Position">
+    <edge id="eid_rdfs:subClassOf69" source="nid_s4auto:RoadTopologyPosition" target="nid_s4auto:Position">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1918,7 +1964,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf68" source="nid_s4auto:OWLClass_92dab589_1afc_4f99_a53c_031ddf5a1d85" target="nid_s4auto:OWLClass_efb5f3dd_4e42_4e19_91b3_f451575038ea">
+    <edge id="eid_rdfs:subClassOf70" source="nid_s4auto:OWLClass_92dab589_1afc_4f99_a53c_031ddf5a1d85" target="nid_s4auto:OWLClass_efb5f3dd_4e42_4e19_91b3_f451575038ea">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1953,7 +1999,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf69" source="nid_s4auto:HeavyTruck" target="nid_s4auto:Truck">
+    <edge id="eid_rdfs:subClassOf71" source="nid_s4auto:HeavyTruck" target="nid_s4auto:Truck">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1976,7 +2022,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf70" source="nid_s4auto:PlatoonState" target="nid_s4auto:State">
+    <edge id="eid_rdfs:subClassOf72" source="nid_s4auto:PlatoonState" target="nid_s4auto:State">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1999,7 +2045,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf71" source="nid_s4auto:OWLClass_33be815d_25bd_48d7_bdb4_8a6febb58d2c" target="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4">
+    <edge id="eid_rdfs:subClassOf73" source="nid_s4auto:OWLClass_33be815d_25bd_48d7_bdb4_8a6febb58d2c" target="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2010,7 +2056,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf72" source="nid_s4auto:Car" target="nid_s4auto:Vehicle">
+    <edge id="eid_rdfs:subClassOf74" source="nid_s4auto:Car" target="nid_s4auto:Vehicle">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2045,7 +2091,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf73" source="nid_s4auto:OWLClass_2cc57115_7965_4f13_9ad6_139fbf337b2e" target="nid_s4auto:OWLClass_be6b198e_5792_4367_8dd0_e1193127a9d0">
+    <edge id="eid_rdfs:subClassOf75" source="nid_s4auto:OWLClass_2cc57115_7965_4f13_9ad6_139fbf337b2e" target="nid_s4auto:OWLClass_be6b198e_5792_4367_8dd0_e1193127a9d0">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2080,7 +2126,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf74" source="nid_s4auto:Height" target="nid_saref:Property">
+    <edge id="eid_rdfs:subClassOf76" source="nid_s4auto:Height" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2103,7 +2149,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf75" source="nid_s4auto:OWLClass_ce70b5bf_f678_4d04_8f7e_ff5b116b49a3" target="nid_s4auto:OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b">
+    <edge id="eid_rdfs:subClassOf77" source="nid_s4auto:OWLClass_ce70b5bf_f678_4d04_8f7e_ff5b116b49a3" target="nid_s4auto:OWLClass_71930964_fef3_43e3_bd49_3d1849e4627b">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2126,7 +2172,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf76" source="nid_s4auto:LightTruck" target="nid_s4auto:Truck">
+    <edge id="eid_rdfs:subClassOf78" source="nid_s4auto:LightTruck" target="nid_s4auto:Truck">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2149,7 +2195,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf77" source="nid_s4auto:OWLClass_a58175fa_904f_4ee1_9c97_39b077249abf" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
+    <edge id="eid_rdfs:subClassOf79" source="nid_s4auto:OWLClass_a58175fa_904f_4ee1_9c97_39b077249abf" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2172,7 +2218,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf78" source="nid_s4auto:OWLClass_7f65788c_8f5a_4c8b_89c8_1f924c8ef511" target="nid_s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8">
+    <edge id="eid_rdfs:subClassOf80" source="nid_s4auto:OWLClass_7f65788c_8f5a_4c8b_89c8_1f924c8ef511" target="nid_s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2195,7 +2241,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf79" source="nid_s4auto:OWLClass_888ef99b_3ccc_45a4_bda4_3258bb4b4192" target="nid_s4auto:NotifiedEvent">
+    <edge id="eid_rdfs:subClassOf81" source="nid_s4auto:OWLClass_888ef99b_3ccc_45a4_bda4_3258bb4b4192" target="nid_s4auto:NotifiedEvent">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2230,7 +2276,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf80" source="nid_s4auto:LongitudinalAcceleration" target="nid_s4auto:Acceleration">
+    <edge id="eid_rdfs:subClassOf82" source="nid_s4auto:LongitudinalAcceleration" target="nid_s4auto:Acceleration">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2253,7 +2299,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf81" source="nid_s4auto:OWLClass_d2711230_22c1_49e8_8058_a44688a41a16" target="nid_s4auto:Speed">
+    <edge id="eid_rdfs:subClassOf83" source="nid_s4auto:OWLClass_d2711230_22c1_49e8_8058_a44688a41a16" target="nid_s4auto:Speed">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2288,7 +2334,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf82" source="nid_s4auto:Size" target="nid_http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+    <edge id="eid_rdfs:subClassOf84" source="nid_s4auto:Size" target="nid_http://www.w3.org/2003/01/geo/wgs84_pos#Point">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2311,7 +2357,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf83" source="nid_s4auto:Disengaging" target="nid_s4auto:PlatoonVehicleState">
+    <edge id="eid_rdfs:subClassOf85" source="nid_s4auto:Disengaging" target="nid_s4auto:PlatoonVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2322,7 +2368,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf84" source="nid_s4auto:Disengaging" target="nid_s4auto:PlatoonState">
+    <edge id="eid_rdfs:subClassOf86" source="nid_s4auto:Disengaging" target="nid_s4auto:PlatoonState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2345,7 +2391,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf85" source="nid_s4auto:PositionConfidenceEllipse" target="nid_s4auto:Confidence">
+    <edge id="eid_rdfs:subClassOf87" source="nid_s4auto:PositionConfidenceEllipse" target="nid_s4auto:Confidence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2368,7 +2414,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf86" source="nid_s4auto:OWLClass_4e93090d_5aeb_4946_a593_25268703bb08" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
+    <edge id="eid_rdfs:subClassOf88" source="nid_s4auto:OWLClass_4e93090d_5aeb_4946_a593_25268703bb08" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2391,7 +2437,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf87" source="nid_s4auto:OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694" target="nid_s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8">
+    <edge id="eid_rdfs:subClassOf89" source="nid_s4auto:OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694" target="nid_s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_s4auto:OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="520.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">s4auto:OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf90" source="nid_s4auto:OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de" target="nid_s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2414,7 +2483,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf88" source="nid_s4auto:OWLClass_50c8f1b0_b382_4232_b895_16b7210ad7d3" target="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86">
+    <edge id="eid_rdfs:subClassOf91" source="nid_s4auto:OWLClass_50c8f1b0_b382_4232_b895_16b7210ad7d3" target="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2437,7 +2506,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf89" source="nid_s4auto:Heading" target="nid_saref:Property">
+    <edge id="eid_rdfs:subClassOf92" source="nid_s4auto:Heading" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2448,7 +2517,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf90" source="nid_s4auto:ParkingSpotState" target="nid_s4auto:State">
+    <edge id="eid_rdfs:subClassOf93" source="nid_s4auto:ParkingSpotState" target="nid_s4auto:State">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2471,7 +2540,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf91" source="nid_s4auto:Standalone" target="nid_s4auto:PlatoonVehicleState">
+    <edge id="eid_rdfs:subClassOf94" source="nid_s4auto:Standalone" target="nid_s4auto:PlatoonVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2482,7 +2551,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf92" source="nid_s4auto:Standalone" target="nid_s4auto:PlatoonState">
+    <edge id="eid_rdfs:subClassOf95" source="nid_s4auto:Standalone" target="nid_s4auto:PlatoonState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2505,7 +2574,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf93" source="nid_s4auto:Width" target="nid_saref:Property">
+    <edge id="eid_rdfs:subClassOf96" source="nid_s4auto:Width" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2528,7 +2597,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf94" source="nid_s4auto:OWLClass_942e2767_7f64_4ce0_822b_2cc26c6a540d" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
+    <edge id="eid_rdfs:subClassOf97" source="nid_s4auto:OWLClass_942e2767_7f64_4ce0_822b_2cc26c6a540d" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2551,7 +2620,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf95" source="nid_s4auto:OWLClass_28157908_14ae_4cbc_909d_850da3c26f2e" target="nid_s4auto:OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa">
+    <edge id="eid_rdfs:subClassOf98" source="nid_s4auto:OWLClass_28157908_14ae_4cbc_909d_850da3c26f2e" target="nid_s4auto:OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2586,7 +2655,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf96" source="nid_s4auto:RegularParkingSpot" target="nid_s4auto:ParkingSpot">
+    <edge id="eid_rdfs:subClassOf99" source="nid_s4auto:RegularParkingSpot" target="nid_s4auto:ParkingSpot">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2609,7 +2678,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf97" source="nid_s4auto:SmallObject" target="nid_s4auto:CriticalObject">
+    <edge id="eid_rdfs:subClassOf100" source="nid_s4auto:SmallObject" target="nid_s4auto:CriticalObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2620,7 +2689,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf98" source="nid_s4auto:OWLClass_9ab327e6_b09d_41b2_93f3_a2f8970b9d72" target="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4">
+    <edge id="eid_rdfs:subClassOf101" source="nid_s4auto:OWLClass_9ab327e6_b09d_41b2_93f3_a2f8970b9d72" target="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2643,7 +2712,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf99" source="nid_s4auto:OWLClass_917b1f76_f117_4910_91ac_2519f8c07dc3" target="nid_s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0">
+    <edge id="eid_rdfs:subClassOf102" source="nid_s4auto:OWLClass_917b1f76_f117_4910_91ac_2519f8c07dc3" target="nid_s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2666,7 +2735,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf100" source="nid_s4auto:P4Animal" target="nid_s4auto:VulnerableRoadUser">
+    <edge id="eid_rdfs:subClassOf103" source="nid_s4auto:P4Animal" target="nid_s4auto:VulnerableRoadUser">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2677,7 +2746,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf101" source="nid_s4auto:VulnerableRoadUser" target="nid_owl:Thing">
+    <edge id="eid_rdfs:subClassOf104" source="nid_s4auto:VulnerableRoadUser" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2688,7 +2757,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf102" source="nid_s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab" target="nid_s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4">
+    <edge id="eid_rdfs:subClassOf105" source="nid_s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab" target="nid_s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2711,7 +2780,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf103" source="nid_s4auto:OWLClass_be7c1797_e17e_4904_8dc6_3b99926e33dd" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
+    <edge id="eid_rdfs:subClassOf106" source="nid_s4auto:OWLClass_be7c1797_e17e_4904_8dc6_3b99926e33dd" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2746,7 +2815,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf104" source="nid_s4auto:VehicleRole" target="nid_s4auto:Role">
+    <edge id="eid_rdfs:subClassOf107" source="nid_s4auto:VehicleRole" target="nid_s4auto:Role">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2769,7 +2838,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf105" source="nid_s4auto:OWLClass_35018e3e_3a05_4ce1_b21d_aecb99889b6a" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
+    <edge id="eid_rdfs:subClassOf108" source="nid_s4auto:OWLClass_35018e3e_3a05_4ce1_b21d_aecb99889b6a" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2792,7 +2861,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf106" source="nid_s4auto:OWLClass_3bfa8d5b_36f3_465e_b7e0_cbbcdbb14af9" target="nid_s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8">
+    <edge id="eid_rdfs:subClassOf109" source="nid_s4auto:OWLClass_3bfa8d5b_36f3_465e_b7e0_cbbcdbb14af9" target="nid_s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2803,7 +2872,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf107" source="nid_s4auto:Point" target="nid_http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+    <edge id="eid_rdfs:subClassOf110" source="nid_s4auto:Point" target="nid_http://www.w3.org/2003/01/geo/wgs84_pos#Point">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2826,7 +2895,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf108" source="nid_s4auto:Point" target="nid_geosp:Geometry">
+    <edge id="eid_rdfs:subClassOf111" source="nid_s4auto:Point" target="nid_geosp:Geometry">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2837,7 +2906,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf109" source="nid_s4auto:ParkingSpot" target="nid_geosp:Feature">
+    <edge id="eid_rdfs:subClassOf112" source="nid_s4auto:ParkingSpot" target="nid_geosp:Feature">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2860,7 +2929,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf110" source="nid_s4auto:OWLClass_6b9849f8_eb6a_4b0d_b135_c271d2c28f91" target="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4">
+    <edge id="eid_rdfs:subClassOf113" source="nid_s4auto:OWLClass_6b9849f8_eb6a_4b0d_b135_c271d2c28f91" target="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2883,7 +2952,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf111" source="nid_s4auto:OWLClass_b53cfe83_28d7_4f08_a457_43738aace26a" target="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4">
+    <edge id="eid_rdfs:subClassOf114" source="nid_s4auto:OWLClass_b53cfe83_28d7_4f08_a457_43738aace26a" target="nid_s4auto:OWLClass_094f68a1_a622_4a62_9298_43b74210b8a4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2906,7 +2975,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf112" source="nid_s4auto:PlatoonPosition" target="nid_s4auto:Position">
+    <edge id="eid_rdfs:subClassOf115" source="nid_s4auto:PlatoonPosition" target="nid_s4auto:Position">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2929,7 +2998,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf113" source="nid_s4auto:DrivingToPickUpSpot" target="nid_s4auto:ParkingVehicleState">
+    <edge id="eid_rdfs:subClassOf116" source="nid_s4auto:DrivingToPickUpSpot" target="nid_s4auto:ParkingVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2952,7 +3021,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf114" source="nid_s4auto:DrivingToParkingSpot" target="nid_s4auto:ParkingVehicleState">
+    <edge id="eid_rdfs:subClassOf117" source="nid_s4auto:DrivingToParkingSpot" target="nid_s4auto:ParkingVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2975,7 +3044,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf115" source="nid_s4auto:RoadObject" target="nid_saref:FeatureOfInterest">
+    <edge id="eid_rdfs:subClassOf118" source="nid_s4auto:RoadObject" target="nid_saref:FeatureOfInterest">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2986,7 +3055,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf116" source="nid_s4auto:Truck" target="nid_s4auto:Vehicle">
+    <edge id="eid_rdfs:subClassOf119" source="nid_s4auto:Truck" target="nid_s4auto:Vehicle">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3009,7 +3078,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf117" source="nid_s4auto:OWLClass_59b3b3ba_5757_41b5_8741_7e226853e49e" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
+    <edge id="eid_rdfs:subClassOf120" source="nid_s4auto:OWLClass_59b3b3ba_5757_41b5_8741_7e226853e49e" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3032,7 +3101,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf118" source="nid_s4auto:CardinalityUnit" target="nid_saref:UnitOfMeasure">
+    <edge id="eid_rdfs:subClassOf121" source="nid_s4auto:CardinalityUnit" target="nid_saref:UnitOfMeasure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3055,7 +3124,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf119" source="nid_s4auto:Parking" target="nid_s4auto:ParkingVehicleState">
+    <edge id="eid_rdfs:subClassOf122" source="nid_s4auto:Parking" target="nid_s4auto:ParkingVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3078,7 +3147,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf120" source="nid_s4auto:OWLClass_ca926664_1ef7_4528_8022_66d1d26b701e" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
+    <edge id="eid_rdfs:subClassOf123" source="nid_s4auto:OWLClass_ca926664_1ef7_4528_8022_66d1d26b701e" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3089,7 +3158,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf121" source="nid_s4auto:OWLClass_268735bf_d97b_43a0_80f7_ead69c3861fa" target="nid_s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a">
+    <edge id="eid_rdfs:subClassOf124" source="nid_s4auto:OWLClass_268735bf_d97b_43a0_80f7_ead69c3861fa" target="nid_s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3112,7 +3181,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf122" source="nid_s4auto:OWLClass_81fdb39d_0931_47a8_b051_9516044569d5" target="nid_s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0">
+    <edge id="eid_rdfs:subClassOf125" source="nid_s4auto:OWLClass_81fdb39d_0931_47a8_b051_9516044569d5" target="nid_s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3147,7 +3216,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf123" source="nid_s4auto:RoadSideSensor" target="nid_saref:Sensor">
+    <edge id="eid_rdfs:subClassOf126" source="nid_s4auto:RoadSideSensor" target="nid_saref:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3170,7 +3239,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf124" source="nid_s4auto:OWLClass_9547169c_07a6_48ee_837e_27343a45ed06" target="nid_s4auto:Vehicle">
+    <edge id="eid_rdfs:subClassOf127" source="nid_s4auto:OWLClass_9547169c_07a6_48ee_837e_27343a45ed06" target="nid_s4auto:Vehicle">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3181,7 +3250,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf125" source="nid_s4auto:Acceleration" target="nid_saref:Property">
+    <edge id="eid_rdfs:subClassOf128" source="nid_s4auto:Acceleration" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3216,7 +3285,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf126" source="nid_s4auto:OWLClass_1ee5b47b_5031_4283_9ea4_b5d07533c19c" target="nid_s4auto:OWLClass_74646d5d_a895_4eb2_891b_56e07258b839">
+    <edge id="eid_rdfs:subClassOf129" source="nid_s4auto:OWLClass_1ee5b47b_5031_4283_9ea4_b5d07533c19c" target="nid_s4auto:OWLClass_74646d5d_a895_4eb2_891b_56e07258b839">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3239,7 +3308,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf127" source="nid_s4auto:OWLClass_94907a46_9fca_42fb_9c66_8626fb7ee513" target="nid_s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8">
+    <edge id="eid_rdfs:subClassOf130" source="nid_s4auto:OWLClass_94907a46_9fca_42fb_9c66_8626fb7ee513" target="nid_s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3262,7 +3331,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf128" source="nid_s4auto:RoadEntity" target="nid_saref:FeatureOfInterest">
+    <edge id="eid_rdfs:subClassOf131" source="nid_s4auto:RoadEntity" target="nid_saref:FeatureOfInterest">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3285,7 +3354,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf129" source="nid_s4auto:BrakeCapacity" target="nid_saref:Property">
+    <edge id="eid_rdfs:subClassOf132" source="nid_s4auto:BrakeCapacity" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3308,7 +3377,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf130" source="nid_s4auto:ElectricChargingParkingSpot" target="nid_s4auto:ParkingSpot">
+    <edge id="eid_rdfs:subClassOf133" source="nid_s4auto:ElectricChargingParkingSpot" target="nid_s4auto:ParkingSpot">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3331,7 +3400,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf131" source="nid_s4auto:OWLClass_8cd541c9_9bb2_49a5_9820_43c0dbcf5a60" target="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379">
+    <edge id="eid_rdfs:subClassOf134" source="nid_s4auto:OWLClass_8cd541c9_9bb2_49a5_9820_43c0dbcf5a60" target="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3354,7 +3423,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf132" source="nid_s4auto:Forming" target="nid_s4auto:PlatoonVehicleState">
+    <edge id="eid_rdfs:subClassOf135" source="nid_s4auto:Forming" target="nid_s4auto:PlatoonVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3377,7 +3446,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf133" source="nid_s4auto:YawRate" target="nid_s4auto:Heading">
+    <edge id="eid_rdfs:subClassOf136" source="nid_s4auto:YawRate" target="nid_s4auto:Heading">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3400,7 +3469,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf134" source="nid_s4auto:Engaging" target="nid_s4auto:PlatoonVehicleState">
+    <edge id="eid_rdfs:subClassOf137" source="nid_s4auto:Engaging" target="nid_s4auto:PlatoonVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3423,7 +3492,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf135" source="nid_s4auto:OWLClass_62ab1c22_189c_4445_85ee_1ef1e2d17b57" target="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379">
+    <edge id="eid_rdfs:subClassOf138" source="nid_s4auto:OWLClass_62ab1c22_189c_4445_85ee_1ef1e2d17b57" target="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3446,7 +3515,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf136" source="nid_s4auto:OWLClass_3f5ca29b_a4bb_4d64_89b4_aac68c137c49" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
+    <edge id="eid_rdfs:subClassOf139" source="nid_s4auto:OWLClass_3f5ca29b_a4bb_4d64_89b4_aac68c137c49" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3469,7 +3538,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf137" source="nid_s4auto:OWLClass_9c9b4090_f3cc_4238_bf99_b4dc7b09c9da" target="nid_s4auto:OWLClass_56e947e4_2cd5_45c3_8238_cdb029833309">
+    <edge id="eid_rdfs:subClassOf140" source="nid_s4auto:OWLClass_9c9b4090_f3cc_4238_bf99_b4dc7b09c9da" target="nid_s4auto:OWLClass_56e947e4_2cd5_45c3_8238_cdb029833309">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3492,7 +3561,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf138" source="nid_s4auto:OWLClass_be6b198e_5792_4367_8dd0_e1193127a9d0" target="nid_s4auto:OWLClass_f12ac0e6_d518_41b2_a737_112009debde8">
+    <edge id="eid_rdfs:subClassOf141" source="nid_s4auto:OWLClass_be6b198e_5792_4367_8dd0_e1193127a9d0" target="nid_s4auto:OWLClass_f12ac0e6_d518_41b2_a737_112009debde8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3515,7 +3584,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf139" source="nid_s4auto:Shape" target="nid_saref:Property">
+    <edge id="eid_rdfs:subClassOf142" source="nid_s4auto:Shape" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3538,7 +3607,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf140" source="nid_s4auto:RelativePosition" target="nid_s4auto:Position">
+    <edge id="eid_rdfs:subClassOf143" source="nid_s4auto:RelativePosition" target="nid_s4auto:Position">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3549,7 +3618,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf141" source="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e" target="nid_saref:Device">
+    <edge id="eid_rdfs:subClassOf144" source="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e" target="nid_saref:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3572,7 +3641,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf142" source="nid_s4auto:OWLClass_61ddf3e4_a633_49ea_bdef_7ca9c784cc34" target="nid_s4auto:OWLClass_8d26a591_bd0b_48a3_ba4b_61932a89dcbd">
+    <edge id="eid_rdfs:subClassOf145" source="nid_s4auto:OWLClass_61ddf3e4_a633_49ea_bdef_7ca9c784cc34" target="nid_s4auto:OWLClass_8d26a591_bd0b_48a3_ba4b_61932a89dcbd">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3595,7 +3664,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf143" source="nid_s4auto:Free" target="nid_s4auto:ParkingSpotState">
+    <edge id="eid_rdfs:subClassOf146" source="nid_s4auto:Free" target="nid_s4auto:ParkingSpotState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3606,7 +3675,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf144" source="nid_s4auto:OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358" target="nid_s4auto:OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa">
+    <edge id="eid_rdfs:subClassOf147" source="nid_s4auto:OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358" target="nid_s4auto:OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3629,7 +3698,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf145" source="nid_s4auto:AngularDirection" target="nid_s4auto:Heading">
+    <edge id="eid_rdfs:subClassOf148" source="nid_s4auto:AngularDirection" target="nid_s4auto:Heading">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3652,7 +3721,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf146" source="nid_s4auto:OWLClass_92454d09_d714_4870_a8d4_c8c16bbc49d8" target="nid_s4auto:OWLClass_efb5f3dd_4e42_4e19_91b3_f451575038ea">
+    <edge id="eid_rdfs:subClassOf149" source="nid_s4auto:OWLClass_92454d09_d714_4870_a8d4_c8c16bbc49d8" target="nid_s4auto:OWLClass_efb5f3dd_4e42_4e19_91b3_f451575038ea">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3663,7 +3732,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf147" source="nid_s4auto:OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa" target="nid_s4auto:OWLClass_268735bf_d97b_43a0_80f7_ead69c3861fa">
+    <edge id="eid_rdfs:subClassOf150" source="nid_s4auto:PublicTransport" target="nid_s4auto:Vehicle">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3674,7 +3743,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf148" source="nid_s4auto:PublicTransport" target="nid_s4auto:Vehicle">
+    <edge id="eid_rdfs:subClassOf151" source="nid_s4auto:OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa" target="nid_s4auto:OWLClass_268735bf_d97b_43a0_80f7_ead69c3861fa">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3697,7 +3766,18 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf149" source="nid_s4auto:SpeedUnit" target="nid_saref:UnitOfMeasure">
+    <edge id="eid_rdfs:subClassOf152" source="nid_s4auto:SpeedUnit" target="nid_saref:UnitOfMeasure">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdfs:subClassOf153" source="nid_s4auto:Speed" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3720,7 +3800,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf150" source="nid_s4auto:OWLClass_55978b20_33ff_44a1_a09c_974f509cc274" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
+    <edge id="eid_rdfs:subClassOf154" source="nid_s4auto:OWLClass_55978b20_33ff_44a1_a09c_974f509cc274" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3731,18 +3811,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf151" source="nid_s4auto:Speed" target="nid_saref:Property">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_rdfs:subClassOf152" source="nid_s4auto:PlatoonVehicleState" target="nid_s4auto:State">
+    <edge id="eid_rdfs:subClassOf155" source="nid_s4auto:PlatoonVehicleState" target="nid_s4auto:State">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3765,7 +3834,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf153" source="nid_s4auto:Unknown" target="nid_s4auto:PlatoonVehicleState">
+    <edge id="eid_rdfs:subClassOf156" source="nid_s4auto:Unknown" target="nid_s4auto:PlatoonVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3776,7 +3845,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf154" source="nid_s4auto:Unknown" target="nid_s4auto:PlatoonState">
+    <edge id="eid_rdfs:subClassOf157" source="nid_s4auto:Unknown" target="nid_s4auto:PlatoonState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3799,7 +3868,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf155" source="nid_s4auto:Parked" target="nid_s4auto:ParkingVehicleState">
+    <edge id="eid_rdfs:subClassOf158" source="nid_s4auto:Parked" target="nid_s4auto:ParkingVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3822,7 +3891,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf156" source="nid_s4auto:PlatoonRole" target="nid_s4auto:Role">
+    <edge id="eid_rdfs:subClassOf159" source="nid_s4auto:PlatoonRole" target="nid_s4auto:Role">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3845,7 +3914,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf157" source="nid_s4auto:State" target="nid_saref:State">
+    <edge id="eid_rdfs:subClassOf160" source="nid_s4auto:State" target="nid_saref:State">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3856,7 +3925,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf158" source="nid_s4auto:ParkingVehicleState" target="nid_s4auto:State">
+    <edge id="eid_rdfs:subClassOf161" source="nid_s4auto:ParkingVehicleState" target="nid_s4auto:State">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3891,7 +3960,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf159" source="nid_s4auto:TrafficLightController" target="nid_s4auto:RoadSideActuator">
+    <edge id="eid_rdfs:subClassOf162" source="nid_s4auto:TrafficLightController" target="nid_s4auto:RoadSideActuator">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3926,7 +3995,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf160" source="nid_s4auto:PlatoonAutomationLevel" target="nid_s4auto:AutomationLevel">
+    <edge id="eid_rdfs:subClassOf163" source="nid_s4auto:PlatoonAutomationLevel" target="nid_s4auto:AutomationLevel">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3949,7 +4018,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf161" source="nid_http://www.w3.org/2003/01/geo/wgs84_pos#Point" target="nid_http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+    <edge id="eid_rdfs:subClassOf164" source="nid_http://www.w3.org/2003/01/geo/wgs84_pos#Point" target="nid_http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3972,7 +4041,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf162" source="nid_s4auto:Length" target="nid_saref:Property">
+    <edge id="eid_rdfs:subClassOf165" source="nid_s4auto:Length" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -3995,7 +4064,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf163" source="nid_s4auto:PerceptionState" target="nid_s4auto:State">
+    <edge id="eid_rdfs:subClassOf166" source="nid_s4auto:PerceptionState" target="nid_s4auto:State">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4006,7 +4075,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf164" source="nid_s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8" target="nid_s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4">
+    <edge id="eid_rdfs:subClassOf167" source="nid_s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8" target="nid_s4auto:OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4029,7 +4098,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf165" source="nid_s4auto:OWLClass_e6b10e5f_1fc3_49fe_995b_d2771ae66e91" target="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86">
+    <edge id="eid_rdfs:subClassOf168" source="nid_s4auto:OWLClass_e6b10e5f_1fc3_49fe_995b_d2771ae66e91" target="nid_s4auto:OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4052,7 +4121,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf166" source="nid_s4auto:PersonalDevice" target="nid_s4auto:AutomotiveObject">
+    <edge id="eid_rdfs:subClassOf169" source="nid_s4auto:PersonalDevice" target="nid_s4auto:AutomotiveObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4063,7 +4132,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf167" source="nid_s4auto:PersonalDevice" target="nid_saref:Device">
+    <edge id="eid_rdfs:subClassOf170" source="nid_s4auto:PersonalDevice" target="nid_saref:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4086,7 +4155,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf168" source="nid_s4auto:Platooning" target="nid_s4auto:PlatoonVehicleState">
+    <edge id="eid_rdfs:subClassOf171" source="nid_s4auto:Platooning" target="nid_s4auto:PlatoonVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4097,7 +4166,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf169" source="nid_s4auto:Platooning" target="nid_s4auto:PlatoonState">
+    <edge id="eid_rdfs:subClassOf172" source="nid_s4auto:Platooning" target="nid_s4auto:PlatoonState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4120,7 +4189,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf170" source="nid_s4auto:VehicleAutomationLevel" target="nid_s4auto:AutomationLevel">
+    <edge id="eid_rdfs:subClassOf173" source="nid_s4auto:VehicleAutomationLevel" target="nid_s4auto:AutomationLevel">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4143,7 +4212,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf171" source="nid_s4auto:Bus" target="nid_s4auto:PublicTransport">
+    <edge id="eid_rdfs:subClassOf174" source="nid_s4auto:Bus" target="nid_s4auto:PublicTransport">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4166,7 +4235,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf172" source="nid_saref:Actuator" target="nid_saref:Device">
+    <edge id="eid_rdfs:subClassOf175" source="nid_saref:Actuator" target="nid_saref:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4189,7 +4258,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf173" source="nid_s4auto:P1Pedestrian" target="nid_s4auto:VulnerableRoadUser">
+    <edge id="eid_rdfs:subClassOf176" source="nid_s4auto:P1Pedestrian" target="nid_s4auto:VulnerableRoadUser">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4212,7 +4281,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf174" source="nid_s4auto:OWLClass_c00a4beb_8f90_4c26_bd83_6f7cfd3d5b70" target="nid_s4auto:OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358">
+    <edge id="eid_rdfs:subClassOf177" source="nid_s4auto:OWLClass_c00a4beb_8f90_4c26_bd83_6f7cfd3d5b70" target="nid_s4auto:OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4235,7 +4304,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf175" source="nid_s4auto:AccelerationConfidence" target="nid_s4auto:Confidence">
+    <edge id="eid_rdfs:subClassOf178" source="nid_s4auto:AccelerationConfidence" target="nid_s4auto:Confidence">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4258,7 +4327,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf176" source="nid_s4auto:OWLClass_9ac216bc_9889_42be_b873_8567be75a107" target="nid_s4auto:OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358">
+    <edge id="eid_rdfs:subClassOf179" source="nid_s4auto:OWLClass_9ac216bc_9889_42be_b873_8567be75a107" target="nid_s4auto:OWLClass_ddf85721_eecd_4df7_be3b_f513b6120358">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4281,7 +4350,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf177" source="nid_s4auto:OWLClass_15fb483a_e638_4f66_813b_1d6257210b27" target="nid_s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8">
+    <edge id="eid_rdfs:subClassOf180" source="nid_s4auto:OWLClass_15fb483a_e638_4f66_813b_1d6257210b27" target="nid_s4auto:OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4304,7 +4373,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf178" source="nid_s4auto:Charging" target="nid_s4auto:ParkingVehicleState">
+    <edge id="eid_rdfs:subClassOf181" source="nid_s4auto:Charging" target="nid_s4auto:ParkingVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4315,7 +4384,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf179" source="nid_s4auto:Charging" target="nid_s4auto:ParkingSpotState">
+    <edge id="eid_rdfs:subClassOf182" source="nid_s4auto:Charging" target="nid_s4auto:ParkingSpotState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4338,7 +4407,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf180" source="nid_s4auto:OWLClass_95be8558_d8a2_4eed_b3ac_45d78ee1d852" target="nid_s4auto:PublicTransport">
+    <edge id="eid_rdfs:subClassOf183" source="nid_s4auto:OWLClass_95be8558_d8a2_4eed_b3ac_45d78ee1d852" target="nid_s4auto:PublicTransport">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4361,7 +4430,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf181" source="nid_s4auto:OWLClass_28e02d4d_1c7b_4c7b_af28_cc59c73a9fa1" target="nid_s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab">
+    <edge id="eid_rdfs:subClassOf184" source="nid_s4auto:OWLClass_28e02d4d_1c7b_4c7b_af28_cc59c73a9fa1" target="nid_s4auto:OWLClass_07a59fd1_8778_41b1_a40f_497242d7cfab">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4384,7 +4453,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf182" source="nid_s4auto:RoutePoint" target="nid_s4auto:Point">
+    <edge id="eid_rdfs:subClassOf185" source="nid_s4auto:RoutePoint" target="nid_s4auto:Point">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4407,7 +4476,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf183" source="nid_s4auto:SpecialPermitParkingSpot" target="nid_s4auto:ParkingSpot">
+    <edge id="eid_rdfs:subClassOf186" source="nid_s4auto:SpecialPermitParkingSpot" target="nid_s4auto:ParkingSpot">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4430,7 +4499,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf184" source="nid_s4auto:Movement" target="nid_saref:Property">
+    <edge id="eid_rdfs:subClassOf187" source="nid_s4auto:Movement" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4441,7 +4510,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf185" source="nid_s4auto:RoadSideActuator" target="nid_saref:Actuator">
+    <edge id="eid_rdfs:subClassOf188" source="nid_s4auto:RoadSideActuator" target="nid_saref:Actuator">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4464,7 +4533,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf186" source="nid_s4auto:OWLClass_3ef5abd6_4002_4095_96dd_008e5780e633" target="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379">
+    <edge id="eid_rdfs:subClassOf189" source="nid_s4auto:OWLClass_3ef5abd6_4002_4095_96dd_008e5780e633" target="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4487,7 +4556,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf187" source="nid_s4auto:OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5" target="nid_saref:UnitOfMeasure">
+    <edge id="eid_rdfs:subClassOf190" source="nid_s4auto:OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5" target="nid_saref:UnitOfMeasure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4510,7 +4579,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf188" source="nid_s4auto:OWLClass_a2818dfc_41cf_4923_9680_ba37180e5970" target="nid_s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0">
+    <edge id="eid_rdfs:subClassOf191" source="nid_s4auto:OWLClass_a2818dfc_41cf_4923_9680_ba37180e5970" target="nid_s4auto:OWLClass_3525e788_5689_48d1_8d98_885ae53e19f0">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4521,7 +4590,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf189" source="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379" target="nid_s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a">
+    <edge id="eid_rdfs:subClassOf192" source="nid_s4auto:OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379" target="nid_s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4544,7 +4613,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf190" source="nid_s4auto:AtPickUpSpot" target="nid_s4auto:ParkingVehicleState">
+    <edge id="eid_rdfs:subClassOf193" source="nid_s4auto:AtPickUpSpot" target="nid_s4auto:ParkingVehicleState">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4567,7 +4636,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf191" source="nid_s4auto:OWLClass_083fab3f_ca95_4af8_873e_7563bd6bec77" target="nid_s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8">
+    <edge id="eid_rdfs:subClassOf194" source="nid_s4auto:OWLClass_083fab3f_ca95_4af8_873e_7563bd6bec77" target="nid_s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4590,7 +4659,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf192" source="nid_s4auto:LateralAcceleration" target="nid_s4auto:Acceleration">
+    <edge id="eid_rdfs:subClassOf195" source="nid_s4auto:LateralAcceleration" target="nid_s4auto:Acceleration">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4613,7 +4682,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf193" source="nid_geosp:Feature" target="nid_geosp:SpatialObject">
+    <edge id="eid_rdfs:subClassOf196" source="nid_geosp:Feature" target="nid_geosp:SpatialObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4636,7 +4705,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf194" source="nid_s4auto:OWLClass_30dd4a6b_a368_45c4_bcb0_b2d8300ba2c1" target="nid_s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a">
+    <edge id="eid_rdfs:subClassOf197" source="nid_s4auto:OWLClass_30dd4a6b_a368_45c4_bcb0_b2d8300ba2c1" target="nid_s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4659,7 +4728,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf195" source="nid_s4auto:OWLClass_a61c93fb_45ce_4eae_94ac_15200c75ee91" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
+    <edge id="eid_rdfs:subClassOf198" source="nid_s4auto:OWLClass_a61c93fb_45ce_4eae_94ac_15200c75ee91" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4682,7 +4751,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf196" source="nid_s4auto:OWLClass_c74dee04_0497_4156_bcad_06a79021d4b3" target="nid_s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a">
+    <edge id="eid_rdfs:subClassOf199" source="nid_s4auto:OWLClass_c74dee04_0497_4156_bcad_06a79021d4b3" target="nid_s4auto:OWLClass_553f9409_f262_4ed9_a940_180eb68bbb2a">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4705,7 +4774,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf197" source="nid_s4auto:OWLClass_ca6f3e72_e492_4e42_bb50_b3befd5200b2" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
+    <edge id="eid_rdfs:subClassOf200" source="nid_s4auto:OWLClass_ca6f3e72_e492_4e42_bb50_b3befd5200b2" target="nid_s4auto:OWLClass_ffc458d3_3e8a_4dff_904f_ec7570614f9e">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4728,7 +4797,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf198" source="nid_s4auto:RelativeSpeed" target="nid_s4auto:Speed">
+    <edge id="eid_rdfs:subClassOf201" source="nid_s4auto:RelativeSpeed" target="nid_s4auto:Speed">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4751,7 +4820,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf199" source="nid_s4auto:AbsolutePosition" target="nid_s4auto:Position">
+    <edge id="eid_rdfs:subClassOf202" source="nid_s4auto:AbsolutePosition" target="nid_s4auto:Position">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4762,7 +4831,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf200" source="nid_s4auto:AbsolutePosition" target="nid_s4auto:Point">
+    <edge id="eid_rdfs:subClassOf203" source="nid_s4auto:AbsolutePosition" target="nid_s4auto:Point">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4773,7 +4842,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf201" source="nid_saref:Sensor" target="nid_saref:Device">
+    <edge id="eid_rdfs:subClassOf204" source="nid_saref:Sensor" target="nid_saref:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4784,7 +4853,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf202" source="nid_s4auto:OWLClass_f12ac0e6_d518_41b2_a737_112009debde8" target="nid_s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8">
+    <edge id="eid_rdfs:subClassOf205" source="nid_s4auto:OWLClass_f12ac0e6_d518_41b2_a737_112009debde8" target="nid_s4auto:OWLClass_d2f64388_08b5_4626_8be5_bf2614562bb8">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4807,7 +4876,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf203" source="nid_s4auto:P3Motorcyclist" target="nid_s4auto:VulnerableRoadUser">
+    <edge id="eid_rdfs:subClassOf206" source="nid_s4auto:P3Motorcyclist" target="nid_s4auto:VulnerableRoadUser">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4830,7 +4899,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf204" source="nid_s4auto:RoadSideEquipment" target="nid_s4auto:AutomotiveObject">
+    <edge id="eid_rdfs:subClassOf207" source="nid_s4auto:RoadSideEquipment" target="nid_s4auto:AutomotiveObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4853,7 +4922,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf205" source="nid_s4auto:Weight" target="nid_saref:Property">
+    <edge id="eid_rdfs:subClassOf208" source="nid_s4auto:Weight" target="nid_saref:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4876,7 +4945,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf206" source="nid_s4auto:OWLClass_32021b7a_e7be_4a44_9c27_d1ea8f53eaa4" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
+    <edge id="eid_rdfs:subClassOf209" source="nid_s4auto:OWLClass_32021b7a_e7be_4a44_9c27_d1ea8f53eaa4" target="nid_s4auto:OWLClass_09ebbdf2_3b5f_4a04_a07a_b0664e9c326d">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4887,7 +4956,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf207" source="nid_geosp:Geometry" target="nid_geosp:SpatialObject">
+    <edge id="eid_rdfs:subClassOf210" source="nid_geosp:Geometry" target="nid_geosp:SpatialObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4910,7 +4979,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf208" source="nid_s4auto:HeightUnit" target="nid_saref:UnitOfMeasure">
+    <edge id="eid_rdfs:subClassOf211" source="nid_s4auto:HeightUnit" target="nid_saref:UnitOfMeasure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -4933,7 +5002,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf209" source="nid_s4auto:OWLClass_eb1fda7a_fc6c_4dfb_ac2f_1ce59234bc97" target="nid_s4auto:OWLClass_efb5f3dd_4e42_4e19_91b3_f451575038ea">
+    <edge id="eid_rdfs:subClassOf212" source="nid_s4auto:OWLClass_eb1fda7a_fc6c_4dfb_ac2f_1ce59234bc97" target="nid_s4auto:OWLClass_efb5f3dd_4e42_4e19_91b3_f451575038ea">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

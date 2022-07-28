@@ -102,6 +102,9 @@
     "OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694"
     },
+    "OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de"
+    },
     "OWLClass_78d734ea_cb53_4c72_9514_3f83274cfc68" : {
       "@id" : "https://saref.etsi.org/saref4auto/OWLClass_78d734ea_cb53_4c72_9514_3f83274cfc68"
     },
@@ -356,6 +359,9 @@
     },
     "Free" : {
       "@id" : "https://saref.etsi.org/saref4auto/Free"
+    },
+    "OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127"
     },
     "hasMaxSize" : {
       "@id" : "https://saref.etsi.org/saref4auto/hasMaxSize"
@@ -656,6 +662,9 @@
     },
     "source" : {
       "@id" : "http://purl.org/dc/terms/source"
+    },
+    "OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8" : {
+      "@id" : "https://saref.etsi.org/saref4auto/OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8"
     },
     "Parking" : {
       "@id" : "https://saref.etsi.org/saref4auto/Parking"
