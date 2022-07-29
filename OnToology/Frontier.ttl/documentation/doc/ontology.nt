@@ -649,7 +649,7 @@
 <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#comment> "Anything with spatial extent, i.e. size, shape, or position.\n e.g. people, places, bowling balls, as well as abstract areas like cubes." .
 <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/2003/01/geo/wgs84_pos#" .
-<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Thing"@en .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialThing"@en .
 # 
 # http://www.w3.org/2006/time#Instant
 <http://www.w3.org/2006/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -902,7 +902,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://saref.etsi.org/saref4auto/CardinalityUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/CardinalityUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/UnitOfMeasure> .
 <https://saref.etsi.org/saref4auto/CardinalityUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "unit of measure of size"@en .
-<https://saref.etsi.org/saref4auto/CardinalityUnit> <http://www.w3.org/2000/01/rdf-schema#label> "cardinality unit"@en .
+<https://saref.etsi.org/saref4auto/CardinalityUnit> <http://www.w3.org/2000/01/rdf-schema#label> "CardinalityUnit"@en .
 # 
 # https://saref.etsi.org/saref4auto/Charging
 <https://saref.etsi.org/saref4auto/Charging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1066,7 +1066,7 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://saref.etsi.org/saref4auto/HeightUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/HeightUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/UnitOfMeasure> .
 <https://saref.etsi.org/saref4auto/HeightUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "unit of measure of height"@en .
-<https://saref.etsi.org/saref4auto/HeightUnit> <http://www.w3.org/2000/01/rdf-schema#label> "height unit"@en .
+<https://saref.etsi.org/saref4auto/HeightUnit> <http://www.w3.org/2000/01/rdf-schema#label> "HeightUnit"@en .
 # 
 # https://saref.etsi.org/saref4auto/Identifier
 <https://saref.etsi.org/saref4auto/Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1081,7 +1081,7 @@ _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://saref.etsi.org/saref4auto/LargeObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/LargeObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4auto/CriticalObject> .
 <https://saref.etsi.org/saref4auto/LargeObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of Critical Object"@en .
-<https://saref.etsi.org/saref4auto/LargeObject> <http://www.w3.org/2000/01/rdf-schema#label> "Large Object"@en .
+<https://saref.etsi.org/saref4auto/LargeObject> <http://www.w3.org/2000/01/rdf-schema#label> "LargeObject"@en .
 # 
 # https://saref.etsi.org/saref4auto/LateralAcceleration
 <https://saref.etsi.org/saref4auto/LateralAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1108,7 +1108,7 @@ _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://saref.etsi.org/saref4auto/LengthUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/LengthUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/UnitOfMeasure> .
 <https://saref.etsi.org/saref4auto/LengthUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "unit of measure of lenght"@en .
-<https://saref.etsi.org/saref4auto/LengthUnit> <http://www.w3.org/2000/01/rdf-schema#label> "length unit"@en .
+<https://saref.etsi.org/saref4auto/LengthUnit> <http://www.w3.org/2000/01/rdf-schema#label> "LengthUnit"@en .
 # 
 # https://saref.etsi.org/saref4auto/LightTruck
 <https://saref.etsi.org/saref4auto/LightTruck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1126,7 +1126,7 @@ _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://saref.etsi.org/saref4auto/MediumObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/MediumObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4auto/CriticalObject> .
 <https://saref.etsi.org/saref4auto/MediumObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of Critical Object"@en .
-<https://saref.etsi.org/saref4auto/MediumObject> <http://www.w3.org/2000/01/rdf-schema#label> "Medium Object"@en .
+<https://saref.etsi.org/saref4auto/MediumObject> <http://www.w3.org/2000/01/rdf-schema#label> "MediumObject"@en .
 # 
 # https://saref.etsi.org/saref4auto/Movement
 <https://saref.etsi.org/saref4auto/Movement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1202,6 +1202,12 @@ _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://saref.etsi.org/saref4auto/OWLClass_15fb483a_e638_4f66_813b_1d6257210b27> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4auto/OWLClass_bb857606_8737_45ad_ae73_c8c7f91884d8> .
 <https://saref.etsi.org/saref4auto/OWLClass_15fb483a_e638_4f66_813b_1d6257210b27> <http://www.w3.org/2000/01/rdf-schema#comment> "An obstruction on the road caused by one or more vehicles." .
 <https://saref.etsi.org/saref4auto/OWLClass_15fb483a_e638_4f66_813b_1d6257210b27> <http://www.w3.org/2000/01/rdf-schema#label> "VehicleObstruction"@es .
+# 
+# https://saref.etsi.org/saref4auto/OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127
+<https://saref.etsi.org/saref4auto/OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4auto/OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4auto/OWLClass_e45fa244_ae32_46c4_85c6_8746c1398c86> .
+<https://saref.etsi.org/saref4auto/OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127> <http://www.w3.org/2000/01/rdf-schema#comment> "Averaged measurements or calculations of traffic headway, i.e. the distance or time interval between vehicles. This measure is measured from the head of one vehicle to the head of the following vehicle." .
+<https://saref.etsi.org/saref4auto/OWLClass_197987c2_5502_4c2c_85ea_ddcf49a6e127> <http://www.w3.org/2000/01/rdf-schema#label> "TrafficHeadway"@es .
 # 
 # https://saref.etsi.org/saref4auto/OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694
 <https://saref.etsi.org/saref4auto/OWLClass_1ab43a6d_571a_434f_9152_bdeb0fb96694> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1331,6 +1337,11 @@ _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://saref.etsi.org/saref4auto/OWLClass_3f5ca29b_a4bb_4d64_89b4_aac68c137c49> <http://www.w3.org/2000/01/rdf-schema#comment> "Failure-status of the measurement point\n•\t0 = no failure\n•\t1 = 1 of both detection loops is probably failing\n•\t2 = more than 20 percent bad counts: severe failure" .
 <https://saref.etsi.org/saref4auto/OWLClass_3f5ca29b_a4bb_4d64_89b4_aac68c137c49> <http://www.w3.org/2000/01/rdf-schema#label> "faultDescription"@es .
 # 
+# https://saref.etsi.org/saref4auto/OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8
+<https://saref.etsi.org/saref4auto/OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4auto/OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4auto/OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4> .
+<https://saref.etsi.org/saref4auto/OWLClass_426d2645_8ad3_425a_9a0c_701b62ffe6e8> <http://www.w3.org/2000/01/rdf-schema#label> "EquipmentOrSystemFault"@es .
+# 
 # https://saref.etsi.org/saref4auto/OWLClass_495b7639_fa49_44c2_a634_3838926ad786
 <https://saref.etsi.org/saref4auto/OWLClass_495b7639_fa49_44c2_a634_3838926ad786> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/OWLClass_495b7639_fa49_44c2_a634_3838926ad786> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4auto/OWLClass_836b22f0_3931_44dd_a18b_4f52f5d10379> .
@@ -1415,7 +1426,7 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://saref.etsi.org/saref4auto/OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/UnitOfMeasure> .
 <https://saref.etsi.org/saref4auto/OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5> <http://www.w3.org/2000/01/rdf-schema#comment> "To indicate the number of an entity in a fraction of time. Number per second" .
-<https://saref.etsi.org/saref4auto/OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5> <http://www.w3.org/2000/01/rdf-schema#label> "flow unit"@es .
+<https://saref.etsi.org/saref4auto/OWLClass_7227c333_67f8_4f2d_a0e1_208d15683bb5> <http://www.w3.org/2000/01/rdf-schema#label> "FlowUnit"@es .
 # 
 # https://saref.etsi.org/saref4auto/OWLClass_74646d5d_a895_4eb2_891b_56e07258b839
 <https://saref.etsi.org/saref4auto/OWLClass_74646d5d_a895_4eb2_891b_56e07258b839> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1463,6 +1474,12 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://saref.etsi.org/saref4auto/OWLClass_888ef99b_3ccc_45a4_bda4_3258bb4b4192> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4auto/NotifiedEvent> .
 <https://saref.etsi.org/saref4auto/OWLClass_888ef99b_3ccc_45a4_bda4_3258bb4b4192> <http://www.w3.org/2000/01/rdf-schema#comment> "Accidents are events where one or more vehicles are involved in collisions or in leaving the roadway. These include collisions between vehicles or with other road users or obstacles." .
 <https://saref.etsi.org/saref4auto/OWLClass_888ef99b_3ccc_45a4_bda4_3258bb4b4192> <http://www.w3.org/2000/01/rdf-schema#label> "Accident"@es .
+# 
+# https://saref.etsi.org/saref4auto/OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de
+<https://saref.etsi.org/saref4auto/OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4auto/OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4auto/OWLClass_6d485427_cb2b_41f5_884e_dc079c437fc4> .
+<https://saref.etsi.org/saref4auto/OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de> <http://www.w3.org/2000/01/rdf-schema#comment> "A traffic condition which is not normal." .
+<https://saref.etsi.org/saref4auto/OWLClass_8a2b58fb_e23a_44da_bfe4_4a1f00bdb6de> <http://www.w3.org/2000/01/rdf-schema#label> "AbnormalTraffic"@es .
 # 
 # https://saref.etsi.org/saref4auto/OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa
 <https://saref.etsi.org/saref4auto/OWLClass_8b969e76_5374_4dc6_a45d_f32e5769cafa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1591,7 +1608,7 @@ _:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://saref.etsi.org/saref4auto/OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0
 <https://saref.etsi.org/saref4auto/OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/UnitOfMeasure> .
-<https://saref.etsi.org/saref4auto/OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0> <http://www.w3.org/2000/01/rdf-schema#label> "acceleration unit"@es .
+<https://saref.etsi.org/saref4auto/OWLClass_9ffbba79_32b5_41e3_9f34_6d82b4c49fe0> <http://www.w3.org/2000/01/rdf-schema#label> "AccelerationUnit"@es .
 # 
 # https://saref.etsi.org/saref4auto/OWLClass_a2818dfc_41cf_4923_9680_ba37180e5970
 <https://saref.etsi.org/saref4auto/OWLClass_a2818dfc_41cf_4923_9680_ba37180e5970> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1669,7 +1686,7 @@ _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://saref.etsi.org/saref4auto/OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/UnitOfMeasure> .
 <https://saref.etsi.org/saref4auto/OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f> <http://www.w3.org/2000/01/rdf-schema#comment> "To indicate when each datum is caputred" .
-<https://saref.etsi.org/saref4auto/OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp"@es .
+<https://saref.etsi.org/saref4auto/OWLClass_c4ba69f1_9f93_4d79_aff2_c354c53e0c8f> <http://www.w3.org/2000/01/rdf-schema#label> "TimeStamp"@es .
 # 
 # https://saref.etsi.org/saref4auto/OWLClass_c74dee04_0497_4156_bcad_06a79021d4b3
 <https://saref.etsi.org/saref4auto/OWLClass_c74dee04_0497_4156_bcad_06a79021d4b3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1802,7 +1819,7 @@ _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://saref.etsi.org/saref4auto/OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba
 <https://saref.etsi.org/saref4auto/OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/UnitOfMeasure> .
-<https://saref.etsi.org/saref4auto/OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba> <http://www.w3.org/2000/01/rdf-schema#label> "time unit"@es .
+<https://saref.etsi.org/saref4auto/OWLClass_f150bbe8_b3cf_4f02_bf1d_4f0a86b669ba> <http://www.w3.org/2000/01/rdf-schema#label> "TimeUnit"@es .
 # 
 # https://saref.etsi.org/saref4auto/OWLClass_f3514a2a_4990_46bd_b24f_ab39a8895638
 <https://saref.etsi.org/saref4auto/OWLClass_f3514a2a_4990_46bd_b24f_ab39a8895638> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2254,7 +2271,7 @@ _:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://saref.etsi.org/saref4auto/SmallObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/SmallObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4auto/CriticalObject> .
 <https://saref.etsi.org/saref4auto/SmallObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of Critical Object"@en .
-<https://saref.etsi.org/saref4auto/SmallObject> <http://www.w3.org/2000/01/rdf-schema#label> "Small Object"@en .
+<https://saref.etsi.org/saref4auto/SmallObject> <http://www.w3.org/2000/01/rdf-schema#label> "SmallObject"@en .
 # 
 # https://saref.etsi.org/saref4auto/SpecialPermitParkingSpot
 <https://saref.etsi.org/saref4auto/SpecialPermitParkingSpot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2290,7 +2307,7 @@ _:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://saref.etsi.org/saref4auto/SpeedUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/SpeedUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/UnitOfMeasure> .
 <https://saref.etsi.org/saref4auto/SpeedUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "unit of measure of speed"@en .
-<https://saref.etsi.org/saref4auto/SpeedUnit> <http://www.w3.org/2000/01/rdf-schema#label> "speed unit"@en .
+<https://saref.etsi.org/saref4auto/SpeedUnit> <http://www.w3.org/2000/01/rdf-schema#label> "SpeedUnit"@en .
 # 
 # https://saref.etsi.org/saref4auto/Standalone
 <https://saref.etsi.org/saref4auto/Standalone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -2533,7 +2550,7 @@ _:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://saref.etsi.org/saref4auto/WidthUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/saref4auto/WidthUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/UnitOfMeasure> .
 <https://saref.etsi.org/saref4auto/WidthUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "unit of measure of width"@en .
-<https://saref.etsi.org/saref4auto/WidthUnit> <http://www.w3.org/2000/01/rdf-schema#label> "width unit"@en .
+<https://saref.etsi.org/saref4auto/WidthUnit> <http://www.w3.org/2000/01/rdf-schema#label> "WidthUnit"@en .
 # 
 # https://saref.etsi.org/saref4auto/YawRate
 <https://saref.etsi.org/saref4auto/YawRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
