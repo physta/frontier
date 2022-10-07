@@ -1,0 +1,1982 @@
+{
+  "@context" : {
+    "forecast" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/forecast"
+    },
+    "SpeedUnit" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/SpeedUnit"
+    },
+    "DevicePublication" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/DevicePublication"
+    },
+    "LightTruck" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/LightTruck"
+    },
+    "Address" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Address"
+    },
+    "faultCreationTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/faultCreationTime"
+    },
+    "SmallObject" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/SmallObject"
+    },
+    "timeValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/timeValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "hasShape" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasShape",
+      "@type" : "@id"
+    },
+    "Situation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Situation"
+    },
+    "consistsOfVehicle" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/consistsOfVehicle",
+      "@type" : "@id"
+    },
+    "trafficCongestion" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/trafficCongestion",
+      "@type" : "@id"
+    },
+    "UnitOfMeasure" : {
+      "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+    },
+    "NonOrderedLocations" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/NonOrderedLocations"
+    },
+    "Route" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Route"
+    },
+    "alertCPoint" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCPoint",
+      "@type" : "@id"
+    },
+    "MultilingualStringValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/MultilingualStringValue"
+    },
+    "entry" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/entry"
+    },
+    "hasEnvironment" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasEnvironment",
+      "@type" : "@id"
+    },
+    "RoadWorks" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadWorks"
+    },
+    "ItineraryByReference" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ItineraryByReference"
+    },
+    "isControlledByDevice" : {
+      "@id" : "https://saref.etsi.org/core/isControlledByDevice",
+      "@type" : "@id"
+    },
+    "Itinerary" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Itinerary"
+    },
+    "animalPresenceType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/animalPresenceType"
+    },
+    "posList" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/posList"
+    },
+    "TravelTimeData" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TravelTimeData"
+    },
+    "vmsUnitFault" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/vmsUnitFault"
+    },
+    "roadworksDuration" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/roadworksDuration"
+    },
+    "TrafficElement" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TrafficElement"
+    },
+    "ReroutingManagement" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ReroutingManagement"
+    },
+    "PressureValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PressureValue"
+    },
+    "DateTimeValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/DateTimeValue"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "lang" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/lang",
+      "@type" : "http://www.w3.org/2001/XMLSchema#language"
+    },
+    "freeFlowSpeed" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/freeFlowSpeed",
+      "@type" : "@id"
+    },
+    "RoutePoint" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoutePoint"
+    },
+    "mobility" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/mobility",
+      "@type" : "@id"
+    },
+    "RoadOrCarraigewayOrLaneManagement" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadOrCarraigewayOrLaneManagement"
+    },
+    "hasLength" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasLength",
+      "@type" : "@id"
+    },
+    "Road" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Road"
+    },
+    "faultSeverity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/faultSeverity"
+    },
+    "concentrationOfVehicles" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/concentrationOfVehicles"
+    },
+    "MesaurementEquipmentFault" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/MesaurementEquipmentFault"
+    },
+    "AuthorityOperation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AuthorityOperation"
+    },
+    "Humidity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Humidity"
+    },
+    "isCollectionOf" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/isCollectionOf",
+      "@type" : "@id"
+    },
+    "validPeriod" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/validPeriod",
+      "@type" : "@id"
+    },
+    "PollutionInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PollutionInformation"
+    },
+    "ItineraryByIndexedLocations" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ItineraryByIndexedLocations"
+    },
+    "Period" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Period"
+    },
+    "Cause" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Cause"
+    },
+    "pertinentLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/pertinentLocation"
+    },
+    "CriticalObject" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/CriticalObject"
+    },
+    "PlatoonVehicleState" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PlatoonVehicleState"
+    },
+    "SpeedPercentile" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/SpeedPercentile"
+    },
+    "GeneralNetworkManagement" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/GeneralNetworkManagement"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "NonWeatherRelatedRoadConditions" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/NonWeatherRelatedRoadConditions"
+    },
+    "timePrecision" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/timePrecision"
+    },
+    "faultLastUpdateTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/faultLastUpdateTime"
+    },
+    "mobilityOfActivity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/mobilityOfActivity",
+      "@type" : "@id"
+    },
+    "PointByCoordinates" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PointByCoordinates"
+    },
+    "GmlLineString" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/GmlLineString"
+    },
+    "publicEventType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/publicEventType"
+    },
+    "commentType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/commentType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "situationRecordFirstSupplierVersionTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/situationRecordFirstSupplierVersionTime"
+    },
+    "locationReference" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/locationReference"
+    },
+    "numberOfVehiclesWaiting" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/numberOfVehiclesWaiting"
+    },
+    "Comment" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Comment"
+    },
+    "MaintenanceWorks" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/MaintenanceWorks"
+    },
+    "occupancy" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/occupancy"
+    },
+    "GeneralObstruction" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/GeneralObstruction"
+    },
+    "totalNumberOfPeopleInvolved" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/totalNumberOfPeopleInvolved"
+    },
+    "averageDistanceHeadway" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/averageDistanceHeadway",
+      "@type" : "@id"
+    },
+    "validityTimeSpecification" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/validityTimeSpecification"
+    },
+    "generalDeviceStatus" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/generalDeviceStatus"
+    },
+    "srsDimension" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/srsDimension",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "RoadServiceDisruption" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadServiceDisruption"
+    },
+    "AbnormalTraffic" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AbnormalTraffic"
+    },
+    "maintenanceVehicleActions" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/maintenanceVehicleActions"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "locationCodeForLinearLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/locationCodeForLinearLocation",
+      "@type" : "@id"
+    },
+    "AxleFlowValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AxleFlowValue"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "endOfPeriod" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/endOfPeriod",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "DeviceFault" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/DeviceFault"
+    },
+    "mobilityType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/mobilityType"
+    },
+    "Platoon" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Platoon"
+    },
+    "winterEquipmentManagementType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/winterEquipmentManagementType"
+    },
+    "arrivalTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/arrivalTime"
+    },
+    "ParkingSpot" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ParkingSpot"
+    },
+    "Source" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Source"
+    },
+    "groupOfVehiclesInvolved" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/groupOfVehiclesInvolved",
+      "@type" : "@id"
+    },
+    "detectsPosition" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/detectsPosition",
+      "@type" : "@id"
+    },
+    "OWLClass_68373d0b_d1af_406c_ab49_8e417a7e0b21" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/OWLClass_68373d0b_d1af_406c_ab49_8e417a7e0b21"
+    },
+    "HumidityInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/HumidityInformation"
+    },
+    "underTraffic" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/underTraffic"
+    },
+    "TrafficSpeed" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TrafficSpeed"
+    },
+    "roadsideServiceDisruptionExtension" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/roadsideServiceDisruptionExtension",
+      "@type" : "@id"
+    },
+    "vehicleInvolved" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/vehicleInvolved",
+      "@type" : "@id"
+    },
+    "situationRecordCreationTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/situationRecordCreationTime"
+    },
+    "situationRecord" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/situationRecord",
+      "@type" : "@id"
+    },
+    "operatorActionStatus" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/operatorActionStatus"
+    },
+    "FloatingPointMetreDistanceValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/FloatingPointMetreDistanceValue"
+    },
+    "RegularParkingSpot" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RegularParkingSpot"
+    },
+    "availabilityRate" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/availabilityRate",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "alertCMethod2PrimaryPointLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCMethod2PrimaryPointLocation",
+      "@type" : "@id"
+    },
+    "NonManagedCause" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/NonManagedCause"
+    },
+    "hasEvent" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasEvent",
+      "@type" : "@id"
+    },
+    "PlatoonRole" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PlatoonRole"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+    },
+    "DataValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/DataValue"
+    },
+    "HeavyTruck" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/HeavyTruck"
+    },
+    "isMemberOfPlatoon" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/isMemberOfPlatoon",
+      "@type" : "@id"
+    },
+    "measuresProperty" : {
+      "@id" : "https://saref.etsi.org/core/measuresProperty",
+      "@type" : "@id"
+    },
+    "hasPosition" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasPosition",
+      "@type" : "@id"
+    },
+    "Geometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
+    "PrecipitationDetail" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PrecipitationDetail"
+    },
+    "LargeObject" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/LargeObject"
+    },
+    "BrakeCapacity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/BrakeCapacity"
+    },
+    "hasValue" : {
+      "@id" : "https://saref.etsi.org/core/hasValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "managedCause" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/managedCause",
+      "@type" : "@id"
+    },
+    "PassengerCar" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PassengerCar"
+    },
+    "alertCDirectionCoded" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCDirectionCoded",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "distanceGap" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/distanceGap"
+    },
+    "reroutingManagementType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/reroutingManagementType"
+    },
+    "travelTimeType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/travelTimeType"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    },
+    "noPrecipitation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/noPrecipitation"
+    },
+    "harmonicSpeed" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/harmonicSpeed",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "OWLClassImpl_d8e65262_0c88_4ae7_8aa9_18b0b7856896" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/OWLClassImpl_d8e65262_0c88_4ae7_8aa9_18b0b7856896"
+    },
+    "PlatoonState" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PlatoonState"
+    },
+    "TrafficStatusValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TrafficStatusValue"
+    },
+    "commentDateTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/commentDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasRole" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasRole",
+      "@type" : "@id"
+    },
+    "LocationByReference" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/LocationByReference"
+    },
+    "AlertCLinearByCode" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCLinearByCode"
+    },
+    "speedPercentile" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/speedPercentile",
+      "@type" : "@id"
+    },
+    "hasOwner" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasOwner",
+      "@type" : "@id"
+    },
+    "SpecialPermitParkingSpot" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/SpecialPermitParkingSpot"
+    },
+    "hasDestination" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasDestination",
+      "@type" : "@id"
+    },
+    "AlertCMethod4SecondaryPointLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCMethod4SecondaryPointLocation"
+    },
+    "ElaboratedData" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ElaboratedData"
+    },
+    "hasVehicleEnvironmentMember" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasVehicleEnvironmentMember",
+      "@type" : "@id"
+    },
+    "TimeUnit" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TimeUnit"
+    },
+    "AlertCMethod2SecondaryPointLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCMethod2SecondaryPointLocation"
+    },
+    "long" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+    },
+    "InfrastructureDamageObstruction" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/InfrastructureDamageObstruction"
+    },
+    "TrafficFlow" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TrafficFlow"
+    },
+    "signedRerouting" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/signedRerouting"
+    },
+    "journeyDestination" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/journeyDestination",
+      "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "OccupancyChangeValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/OccupancyChangeValue"
+    },
+    "hasIdentifier" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasIdentifier",
+      "@type" : "@id"
+    },
+    "AutomationLevel" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AutomationLevel"
+    },
+    "Wind" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Wind"
+    },
+    "Mobility" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Mobility"
+    },
+    "hasProvider" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasProvider",
+      "@type" : "@id"
+    },
+    "PublicEvent" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PublicEvent"
+    },
+    "WidthUnit" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/WidthUnit"
+    },
+    "periodName" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/periodName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "alertCMethod4SecondaryPointLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCMethod4SecondaryPointLocation",
+      "@type" : "@id"
+    },
+    "AlertCDirection" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCDirection"
+    },
+    "travelTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/travelTime",
+      "@type" : "@id"
+    },
+    "RoadOperatorServiceDisruption" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadOperatorServiceDisruption"
+    },
+    "VmsUnitFault" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/VmsUnitFault"
+    },
+    "RoadAssistance" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadAssistance"
+    },
+    "equipmentOrSystemFaultType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/equipmentOrSystemFaultType"
+    },
+    "environmentalObstructionType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/environmentalObstructionType"
+    },
+    "hasDataOf" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasDataOf",
+      "@type" : "@id"
+    },
+    "disturbanceActivityType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/disturbanceActivityType"
+    },
+    "Location" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Location"
+    },
+    "HeightUnit" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/HeightUnit"
+    },
+    "accident" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/accident",
+      "@type" : "@id"
+    },
+    "Movement" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Movement"
+    },
+    "ElectronicControlUnit" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ElectronicControlUnit"
+    },
+    "management" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/management",
+      "@type" : "@id"
+    },
+    "Activity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Activity"
+    },
+    "VehicleEnvironment" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/VehicleEnvironment"
+    },
+    "Length" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Length"
+    },
+    "ParkingVehicleState" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ParkingVehicleState"
+    },
+    "validity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/validity",
+      "@type" : "@id"
+    },
+    "SpeedManagement" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/SpeedManagement"
+    },
+    "TemperatureInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TemperatureInformation"
+    },
+    "isConfidenceOf" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/isConfidenceOf",
+      "@type" : "@id"
+    },
+    "situationRecordObservationTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/situationRecordObservationTime"
+    },
+    "Accident" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Accident"
+    },
+    "measurementOrCalculationPeriod" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/measurementOrCalculationPeriod"
+    },
+    "VehicleCountValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/VehicleCountValue"
+    },
+    "isRelatedTo" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/isRelatedTo",
+      "@type" : "@id"
+    },
+    "roadOrCarriagewayOrLaneManagementType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/roadOrCarriagewayOrLaneManagementType"
+    },
+    "vehicleObstructionType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/vehicleObstructionType"
+    },
+    "usesMeasurement" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/usesMeasurement",
+      "@type" : "@id"
+    },
+    "id" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/id"
+    },
+    "RelativePosition" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RelativePosition"
+    },
+    "AlertCArea" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCArea"
+    },
+    "Temperature" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Temperature"
+    },
+    "GroupOfLocations" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/GroupOfLocations"
+    },
+    "dateTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/dateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "mobilityOfObstruction" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/mobilityOfObstruction",
+      "@type" : "@id"
+    },
+    "PersonalDevice" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PersonalDevice"
+    },
+    "causeType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/causeType"
+    },
+    "NonRoadEventInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/NonRoadEventInformation"
+    },
+    "VehicleObstruction" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/VehicleObstruction"
+    },
+    "RendezvousLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RendezvousLocation"
+    },
+    "minimumCarOccupancy" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/minimumCarOccupancy"
+    },
+    "Status" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Status"
+    },
+    "stationType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/stationType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "VmsFault" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/VmsFault"
+    },
+    "hasMaxSize" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasMaxSize"
+    },
+    "hasProperty" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasProperty",
+      "@type" : "@id"
+    },
+    "hasPlatoonPosition" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasPlatoonPosition",
+      "@type" : "@id"
+    },
+    "LateralAcceleration" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/LateralAcceleration"
+    },
+    "isMemberOf" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/isMemberOf",
+      "@type" : "@id"
+    },
+    "integerMetreDistance" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/integerMetreDistance"
+    },
+    "headerInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/headerInformation",
+      "@type" : "@id"
+    },
+    "transitServiceType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/transitServiceType"
+    },
+    "causeDescription" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/causeDescription"
+    },
+    "PlatoonAutomationLevel" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PlatoonAutomationLevel"
+    },
+    "forVehiclesWithCharacteristicsOf" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/forVehiclesWithCharacteristicsOf",
+      "@type" : "@id"
+    },
+    "TrafficData" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TrafficData"
+    },
+    "PublicTransport" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PublicTransport"
+    },
+    "measurementMadeBy" : {
+      "@id" : "https://saref.etsi.org/core/measurementMadeBy",
+      "@type" : "@id"
+    },
+    "RoadSideActuator" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadSideActuator"
+    },
+    "consistsOfEquipment" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/consistsOfEquipment",
+      "@type" : "@id"
+    },
+    "roadSurfaceConditionMeasurements" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/roadSurfaceConditionMeasurements",
+      "@type" : "@id"
+    },
+    "numberOfObstructions" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/numberOfObstructions"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "hasAutomationLevel" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasAutomationLevel",
+      "@type" : "@id"
+    },
+    "PcuFlowValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PcuFlowValue"
+    },
+    "statusDescription" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/statusDescription"
+    },
+    "GroupOfVehiclesInvolved" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/GroupOfVehiclesInvolved"
+    },
+    "confidentialityOverride" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/confidentialityOverride",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AccelerationConfidence" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AccelerationConfidence"
+    },
+    "PositionConfidenceEllipse" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PositionConfidenceEllipse"
+    },
+    "WindSpeedValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/WindSpeedValue"
+    },
+    "VehicleCharacteristics" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/VehicleCharacteristics"
+    },
+    "overrunning" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/overrunning",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "obstructionType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/obstructionType"
+    },
+    "generalNetworkManagementType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/generalNetworkManagementType"
+    },
+    "consistsOfObject" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/consistsOfObject",
+      "@type" : "@id"
+    },
+    "complianceOption" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/complianceOption"
+    },
+    "genericSituationRecordExtension" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/genericSituationRecordExtension"
+    },
+    "OverallPeriod" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/OverallPeriod"
+    },
+    "visibility" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/visibility",
+      "@type" : "@id"
+    },
+    "urgency" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/urgency"
+    },
+    "presenceDurationTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/presenceDurationTime"
+    },
+    "LengthUnit" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/LengthUnit"
+    },
+    "alertCDirection" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCDirection",
+      "@type" : "@id"
+    },
+    "pollution" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/pollution",
+      "@type" : "@id"
+    },
+    "FrictionValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/FrictionValue"
+    },
+    "RoadSideSensor" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadSideSensor"
+    },
+    "additionalDeviceInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/additionalDeviceInformation"
+    },
+    "CarParks" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/CarParks"
+    },
+    "stationID" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/stationID"
+    },
+    "RoadSurfaceConditionMeasurements" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadSurfaceConditionMeasurements"
+    },
+    "alertCDirectionNamed" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCDirectionNamed",
+      "@type" : "@id"
+    },
+    "averageTimeHeadway" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/averageTimeHeadway",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "GeneralInstructionOrMessageToRoadUsers" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/GeneralInstructionOrMessageToRoadUsers"
+    },
+    "EquipmentOrSystemFault" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/EquipmentOrSystemFault"
+    },
+    "actionPlanIdentifier" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/actionPlanIdentifier"
+    },
+    "applicableForTrafficType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/applicableForTrafficType"
+    },
+    "confidentiality" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/confidentiality"
+    },
+    "HeaderInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/HeaderInformation"
+    },
+    "FlowUnit" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/FlowUnit"
+    },
+    "queueLength" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/queueLength"
+    },
+    "Width" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Width"
+    },
+    "areaOfInterest" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/areaOfInterest"
+    },
+    "Role" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Role"
+    },
+    "trafficStatus" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/trafficStatus"
+    },
+    "PerceptionState" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PerceptionState"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "vehicleFlow" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/vehicleFlow",
+      "@type" : "@id"
+    },
+    "percentageLongVehicles" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/percentageLongVehicles",
+      "@type" : "@id"
+    },
+    "reroutingItineraryDescription" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/reroutingItineraryDescription",
+      "@type" : "@id"
+    },
+    "informationStatus" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/informationStatus"
+    },
+    "lastUpdateOfDeviceInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/lastUpdateOfDeviceInformation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "Linear" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Linear"
+    },
+    "precipitationDetail" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/precipitationDetail",
+      "@type" : "@id"
+    },
+    "cause" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/cause",
+      "@type" : "@id"
+    },
+    "hasPlatoonVehicleState" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasPlatoonVehicleState",
+      "@type" : "@id"
+    },
+    "value" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/value",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "faultIdentifier" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/faultIdentifier"
+    },
+    "restlessness" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/restlessness",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "Impact" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Impact"
+    },
+    "hasMember" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasMember",
+      "@type" : "@id"
+    },
+    "devicePublication" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/devicePublication",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "hasSize" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasSize",
+      "@type" : "@id"
+    },
+    "alertCLocationName" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCLocationName",
+      "@type" : "@id"
+    },
+    "drivingConditionType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/drivingConditionType"
+    },
+    "trafficManuallyDirectedBy" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/trafficManuallyDirectedBy"
+    },
+    "RoadConditions" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadConditions"
+    },
+    "TrafficHeadway" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TrafficHeadway"
+    },
+    "location" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+      "@type" : "@id"
+    },
+    "RoadObject" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadObject"
+    },
+    "timeGap" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/timeGap"
+    },
+    "applicableForTrafficDirection" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/applicableForTrafficDirection"
+    },
+    "Weight" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Weight"
+    },
+    "MaintenanceVehicles" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/MaintenanceVehicles"
+    },
+    "temperature" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/temperature",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "hasConfidenceValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasConfidenceValue"
+    },
+    "Plane" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Plane"
+    },
+    "PrecipitationIntensityValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PrecipitationIntensityValue"
+    },
+    "hasEnd" : {
+      "@id" : "http://www.w3.org/2006/time#hasEnd",
+      "@type" : "@id"
+    },
+    "AnimalPresenceObstruction" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AnimalPresenceObstruction"
+    },
+    "SpeedConfidence" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/SpeedConfidence"
+    },
+    "OWLClassImpl_da73f0cc_a311_4f84_ae5d_d5b5664a4240" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/OWLClassImpl_da73f0cc_a311_4f84_ae5d_d5b5664a4240"
+    },
+    "transitServiceInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/transitServiceInformation"
+    },
+    "VehicleFlowValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/VehicleFlowValue"
+    },
+    "Car" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Car"
+    },
+    "MicrogramsConcentrationValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/MicrogramsConcentrationValue"
+    },
+    "RoadNode" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadNode"
+    },
+    "alertCLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCLocation",
+      "@type" : "@id"
+    },
+    "NetworkManagement" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/NetworkManagement"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    },
+    "hasBeginning" : {
+      "@id" : "http://www.w3.org/2006/time#hasBeginning",
+      "@type" : "@id"
+    },
+    "hasEstimatedRendezvousLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasEstimatedRendezvousLocation",
+      "@type" : "@id"
+    },
+    "situationVersionTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/situationVersionTime"
+    },
+    "alt" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt"
+    },
+    "impact" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/impact",
+      "@type" : "@id"
+    },
+    "Acceleration" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Acceleration"
+    },
+    "ElaboratedDataFault" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ElaboratedDataFault"
+    },
+    "RoadSurfaceConditionInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadSurfaceConditionInformation"
+    },
+    "SignSetting" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/SignSetting"
+    },
+    "Pollution" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Pollution"
+    },
+    "Obstruction" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Obstruction"
+    },
+    "hasSubSystem" : {
+      "@id" : "https://saref.etsi.org/saref4syst/hasSubSystem",
+      "@type" : "@id"
+    },
+    "nonWeatherRelatedRoadConditionType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/nonWeatherRelatedRoadConditionType"
+    },
+    "DirectionCompassValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/DirectionCompassValue"
+    },
+    "hasConfidenceUnitOfMeasure" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasConfidenceUnitOfMeasure",
+      "@type" : "@id"
+    },
+    "placesAtWhichApplicable" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/placesAtWhichApplicable"
+    },
+    "relatesToMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/relatesToMeasurement",
+      "@type" : "@id"
+    },
+    "Conditions" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Conditions"
+    },
+    "relativeTrafficFlow" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/relativeTrafficFlow"
+    },
+    "hasVehicleRole" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasVehicleRole",
+      "@type" : "@id"
+    },
+    "Truck" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Truck"
+    },
+    "isMeasuredByDevice" : {
+      "@id" : "https://saref.etsi.org/core/isMeasuredByDevice",
+      "@type" : "@id"
+    },
+    "automaticallyInitiated" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/automaticallyInitiated"
+    },
+    "faultyEquipmentOrSystemType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/faultyEquipmentOrSystemType"
+    },
+    "WinterDrivingManagement" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/WinterDrivingManagement"
+    },
+    "ConstructionWorks" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ConstructionWorks"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "DeviceStatus" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/DeviceStatus"
+    },
+    "TransitInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TransitInformation"
+    },
+    "PrecipitationInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PrecipitationInformation"
+    },
+    "hasWidth" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasWidth",
+      "@type" : "@id"
+    },
+    "accidentType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/accidentType"
+    },
+    "MultilingualStringValueType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/MultilingualStringValueType"
+    },
+    "hasParkingVehicleState" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasParkingVehicleState",
+      "@type" : "@id"
+    },
+    "hasRelativePosition" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasRelativePosition",
+      "@type" : "@id"
+    },
+    "typeOfDevice" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/typeOfDevice"
+    },
+    "hasHeight" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasHeight",
+      "@type" : "@id"
+    },
+    "alertCLocationTableVersion" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCLocationTableVersion",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "trafficTrendType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/trafficTrendType"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "NetworkLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/NetworkLocation"
+    },
+    "Point" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Point"
+    },
+    "AccelerationUnit" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AccelerationUnit"
+    },
+    "Size" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Size"
+    },
+    "individualVehicleSpeed" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/individualVehicleSpeed"
+    },
+    "measurementOrCalculationTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/measurementOrCalculationTime"
+    },
+    "consistsOfEvent" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/consistsOfEvent",
+      "@type" : "@id"
+    },
+    "sourceName" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/sourceName",
+      "@type" : "@id"
+    },
+    "Position" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Position"
+    },
+    "UrlLink" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/UrlLink"
+    },
+    "makesMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/makesMeasurement",
+      "@type" : "@id"
+    },
+    "srsName" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/srsName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OWLObjectPropertyImpl_395874f0_5434_48f2_b73d_8c60af0c7371" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/OWLObjectPropertyImpl_395874f0_5434_48f2_b73d_8c60af0c7371",
+      "@type" : "@id"
+    },
+    "hasInformationOf" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasInformationOf",
+      "@type" : "@id"
+    },
+    "vmsSetting" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/vmsSetting",
+      "@type" : "@id"
+    },
+    "humidity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/humidity",
+      "@type" : "@id"
+    },
+    "measurementEquipmentFault" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/measurementEquipmentFault"
+    },
+    "BasicData" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/BasicData"
+    },
+    "hasEstimatedJoiningTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasEstimatedJoiningTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "maintenanceVehicles" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/maintenanceVehicles",
+      "@type" : "@id"
+    },
+    "accidentExtension" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/accidentExtension"
+    },
+    "AlertCMethod2PrimaryPointLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCMethod2PrimaryPointLocation"
+    },
+    "hasCoordinateX" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasCoordinateX"
+    },
+    "hasGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "@type" : "@id"
+    },
+    "produces" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/produces",
+      "@type" : "@id"
+    },
+    "RoadSideEquipment" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadSideEquipment"
+    },
+    "Property" : {
+      "@id" : "https://saref.etsi.org/core/Property"
+    },
+    "SituationRecord" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/SituationRecord"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "VehicleRole" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/VehicleRole"
+    },
+    "roadOrJunctionNumber" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/roadOrJunctionNumber"
+    },
+    "timeHeadway" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/timeHeadway"
+    },
+    "numberOfMaintenanceVehicles" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/numberOfMaintenanceVehicles"
+    },
+    "GenericSituationRecord" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/GenericSituationRecord"
+    },
+    "faultType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/faultType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "lastDeviceCheck" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/lastDeviceCheck"
+    },
+    "inXSDDateTimeStamp" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "AlertCMethod2Point" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCMethod2Point"
+    },
+    "hasDescriptionName" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasDescriptionName"
+    },
+    "source" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/source",
+      "@type" : "@id"
+    },
+    "situation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/situation",
+      "@type" : "@id"
+    },
+    "TemperatureValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TemperatureValue"
+    },
+    "type" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "generalInstructionToRoadUsersType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/generalInstructionToRoadUsersType"
+    },
+    "alertCMethod4PrimaryPointLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCMethod4PrimaryPointLocation",
+      "@type" : "@id"
+    },
+    "journeyOrigin" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/journeyOrigin",
+      "@type" : "@id"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://saref.etsi.org/core/isMeasuredIn",
+      "@type" : "@id"
+    },
+    "roadworksScale" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/roadworksScale"
+    },
+    "roadsideServiceDisruptionType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/roadsideServiceDisruptionType"
+    },
+    "AlertCLinear" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCLinear"
+    },
+    "Height" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Height"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "subjects" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/subjects",
+      "@type" : "@id"
+    },
+    "SpatialObject" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+    },
+    "timeMeaning" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/timeMeaning"
+    },
+    "TrafficManagementCentre" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TrafficManagementCentre"
+    },
+    "publicationTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/publicationTime"
+    },
+    "hasMovement" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasMovement",
+      "@type" : "@id"
+    },
+    "lat" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+    },
+    "WindInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/WindInformation"
+    },
+    "DisturbanceActivity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/DisturbanceActivity"
+    },
+    "TollStation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TollStation"
+    },
+    "ParkingSpotPoint" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ParkingSpotPoint"
+    },
+    "consistsOfUser" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/consistsOfUser",
+      "@type" : "@id"
+    },
+    "PayloadPublication" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PayloadPublication"
+    },
+    "consistsOfEntity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/consistsOfEntity",
+      "@type" : "@id"
+    },
+    "RoadEntity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadEntity"
+    },
+    "CardinalityUnit" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/CardinalityUnit"
+    },
+    "depth" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/depth"
+    },
+    "version" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/version",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "overallSeverity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/overallSeverity"
+    },
+    "weatherRelatedRoadConditionType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/weatherRelatedRoadConditionType"
+    },
+    "consistsOf" : {
+      "@id" : "https://saref.etsi.org/core/consistsOf",
+      "@type" : "@id"
+    },
+    "absoluteSpeed" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/absoluteSpeed",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "nonGeneralPublicComment" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/nonGeneralPublicComment",
+      "@type" : "@id"
+    },
+    "KilogramConcentrationValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/KilogramConcentrationValue"
+    },
+    "hasCoordinateZ" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasCoordinateZ"
+    },
+    "IndividualVehicleDataValues" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/IndividualVehicleDataValues"
+    },
+    "PointCoordinates" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PointCoordinates"
+    },
+    "averageVehicleSpeed" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/averageVehicleSpeed",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "OWLClassImpl_f02aeb6a_104f_4cca_bdd0_53e391003c58" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/OWLClassImpl_f02aeb6a_104f_4cca_bdd0_53e391003c58"
+    },
+    "MultilingualString" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/MultilingualString"
+    },
+    "AbsolutePosition" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AbsolutePosition"
+    },
+    "AlertCMethod4Point" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCMethod4Point"
+    },
+    "ManagedCause" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ManagedCause"
+    },
+    "basicData" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/basicData",
+      "@type" : "@id"
+    },
+    "ConcentrationOfVehiclesValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ConcentrationOfVehiclesValue"
+    },
+    "scheduledDepartureTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/scheduledDepartureTime"
+    },
+    "hasPerceptionState" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasPerceptionState",
+      "@type" : "@id"
+    },
+    "AlertCMethod4PrimaryPointLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCMethod4PrimaryPointLocation"
+    },
+    "pcuFlow" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/pcuFlow",
+      "@type" : "@id"
+    },
+    "groupOfPeopleInvolved" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/groupOfPeopleInvolved",
+      "@type" : "@id"
+    },
+    "faultDescription" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/faultDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "PlatoonPosition" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PlatoonPosition"
+    },
+    "accidentCause" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/accidentCause"
+    },
+    "exit" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/exit"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "Validity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Validity"
+    },
+    "AlertCPoint" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCPoint"
+    },
+    "YawRate" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/YawRate"
+    },
+    "vehicleFlowRate" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/vehicleFlowRate"
+    },
+    "pressure" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/pressure",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "roadMaintenanceType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/roadMaintenanceType"
+    },
+    "Management" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Management"
+    },
+    "hasRoadTopologyPosition" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasRoadTopologyPosition",
+      "@type" : "@id"
+    },
+    "elaboratedDataFault" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/elaboratedDataFault"
+    },
+    "hasState" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasState",
+      "@type" : "@id"
+    },
+    "OffsetDistance" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/OffsetDistance"
+    },
+    "travelTimeTrendType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/travelTimeTrendType"
+    },
+    "TrafficStatus" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TrafficStatus"
+    },
+    "generalPublicComment" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/generalPublicComment",
+      "@type" : "@id"
+    },
+    "normallyExpectedTravelTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/normallyExpectedTravelTime",
+      "@type" : "@id"
+    },
+    "DeviceState" : {
+      "@id" : "https://saref.etsi.org/core/DeviceState"
+    },
+    "probabilityOfOccurrence" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/probabilityOfOccurrence"
+    },
+    "EndPoint" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/EndPoint"
+    },
+    "Fault" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Fault"
+    },
+    "abnormalTrafficType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/abnormalTrafficType"
+    },
+    "urgentRoadworks" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/urgentRoadworks"
+    },
+    "State" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/State"
+    },
+    "elaboratedData" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/elaboratedData",
+      "@type" : "@id"
+    },
+    "poorEnvironmentType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/poorEnvironmentType"
+    },
+    "roadsideAssistanceType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/roadsideAssistanceType"
+    },
+    "totalNumberOfVehiclesInvolved" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/totalNumberOfVehiclesInvolved"
+    },
+    "groupOfLocations" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/groupOfLocations",
+      "@type" : "@id"
+    },
+    "ApplicationRateValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ApplicationRateValue"
+    },
+    "NonOrderedLocationGroupByReference" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/NonOrderedLocationGroupByReference"
+    },
+    "relatesToProperty" : {
+      "@id" : "https://saref.etsi.org/core/relatesToProperty",
+      "@type" : "@id"
+    },
+    "alternativeRoute" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alternativeRoute",
+      "@type" : "@id"
+    },
+    "TwoWheeler" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TwoWheeler"
+    },
+    "SpeedValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/SpeedValue"
+    },
+    "LongitudinalAcceleration" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/LongitudinalAcceleration"
+    },
+    "exceptionPeriod" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/exceptionPeriod",
+      "@type" : "@id"
+    },
+    "hasOrigin" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasOrigin",
+      "@type" : "@id"
+    },
+    "Actuator" : {
+      "@id" : "https://saref.etsi.org/core/Actuator"
+    },
+    "WeatherRelatedRoadConditions" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/WeatherRelatedRoadConditions"
+    },
+    "situationRecordCreationReference" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/situationRecordCreationReference"
+    },
+    "StartPoint" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/StartPoint"
+    },
+    "GroupOfPeopleInvolved" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/GroupOfPeopleInvolved"
+    },
+    "hasPlatoonRole" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasPlatoonRole",
+      "@type" : "@id"
+    },
+    "relativeSpeed" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/relativeSpeed",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "alive" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alive"
+    },
+    "distanceHeadway" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/distanceHeadway"
+    },
+    "isMemberOfVehicleEnvironment" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/isMemberOfVehicleEnvironment",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/comment",
+      "@type" : "@id"
+    },
+    "IntegerMetreDistanceValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/IntegerMetreDistanceValue"
+    },
+    "AlertCLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCLocation"
+    },
+    "alertCLinear" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCLinear",
+      "@type" : "@id"
+    },
+    "controlsProperty" : {
+      "@id" : "https://saref.etsi.org/core/controlsProperty",
+      "@type" : "@id"
+    },
+    "Subjects" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Subjects"
+    },
+    "MediumObject" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/MediumObject"
+    },
+    "urlLink" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/urlLink",
+      "@type" : "@id"
+    },
+    "NonOrderedLocationGroupByList" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/NonOrderedLocationGroupByList"
+    },
+    "startOfPeriod" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/startOfPeriod",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "generalMessageToRoadUsers" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/generalMessageToRoadUsers",
+      "@type" : "@id"
+    },
+    "PoorEnvironmentConditions" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PoorEnvironmentConditions"
+    },
+    "alertCMethod2SecondaryPointLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCMethod2SecondaryPointLocation",
+      "@type" : "@id"
+    },
+    "overallStartTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/overallStartTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "regularity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/regularity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "VisibilityInformation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/VisibilityInformation"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "wind" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/wind",
+      "@type" : "@id"
+    },
+    "validityStatus" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/validityStatus"
+    },
+    "authorityOperationType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/authorityOperationType"
+    },
+    "severity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/severity"
+    },
+    "OperatorAction" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/OperatorAction"
+    },
+    "System" : {
+      "@id" : "https://saref.etsi.org/saref4syst/System"
+    },
+    "roadMaintenance" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/roadMaintenance"
+    },
+    "Shape" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Shape"
+    },
+    "vehicleType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/vehicleType"
+    },
+    "infrastructureDamageType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/infrastructureDamageType"
+    },
+    "ParkingSpotState" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ParkingSpotState"
+    },
+    "PercentageValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/PercentageValue"
+    },
+    "axleFlow" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/axleFlow",
+      "@type" : "@id"
+    },
+    "concentration" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/concentration",
+      "@type" : "@id"
+    },
+    "hasPlatoonState" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasPlatoonState",
+      "@type" : "@id"
+    },
+    "AlertCMethod2Linear" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCMethod2Linear"
+    },
+    "specificLocation" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/specificLocation"
+    },
+    "AngularDirection" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AngularDirection"
+    },
+    "vmsFault" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/vmsFault"
+    },
+    "Device" : {
+      "@id" : "https://saref.etsi.org/core/Device"
+    },
+    "AutomotiveObject" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AutomotiveObject"
+    },
+    "trafficFlowCharacteristics" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/trafficFlowCharacteristics"
+    },
+    "TrafficLightController" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TrafficLightController"
+    },
+    "subSystemOf" : {
+      "@id" : "https://saref.etsi.org/saref4syst/subSystemOf",
+      "@type" : "@id"
+    },
+    "Vehicle" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Vehicle"
+    },
+    "hasFormat" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasFormat",
+      "@type" : "@id"
+    },
+    "hasTimestamp" : {
+      "@id" : "https://saref.etsi.org/core/hasTimestamp"
+    },
+    "TrafficConcentration" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TrafficConcentration"
+    },
+    "situationVersionCreationTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/situationVersionCreationTime"
+    },
+    "AlertCMethod4Linear" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/AlertCMethod4Linear"
+    },
+    "alertCLocationCountryCode" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCLocationCountryCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Area" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Area"
+    },
+    "measurementOrCalculationTimePrecision" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/measurementOrCalculationTimePrecision"
+    },
+    "WeatherData" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/WeatherData"
+    },
+    "pointByCoordinates" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/pointByCoordinates",
+      "@type" : "@id"
+    },
+    "TimeStamp" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/TimeStamp"
+    },
+    "temporarySpeedLimit" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/temporarySpeedLimit"
+    },
+    "roadOperatorServiceDisruptionExtension" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/roadOperatorServiceDisruptionExtension",
+      "@type" : "@id"
+    },
+    "OWLClass_95be8558_d8a2_4eed_b3ac_45d78ee1d852" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/OWLClass_95be8558_d8a2_4eed_b3ac_45d78ee1d852"
+    },
+    "roadOperatorServiceDisruptionType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/roadOperatorServiceDisruptionType"
+    },
+    "hasPlatoonMember" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasPlatoonMember",
+      "@type" : "@id"
+    },
+    "offsetDistance" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/offsetDistance",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "operatorActionExtension" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/operatorActionExtension"
+    },
+    "EvironmentalObstruction" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/EvironmentalObstruction"
+    },
+    "Identifier" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Identifier"
+    },
+    "passageDurationTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/passageDurationTime"
+    },
+    "RoadTopologyPosition" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/RoadTopologyPosition"
+    },
+    "hasBrakeCapacity" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasBrakeCapacity",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "pointCoordinates" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/pointCoordinates",
+      "@type" : "@id"
+    },
+    "journeyReference" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/journeyReference"
+    },
+    "exitTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/exitTime"
+    },
+    "OWLObjectPropertyImpl_ec2042e1_eacf_4b80_b414_e280717a8528" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/OWLObjectPropertyImpl_ec2042e1_eacf_4b80_b414_e280717a8528",
+      "@type" : "@id"
+    },
+    "constructionWorkType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/constructionWorkType"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "hasOpeningTimeAvailability" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasOpeningTimeAvailability",
+      "@type" : "@id"
+    },
+    "freeFlowTravelTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/freeFlowTravelTime",
+      "@type" : "@id"
+    },
+    "DirectionBearingValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/DirectionBearingValue"
+    },
+    "hasParkingSpotState" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasParkingSpotState",
+      "@type" : "@id"
+    },
+    "alertCDirectionSense" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCDirectionSense",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Heading" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Heading"
+    },
+    "VehicleAutomationLevel" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/VehicleAutomationLevel"
+    },
+    "windSpeed" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/windSpeed",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "Confidence" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/Confidence"
+    },
+    "hasConfidence" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasConfidence",
+      "@type" : "@id"
+    },
+    "overallEndTime" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/overallEndTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "hasCoordinateY" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasCoordinateY"
+    },
+    "DurationValue" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/DurationValue"
+    },
+    "hasRoute" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasRoute",
+      "@type" : "@id"
+    },
+    "hasPlatoonIndex" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/hasPlatoonIndex",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "gmlLineString" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/gmlLineString",
+      "@type" : "@id"
+    },
+    "Sensor" : {
+      "@id" : "https://saref.etsi.org/core/Sensor"
+    },
+    "alertCLocationTableNumber" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/alertCLocationTableNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "genericSituationRecordName" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/genericSituationRecordName"
+    },
+    "obstructingVehicle" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/obstructingVehicle",
+      "@type" : "@id"
+    },
+    "actionOrigin" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/actionOrigin"
+    },
+    "speedManagementType" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/speedManagementType"
+    },
+    "ElectricChargingParkingSpot" : {
+      "@id" : "https://physta.github.io/frontier/OnToology/Frontier.ttl/documentation/doc/index-en.html/ElectricChargingParkingSpot"
+    }
+  }
+}
