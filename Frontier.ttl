@@ -1,10 +1,10 @@
-@prefix : <https://w3id.org/frontier#> .
+@prefix : <https://w3id.org/frontier/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/frontier#> .
+@base <https://w3id.org/frontier/> .
 
 <https://w3id.org/frontier/> rdf:type owl:Ontology ;
                                                                                              owl:versionIRI <https://w3id.org/frontier/> ;
@@ -14,10 +14,10 @@
                                                                                              <http://purl.org/dc/terms/issued> "March 2020" ;
                                                                                              <http://purl.org/dc/terms/license> <https://forge.etsi.org/etsi-software-license> ;
                                                                                              <http://purl.org/dc/terms/modified> "October 2022"@en ;
-                                                                                             <http://purl.org/dc/terms/source> <https://docs.datex2.eu/> , <https://w3id.org/frontier#> , <https://www.etsi.org/> ;
+                                                                                             <http://purl.org/dc/terms/source> <https://docs.datex2.eu/> , <https://w3id.org/frontier/> , <https://www.etsi.org/> ;
                                                                                              <http://purl.org/dc/terms/title> "FRONTIER Project Ontology with DATEX II and SAREF extension for automotive"@en ;
                                                                                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "FrontierProject" ;
-                                                                                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/frontier#" ;
+                                                                                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/frontier/" ;
                                                                                              rdfs:seeAlso <https://www.etsi.org/deliver/etsi_ts/103400_103499/10341007/01.01.01_60/ts_10341007v010101p.pdf> ;
                                                                                              owl:versionInfo "v0.2" .
 
