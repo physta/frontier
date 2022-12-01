@@ -6987,8 +6987,7 @@ https://docs.datex2.eu/location/7_Gml.html""" ;
 
 ###  https://w3id.org/frontier/#OverallPeriod
 :OverallPeriod rdf:type owl:Class ;
-               rdfs:subClassOf owl:Thing ,
-                               [ rdf:type owl:Restriction ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                  owl:onProperty :exceptionPeriod ;
                                  owl:allValuesFrom :Period
                                ] ,
@@ -10546,12 +10545,12 @@ https://docs.datex2.eu/location/7_Gml.html""" ;
 :exitTime rdfs:label "exitTime"@en .
 
 
-:faultDescription rdfs:comment "Textual description of the fault." ;
-                  rdfs:label "faultDescription"@en ;
-                  rdfs:comment """Failure-status of the measurement point
+:faultDescription rdfs:comment """Failure-status of the measurement point
 •	0 = no failure
 •	1 = 1 of both detection loops is probably failing
-•	2 = more than 20 percent bad counts: severe failure""" .
+•	2 = more than 20 percent bad counts: severe failure""" ;
+                  rdfs:label "faultDescription"@en ;
+                  rdfs:comment "Textual description of the fault." .
 
 
 :feedType rdfs:label "feedType"@en .
